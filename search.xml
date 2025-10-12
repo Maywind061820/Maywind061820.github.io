@@ -1,3 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/08/07/Hello-World/</url>
+    <content><![CDATA[<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h2>]]></content>
+  </entry>
+  <entry>
+    <title>README</title>
+    <url>/2025/08/07/README/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>生信速通？？？</title>
+    <url>/2025/10/12/test/</url>
+    <content><![CDATA[<h1 id="生信速通？？？"><a href="#生信速通？？？" class="headerlink" title="生信速通？？？"></a>生信速通？？？</h1><p><del>其实本人是比较反感不求甚解的</del></p>
+<p><del>但是总不能速通生物学有关内容、计算机组成原理、数学、编程吧</del></p>
+<p>我们希望学习以下内容：</p>
+<ul>
+<li>R语言语法</li>
+<li>各种图形的绘制</li>
+<li>TCGA的使用</li>
+<li>COX回归分析</li>
+<li>GO KEGG GESA富集分析</li>
+<li>……</li>
+</ul>
+<p>R这个东西在我看来根本不是一门编程语言，而是一个工具。看各种教程所谓各种函数满天飞，各种包满天飞，编程没有逻辑性，没有美感，只剩下机械的记忆。</p>
+<p>B站的教程大多讲不清原理，或多或少地进行了关键部分的模糊和隐藏。令人汗颜！</p>
+<p>可恶，然而……</p>
+<hr>
+<p>本篇旨在介绍一些基础概念和流程。您可以查看其他文章以获取更详细的信息。</p>
+<p>呐，要开始了哟！</p>
+<hr>
+<h2 id="测序过程"><a href="#测序过程" class="headerlink" title="测序过程"></a>测序过程</h2><p><a href="https://www.bilibili.com/video/BV1v34y147nj">illumina技术原理</a></p>
+<h2 id="几个术语"><a href="#几个术语" class="headerlink" title="几个术语"></a>几个术语</h2><ul>
+<li>reads: 一个 read 是落到某个基因的一个DNA测序片段</li>
+<li>counts：一个基因的 reads 总数即为该基因的 counts</li>
+<li>基因长度：目标基因非重叠外显子长度之和（有几个碱基对）</li>
+<li>测序深度：测序得到的基因总量（bp）与基因组（测序目标区域、转录组）的比值。</li>
+</ul>
+<hr>
+<ul>
+<li>RPK(每千个碱基的read数)<ul>
+<li>$\text{RPK}_i = 10 ^ 3 \cdot \dfrac{n_i}{l_i}$</li>
+<li>平衡掉基因长度的影响</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>RPKM<ul>
+<li>$\text{RPKM}_i = 10 ^ 6 \cdot \dfrac{\text{RPK}_i}{\sum _jn_j}$</li>
+<li>在RPK的基础上平衡掉基因深度的影响</li>
+<li>RPKM是单端测序的概念，FPKM是双端测序的概念</li>
+<li><strong>可以组内比较，无法组间比较</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>TPM<ul>
+<li>$\text{TPM}_i = 10 ^ 6 \cdot \dfrac{\text{RPK}_i}{\sum _j\text{RPK}}_j$</li>
+<li><strong>既可组内比较，也可组间比较</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>CPM<ul>
+<li>$\text{CPM}_i = 10 ^ 6 \cdot \dfrac{n_i}{\sum _j n_j}$</li>
+<li><strong>不可组内比较，可以组间比较</strong><h2 id="最后，让我们高呼："><a href="#最后，让我们高呼：" class="headerlink" title="最后，让我们高呼："></a>最后，让我们高呼：</h2></li>
+</ul>
+</li>
+</ul>
+<h1 id="R，你乱搞-lt-和-的事迹将会被天下的使用者怀恨在心！！！"><a href="#R，你乱搞-lt-和-的事迹将会被天下的使用者怀恨在心！！！" class="headerlink" title="R，你乱搞&lt;-和=的事迹将会被天下的使用者怀恨在心！！！"></a>R，你乱搞&lt;-和=的事迹将会被天下的使用者怀恨在心！！！</h1><h1 id="R语言将会臭名昭著"><a href="#R语言将会臭名昭著" class="headerlink" title="R语言将会臭名昭著"></a><del>R语言将会臭名昭著</del></h1>]]></content>
+      <categories>
+        <category>生物信息学</category>
+      </categories>
+      <tags>
+        <tag>生物信息学</tag>
+        <tag>TCGA</tag>
+        <tag>极速版</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>R语言语法</title>
+    <url>/2025/10/12/Rgrammar/</url>
+    <content><![CDATA[<h1 id="R语言语法"><a href="#R语言语法" class="headerlink" title="R语言语法"></a>R语言语法</h1><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="注释（同python）"><a href="#注释（同python）" class="headerlink" title="注释（同python）"></a>注释（同python）</h3><figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 这是注释</span></span><br><span class="line">print<span class="punctuation">(</span><span class="string">&quot;hello world&quot;</span><span class="punctuation">)</span></span><br><span class="line"><span class="comment"># 利用不可执行进行多行注释</span></span><br><span class="line"><span class="keyword">if</span><span class="punctuation">(</span><span class="literal">FALSE</span><span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="string">&quot;</span></span><br><span class="line"><span class="string">    R语言将会臭名昭著</span></span><br><span class="line"><span class="string">    Rubbish R,it is so stupid.</span></span><br><span class="line"><span class="string">    &quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用ls-来查看当前变量"><a href="#使用ls-来查看当前变量" class="headerlink" title="使用ls()来查看当前变量"></a>使用<code>ls()</code>来查看当前变量</h3><ul>
+<li><p>使用<code>rm(变量名)</code>来删除变量</p>
+ <figure class="highlight r"><table><tr><td class="code"><pre><span class="line">rm<span class="punctuation">(</span><span class="built_in">list</span> <span class="operator">=</span> ls<span class="punctuation">(</span><span class="punctuation">)</span><span class="punctuation">)</span> <span class="comment"># 删除所有变量</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>使用<code>setwd()</code>设置工作目录</p>
+</li>
+<li><p>使用<code>getwd()</code>查看工作目录 </p>
+</li>
+</ul>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><ul>
+<li><p><strong>赋值运算符</strong></p>
+<ul>
+<li><p>使用’-&gt;’ ‘-&gt;&gt;’ ‘=’ ‘&lt;-‘ ‘&lt;&lt;-‘来赋值</p>
+</li>
+<li><p><strong>Warning</strong>：在某些场合<code>&lt;-</code>   和<code>=</code>不等价</p>
+</li>
+</ul>
+</li>
+<li><p><strong>数学运算符</strong></p>
+<p>| 优先级 | 符号  |   含义   |<br>| :——: | :—-: | :———: |<br>|   1    |  ()   |   括号   |<br>|   2    |   ^   | 乘方运算 |<br>|   3    |  %%   |  模运算  |<br>|        |  %/%  |   整除   |<br>|   4    |   /   |   除法   |<br>|        |   *   |   乘法   |<br>|   5    |   +   |   加法   |<br>|        |   -   |   减法   |</p>
+</li>
+<li><p><strong>关系运算符</strong></p>
+<p>  包括<code>== &gt; &lt; &lt;= &gt;= !=</code></p>
+</li>
+<li><p><strong>逻辑运算符</strong></p>
+<p>  包括<code>&amp; | ! &amp;&amp; ||</code></p>
+</li>
+<li><p><strong>其他</strong></p>
+<ul>
+<li>冒号运算符<code>:</code>用于创建向量</li>
+<li><code>A %in% P</code>判断A是否存在于P中</li>
+<li><code>A %*% B</code> 矩阵A * B</li>
+</ul>
+</li>
+</ul>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><ul>
+<li>数字<ul>
+<li>一般</li>
+<li>科学计数法</li>
+</ul>
+</li>
+<li>逻辑</li>
+<li>文本</li>
+</ul>
+<h3 id="向量-vector"><a href="#向量-vector" class="headerlink" title="向量(vector)"></a>向量(vector)</h3><ul>
+<li><p>创建：</p>
+<ul>
+<li><p>使用<code>c()</code>创建向量</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">a <span class="operator">=</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="number">1</span><span class="punctuation">,</span><span class="number">5</span><span class="punctuation">)</span></span><br><span class="line">b <span class="operator">=</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="number">2</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">print<span class="punctuation">(</span>a <span class="operator">+</span> b<span class="punctuation">)</span></span><br><span class="line"><span class="comment"># 将输出3 9</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用<code>seq(m,n,d)</code>生成有空隔的数列</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">seq<span class="punctuation">(</span><span class="number">1</span><span class="punctuation">,</span><span class="number">9</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">)</span> <span class="comment"># 1,3,5,7,9</span></span><br><span class="line">seq<span class="punctuation">(</span><span class="number">0</span><span class="punctuation">,</span><span class="number">1</span><span class="punctuation">,</span>length.out <span class="operator">=</span> <span class="number">3</span><span class="punctuation">)</span> <span class="comment"># 0,0.5,1</span></span><br></pre></td></tr></table></figure></li>
+<li>使用<code>rep(m,n)</code>生成重复序列<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="built_in">rep</span><span class="punctuation">(</span><span class="number">0</span><span class="punctuation">,</span> <span class="number">5</span><span class="punctuation">)</span> <span class="comment"># 0,0,0,0,0 </span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>取下标  <figure class="highlight r"><table><tr><td class="code"><pre><span class="line">a <span class="operator">=</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="number">1</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">,</span><span class="number">3</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">,</span><span class="number">5</span><span class="punctuation">)</span></span><br><span class="line">a<span class="punctuation">[</span><span class="number">2</span><span class="punctuation">]</span> <span class="comment"># 取第2项</span></span><br><span class="line">a<span class="punctuation">[</span><span class="number">1</span><span class="operator">:</span><span class="number">5</span><span class="punctuation">]</span> <span class="comment">#取第1-5项</span></span><br><span class="line">a<span class="punctuation">[</span><span class="built_in">c</span><span class="punctuation">(</span><span class="number">1</span><span class="punctuation">,</span><span class="number">3</span><span class="punctuation">,</span><span class="number">5</span><span class="punctuation">)</span><span class="punctuation">]</span> <span class="comment">#取第1,3,5项</span></span><br><span class="line">a<span class="punctuation">[</span><span class="built_in">c</span><span class="punctuation">(</span><span class="operator">-</span><span class="number">1</span><span class="punctuation">,</span><span class="operator">-</span><span class="number">5</span><span class="punctuation">)</span><span class="punctuation">]</span> <span class="comment">#取除了第1,5项</span></span><br></pre></td></tr></table></figure></li>
+<li>标量运算  <figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="built_in">c</span><span class="punctuation">(</span><span class="number">3</span><span class="punctuation">,</span> <span class="number">4</span><span class="punctuation">,</span> <span class="number">5</span><span class="punctuation">)</span> <span class="operator">-</span> <span class="number">1</span></span><br><span class="line"><span class="comment"># 输出2 3 4</span></span><br><span class="line">a <span class="operator">=</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="number">1</span><span class="punctuation">,</span> <span class="number">2</span><span class="punctuation">)</span></span><br><span class="line">a <span class="operator">^</span> <span class="number">2</span></span><br><span class="line"><span class="comment"># 输出1 4</span></span><br></pre></td></tr></table></figure></li>
+<li>排序<ul>
+<li><code>sort(a,decreasing = FALSE,na.last = TRUE)</code><ul>
+<li>其中 a 为待排序向量,decreasing默认为 F,F 为升序,T 为降序。</li>
+<li>na.last 表示是否将缺失值放在最后，若F为最前</li>
+</ul>
+</li>
+<li><code>order(a)</code><ul>
+<li>返回排序后的索引位置</li>
+</ul>
+</li>
+<li><code>rev(a)</code><ul>
+<li>反转 a</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>统计函数<br>  | 函数名 |                 含义                 |<br>  | :——: | :—————————————————: |<br>  |  sum   |                 求和                 |<br>  |  mean  |               求平均值               |<br>  |  var   |                 方差                 |<br>  |   sd   |                标准差                |<br>  |  min   |                最小值                |<br>  |  max   |                最大值                |<br>  | range  | 取值范围（二维向量，最大值和最小值） |</li>
+<li>其他<ul>
+<li><code>which(表达式)</code><ul>
+<li>返回表达式为真的下标向量</li>
+</ul>
+</li>
+<li><pre><code class="lang-all()```">- 相当于对向量的所有元素进行 ```&amp;&amp;
+</code></pre>
+</li>
+<li><pre><code class="lang-any()```">- 相当于对向量的所有元素进行 ```||
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="列表-list"><a href="#列表-list" class="headerlink" title="列表(list)"></a>列表(list)</h3><ul>
+<li>和python差不多</li>
+</ul>
+<h3 id="矩阵-matrix"><a href="#矩阵-matrix" class="headerlink" title="矩阵(matrix)"></a>矩阵(matrix)</h3><p><del>2维数组</del></p>
+<ul>
+<li>创建<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">matrix<span class="punctuation">(</span>data <span class="operator">=</span> <span class="literal">NA</span><span class="punctuation">,</span> nrow <span class="operator">=</span> <span class="number">1</span><span class="punctuation">,</span> ncol <span class="operator">=</span> <span class="number">1</span><span class="punctuation">,</span> byrow <span class="operator">=</span> <span class="literal">FALSE</span><span class="punctuation">,</span><span class="built_in">dimnames</span> <span class="operator">=</span> <span class="literal">NULL</span> or <span class="built_in">list</span><span class="punctuation">(</span>rownames<span class="punctuation">,</span>colnames<span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>分别是填充的数据(向量格式、行数、列数、按行填充、行列名称)</li>
+</ul>
+</li>
+<li>访问矩阵的元素采用<code>[a,b]</code></li>
+<li>矩阵运算，统统支持</li>
+<li><code>t()</code>实现矩阵转置</li>
+<li><code>solve(A,b)</code>解线性方程组 <code>solve(A)</code>直接矩阵求逆</li>
+<li><code>apply(A,x,function())</code> 将矩阵按行或按列应用于function()，x=1按行操作，x=2按列操作。</li>
+</ul>
+<h3 id="数组-array"><a href="#数组-array" class="headerlink" title="数组(array)"></a>数组(array)</h3><p><del>3维数组</del></p>
+<h3 id="因子-factor"><a href="#因子-factor" class="headerlink" title="因子(factor)"></a>因子(factor)</h3><h3 id="数据框-data-frame"><a href="#数据框-data-frame" class="headerlink" title="数据框(data.frame)"></a>数据框(data.frame)</h3><h2 id="循环与条件语句"><a href="#循环与条件语句" class="headerlink" title="循环与条件语句"></a>循环与条件语句</h2><h2 id="操作函数"><a href="#操作函数" class="headerlink" title="操作函数"></a>操作函数</h2>]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>绘图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>R医学统计图形</title>
+    <url>/2025/10/12/Rgraphics/</url>
+    <content><![CDATA[<h1 id="R医学统计图形"><a href="#R医学统计图形" class="headerlink" title="R医学统计图形"></a>R医学统计图形</h1><h2 id="基础绘图包"><a href="#基础绘图包" class="headerlink" title="基础绘图包"></a>基础绘图包</h2><h3 id="par-函数"><a href="#par-函数" class="headerlink" title="par()函数"></a>par()函数</h3><figure class="highlight r"><table><tr><td class="code"><pre><span class="line">help<span class="punctuation">(</span><span class="string">&quot;par&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<p>一共有60多个参数。</p>
+<h2 id="颜色的选取"><a href="#颜色的选取" class="headerlink" title="颜色的选取"></a>颜色的选取</h2><h2 id="ggplot2"><a href="#ggplot2" class="headerlink" title="ggplot2"></a>ggplot2</h2><h2 id="其他静态图形的绘制"><a href="#其他静态图形的绘制" class="headerlink" title="其他静态图形的绘制"></a>其他静态图形的绘制</h2><h2 id="动态交互绘图系统"><a href="#动态交互绘图系统" class="headerlink" title="动态交互绘图系统"></a>动态交互绘图系统</h2>]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>绘图</tag>
+      </tags>
+  </entry>
 </search>
