@@ -23,4 +23,31 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>生信速通？？？</title>
+    <url>/2025/10/12/test/</url>
+    <content><![CDATA[<h1 id="生信速通？？？"><a href="#生信速通？？？" class="headerlink" title="生信速通？？？"></a>生信速通？？？</h1><p><del>其实本人是比较反感不求甚解的</del></p>
+<p><del>但是总不能速通生物学有关内容、计算机组成原理、数学、编程吧</del></p>
+<p>我们希望学习以下内容：</p>
+<ul>
+<li>R语言语法</li>
+<li>各种图形的绘制</li>
+<li>TCGA的使用</li>
+<li>COX回归分析</li>
+<li>GO KEGG GESA富集分析</li>
+<li>……</li>
+</ul>
+<p>R这个东西在我看来根本不是一门编程语言，而是一个工具。看各种教程所谓各种函数满天飞，各种包满天飞，编程没有逻辑性，没有美感，只剩下机械的记忆。</p>
+<p>可恶，然而……</p>
+<hr>
+<h2 id="最后，让我们高呼："><a href="#最后，让我们高呼：" class="headerlink" title="最后，让我们高呼："></a>最后，让我们高呼：</h2><h1 id="R，你乱搞"><a href="#R，你乱搞" class="headerlink" title="R，你乱搞&lt;-和&#x3D;的事迹将会被天下的使用者怀恨在心！！！"></a>R，你乱搞&lt;-和&#x3D;的事迹将会被天下的使用者怀恨在心！！！</h1><h1 id="R语言将会臭名昭著"><a href="#R语言将会臭名昭著" class="headerlink" title="R语言将会臭名昭著"></a><del>R语言将会臭名昭著</del></h1>]]></content>
+      <categories>
+        <category>生物信息学</category>
+      </categories>
+      <tags>
+        <tag>生物信息学</tag>
+        <tag>TCGA</tag>
+        <tag>极速版</tag>
+      </tags>
+  </entry>
 </search>
