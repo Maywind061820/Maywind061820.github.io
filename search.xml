@@ -6,22 +6,19 @@
     <content><![CDATA[<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h2>]]></content>
   </entry>
   <entry>
-    <title>README</title>
-    <url>/2025/08/07/README/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>R医学统计图形</title>
+    <url>/2025/10/12/Rgraphics/</url>
+    <content><![CDATA[<h1 id="R医学统计图形"><a href="#R医学统计图形" class="headerlink" title="R医学统计图形"></a>R医学统计图形</h1><h2 id="基础绘图包"><a href="#基础绘图包" class="headerlink" title="基础绘图包"></a>基础绘图包</h2><h3 id="par-函数"><a href="#par-函数" class="headerlink" title="par()函数"></a>par()函数</h3><figure class="highlight r"><table><tr><td class="code"><pre><span class="line">help<span class="punctuation">(</span><span class="string">&quot;par&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
+<p>一共有60多个参数。</p>
+<h2 id="颜色的选取"><a href="#颜色的选取" class="headerlink" title="颜色的选取"></a>颜色的选取</h2><h2 id="ggplot2"><a href="#ggplot2" class="headerlink" title="ggplot2"></a>ggplot2</h2><h2 id="其他静态图形的绘制"><a href="#其他静态图形的绘制" class="headerlink" title="其他静态图形的绘制"></a>其他静态图形的绘制</h2><h2 id="动态交互绘图系统"><a href="#动态交互绘图系统" class="headerlink" title="动态交互绘图系统"></a>动态交互绘图系统</h2>]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>绘图</tag>
+      </tags>
   </entry>
   <entry>
     <title>R语言语法</title>
@@ -229,21 +226,6 @@
       </tags>
   </entry>
   <entry>
-    <title>R医学统计图形</title>
-    <url>/2025/10/12/Rgraphics/</url>
-    <content><![CDATA[<h1 id="R医学统计图形"><a href="#R医学统计图形" class="headerlink" title="R医学统计图形"></a>R医学统计图形</h1><h2 id="基础绘图包"><a href="#基础绘图包" class="headerlink" title="基础绘图包"></a>基础绘图包</h2><h3 id="par-函数"><a href="#par-函数" class="headerlink" title="par()函数"></a>par()函数</h3><figure class="highlight r"><table><tr><td class="code"><pre><span class="line">help<span class="punctuation">(</span><span class="string">&quot;par&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
-
-<p>一共有60多个参数。</p>
-<h2 id="颜色的选取"><a href="#颜色的选取" class="headerlink" title="颜色的选取"></a>颜色的选取</h2><h2 id="ggplot2"><a href="#ggplot2" class="headerlink" title="ggplot2"></a>ggplot2</h2><h2 id="其他静态图形的绘制"><a href="#其他静态图形的绘制" class="headerlink" title="其他静态图形的绘制"></a>其他静态图形的绘制</h2><h2 id="动态交互绘图系统"><a href="#动态交互绘图系统" class="headerlink" title="动态交互绘图系统"></a>动态交互绘图系统</h2>]]></content>
-      <categories>
-        <category>R</category>
-      </categories>
-      <tags>
-        <tag>R</tag>
-        <tag>绘图</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>生信速通？？？</title>
     <url>/2025/10/12/test/</url>
     <content><![CDATA[<h1 id="生信速通？？？"><a href="#生信速通？？？" class="headerlink" title="生信速通？？？"></a>生信速通？？？</h1><p><del>其实本人是比较反感不求甚解的</del></p>
@@ -314,5 +296,23 @@
         <tag>TCGA</tag>
         <tag>极速版</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>README</title>
+    <url>/2025/08/07/README/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
 </search>
