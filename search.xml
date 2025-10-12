@@ -225,4 +225,274 @@
         <tag>极速版</tag>
       </tags>
   </entry>
+  <entry>
+    <title>TCGA数据下载</title>
+    <url>/2025/10/12/Homework1/</url>
+    <content><![CDATA[<h1 id="作业过程1"><a class="markdownIt-Anchor" href="#作业过程1"></a> 作业过程1</h1>
+<p><s>原理什么的会补票的</s></p>
+<p>本文仅参考网络代码，因为讲的实在是emmm（向量和集合能是一个东西吗？？？）</p>
+<h2 id="step1装包"><a class="markdownIt-Anchor" href="#step1装包"></a> Step1.装包</h2>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span><span class="punctuation">(</span><span class="operator">!</span>require<span class="punctuation">(</span><span class="string">&quot;tidyverse&quot;</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">    install.packages<span class="punctuation">(</span><span class="string">&quot;tidyverse&quot;</span><span class="punctuation">)</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line">library<span class="punctuation">(</span>tidyverse<span class="punctuation">)</span></span><br><span class="line"><span class="keyword">if</span><span class="punctuation">(</span><span class="operator">!</span>require<span class="punctuation">(</span><span class="string">&quot;BiocManager&quot;</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">    install.packages<span class="punctuation">(</span><span class="string">&quot;BiocManager&quot;</span><span class="punctuation">)</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line">library<span class="punctuation">(</span>BiocManager<span class="punctuation">)</span></span><br><span class="line">BiocManager<span class="operator">::</span>install<span class="punctuation">(</span><span class="string">&quot;BioinformaticsFMRP/TCGAbiolinksGUI.data&quot;</span><span class="punctuation">)</span></span><br><span class="line">BiocManager<span class="operator">::</span>install<span class="punctuation">(</span><span class="string">&quot;remotes&quot;</span><span class="punctuation">)</span></span><br><span class="line">BiocManager<span class="operator">::</span>install<span class="punctuation">(</span><span class="string">&quot;ExperimentHub&quot;</span><span class="punctuation">)</span></span><br><span class="line">BiocManager<span class="operator">::</span>install<span class="punctuation">(</span><span class="string">&quot;BioinformaticsFMRP/TCGAbiolinks&quot;</span><span class="punctuation">)</span></span><br><span class="line">BiocManager<span class="operator">::</span>install<span class="punctuation">(</span><span class="string">&quot;BioinformaticsFMRP/TCGAbiolinksGUI.data&quot;</span><span class="punctuation">)</span></span><br><span class="line">BiocManager<span class="operator">::</span>install<span class="punctuation">(</span><span class="string">&quot;TCGAbiolinks&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<h3 id="1-tcgabiolinks"><a class="markdownIt-Anchor" href="#1-tcgabiolinks"></a> 1. <strong>TCGAbiolinks</strong></h3>
+<p><strong>主要功能：</strong></p>
+<ul>
+<li>TCGA数据下载和处理的<strong>核心包</strong></li>
+<li>从GDC（Genomic Data Commons）门户查询和下载数据</li>
+<li>支持多种数据类型：基因表达、甲基化、突变、临床数据等</li>
+<li>提供数据预处理和标准化功能</li>
+<li>包含基本的差异表达分析、生存分析等功能</li>
+</ul>
+<h3 id="2-tcgabiolinksguidata"><a class="markdownIt-Anchor" href="#2-tcgabiolinksguidata"></a> 2. <strong>TCGAbiolinksGUI.data</strong></h3>
+<p><strong>主要功能：</strong></p>
+<ul>
+<li>TCGAbiolinksGUI的<strong>数据依赖包</strong></li>
+<li>包含GUI界面所需的示例数据和配置信息</li>
+<li>提供演示用的数据集</li>
+</ul>
+<h3 id="3-tcgabiolinksgui"><a class="markdownIt-Anchor" href="#3-tcgabiolinksgui"></a> 3. <strong>TCGAbiolinksGUI</strong></h3>
+<p><strong>主要功能：</strong></p>
+<ul>
+<li>提供<strong>图形用户界面</strong>的交互式分析工具</li>
+<li>基于Shiny构建的Web界面</li>
+<li>让用户无需编写代码即可进行TCGA数据分析</li>
+<li>包含数据下载、预处理、可视化等模块</li>
+</ul>
+<h3 id="4-experimenthub"><a class="markdownIt-Anchor" href="#4-experimenthub"></a> 4. <strong>ExperimentHub</strong></h3>
+<p><strong>主要功能：</strong></p>
+<ul>
+<li>Bioconductor的<strong>实验数据管理工具</strong></li>
+<li>提供统一接口访问各种生物医学数据集</li>
+<li>管理数据的下载、缓存和版本控制</li>
+</ul>
+<h3 id="5-remotes"><a class="markdownIt-Anchor" href="#5-remotes"></a> 5. <strong>remotes</strong></h3>
+<p><strong>主要功能：</strong></p>
+<ul>
+<li>用于从GitHub等非标准源安装R包</li>
+<li>可以安装开发版本的包</li>
+</ul>
+<h3 id="典型工作流程"><a class="markdownIt-Anchor" href="#典型工作流程"></a> 典型工作流程：</h3>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1. 查询数据</span></span><br><span class="line">query <span class="operator">&lt;-</span> GDCquery<span class="punctuation">(</span>project <span class="operator">=</span> <span class="string">&quot;TCGA-BRCA&quot;</span><span class="punctuation">,</span> </span><br><span class="line">                  data.category <span class="operator">=</span> <span class="string">&quot;Transcriptome Profiling&quot;</span><span class="punctuation">,</span></span><br><span class="line">                  data.type <span class="operator">=</span> <span class="string">&quot;Gene Expression Quantification&quot;</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 下载数据</span></span><br><span class="line">GDCdownload<span class="punctuation">(</span>query<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 准备数据</span></span><br><span class="line">data <span class="operator">&lt;-</span> GDCprepare<span class="punctuation">(</span>query<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 分析数据</span></span><br><span class="line">expressed_genes <span class="operator">&lt;-</span> TCGAanalyze_DEA<span class="punctuation">(</span>data<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<p>这些包共同构成了一个完整的TCGA数据分析生态系统，从数据获取到最终分析结果的可视化。</p>
+<ul>
+<li><code>TCGAbiolinks</code>是<strong>核心包</strong>，包含了<code>GDCquery</code>, <code>GDCdownload</code>, <code>GDCprepare</code>等主要函数</li>
+<li>其他包（如<code>TCGAbiolinksGUI.data</code>, <code>ExperimentHub</code>等）是：
+<ul>
+<li><strong>依赖包</strong>：在安装时自动安装，但不需要显式加载</li>
+<li><strong>扩展包</strong>：提供额外功能（如GUI界面），但基础数据分析不需要</li>
+</ul>
+</li>
+<li><code>BiocManager</code>只是包管理器，安装后通常不需要加载</li>
+</ul>
+<hr />
+<h2 id="step2读取tcga数据"><a class="markdownIt-Anchor" href="#step2读取tcga数据"></a> Step2.读取TCGA数据</h2>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">expquery <span class="operator">&lt;-</span> GDCquery<span class="punctuation">(</span>project <span class="operator">=</span> cancer_type<span class="punctuation">,</span></span><br><span class="line">                     data.category <span class="operator">=</span> <span class="string">&quot;Transcriptome Profiling&quot;</span><span class="punctuation">,</span></span><br><span class="line">                     data.type <span class="operator">=</span> <span class="string">&quot;Gene Expression Quantification&quot;</span><span class="punctuation">,</span> </span><br><span class="line">                     workflow.type <span class="operator">=</span> <span class="string">&quot;STAR - Counts&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong><code>GDCquery()</code></strong>：向TCGA数据库&quot;提问&quot;，告诉它我想要什么样的数据。</li>
+<li><strong>参数解释</strong>：
+<ul>
+<li><code>project</code>：TCGA项目编号，LUAD=肺腺癌</li>
+<li><code>data.category</code>：数据大类，转录组分析包含RNA-seq数据</li>
+<li><code>data.type</code>：具体数据类型，基因表达定量值</li>
+<li><code>workflow.type</code>：数据处理流程，STAR是常用的比对工具</li>
+</ul>
+</li>
+<li><strong>作用</strong>：构建了一个查询请求，但还没有真正下载数据</li>
+</ul>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">GDCdownload<span class="punctuation">(</span>expquery<span class="punctuation">,</span> directory <span class="operator">=</span> <span class="string">&quot;GDCdata&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong><code>GDCdownload()</code></strong>：现在开始真正下载数据</li>
+<li><strong>参数</strong>：
+<ul>
+<li><code>expquery</code>：使用刚才构建的查询请求</li>
+<li><code>directory = &quot;GDCdata&quot;</code>：把下载的数据保存到&quot;GDCdata&quot;文件夹里</li>
+</ul>
+</li>
+<li><strong>作用</strong>：从TCGA数据库下载数据到你的电脑</li>
+</ul>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">expquery2 <span class="operator">&lt;-</span> GDCprepare<span class="punctuation">(</span>expquery<span class="punctuation">,</span> directory <span class="operator">=</span> <span class="string">&quot;GDCdata&quot;</span><span class="punctuation">,</span> summarizedExperiment <span class="operator">=</span> <span class="built_in">T</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong><code>GDCprepare()</code></strong>：整理和格式化下载的原始数据，让它变得容易使用</li>
+<li><strong>参数</strong>：
+<ul>
+<li><code>expquery</code>：之前的查询请求</li>
+<li><code>directory = &quot;GDCdata&quot;</code>：数据所在文件夹</li>
+<li>
+<ul>
+<li><code>summarizedExperiment = T</code>：返回生物信息学标准数据结构，包含：</li>
+</ul>
+</li>
+<li>表达矩阵（assay）</li>
+<li>样本信息（colData）</li>
+<li>基因信息（rowData）</li>
+</ul>
+</li>
+<li><strong>作用</strong>：把杂乱的原始数据整理成整齐的表格格式</li>
+</ul>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">save<span class="punctuation">(</span>expquery2<span class="punctuation">,</span> file <span class="operator">=</span> <span class="string">&quot;luad.gdc_2025.rda&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong><code>save()</code></strong>：保存数据到文件</li>
+<li><strong>语法</strong>：<code>save(要保存的变量, file = &quot;文件名&quot;)</code></li>
+<li><strong>参数</strong>：
+<ul>
+<li><code>expquery2</code>：要保存的数据（刚才整理好的数据）</li>
+<li><code>file = &quot;luad.gdc_2025.rda&quot;</code>：保存为名为&quot;luad.gdc_2025.rda&quot;的文件</li>
+</ul>
+</li>
+<li><strong><code>.rda</code>格式</strong>：R的专用数据格式，保存后下次可以用<code>load(&quot;luad.gdc_2025.rda&quot;)</code>直接加载</li>
+<li><strong>作用</strong>：把数据保存起来，下次就不用重新下载了</li>
+</ul>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">gene_annotation <span class="operator">&lt;-</span> as.data.frame<span class="punctuation">(</span>rowData<span class="punctuation">(</span>expquery2<span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>语法</strong>：
+<ul>
+<li><code>rowData()</code>：SummarizedExperiment方法，提取行注解数据</li>
+<li><code>as.data.frame()</code>：强制转换为数据框（data.frame类）</li>
+</ul>
+</li>
+<li><strong>功能</strong>：从表达数据对象中提取基因级别的元数据</li>
+</ul>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">gene_annotation1 <span class="operator">&lt;-</span> data.frame<span class="punctuation">(</span></span><br><span class="line">  ENSEMBL <span class="operator">=</span> rownames<span class="punctuation">(</span>gene_annotation<span class="punctuation">)</span><span class="punctuation">,</span>  </span><br><span class="line">  symbol <span class="operator">=</span> gene_annotation<span class="operator">$</span>gene_name<span class="punctuation">,</span> </span><br><span class="line">  type <span class="operator">=</span> gene_annotation<span class="operator">$</span>gene_type<span class="punctuation">,</span> </span><br><span class="line">  stringsAsFactors <span class="operator">=</span> <span class="literal">FALSE</span></span><br><span class="line"><span class="punctuation">)</span></span><br><span class="line">save<span class="punctuation">(</span>gene_annotation1<span class="punctuation">,</span> file <span class="operator">=</span> <span class="string">&quot;gene_annotation_2022.rda&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>语法</strong>：
+<ul>
+<li><code>data.frame()</code>：创建数据框构造函数</li>
+<li><code>rownames()</code>：提取数据框的行名</li>
+<li><code>$</code>操作符：提取数据框的指定列</li>
+<li><code>stringsAsFactors = FALSE</code>：阻止字符向量自动转换为因子</li>
+</ul>
+</li>
+<li><strong>功能</strong>：创建新的简化基因注解数据框，包含：
+<ul>
+<li>ENSEMBL ID（从行名获取）</li>
+<li>基因符号（从原gene_name列）</li>
+<li>基因类型（从原gene_type列）</li>
+</ul>
+</li>
+</ul>
+<p>全部代码</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">setwd<span class="punctuation">(</span><span class="string">&#x27;TCGA-LUAD&#x27;</span><span class="punctuation">)</span></span><br><span class="line">setwd<span class="punctuation">(</span><span class="string">&quot;TCGAdata&quot;</span><span class="punctuation">)</span></span><br><span class="line">library<span class="punctuation">(</span>tidyverse<span class="punctuation">)</span> <span class="comment"># 加载包</span></span><br><span class="line">library<span class="punctuation">(</span>BiocManager<span class="punctuation">)</span></span><br><span class="line">library<span class="punctuation">(</span>TCGAbiolinks<span class="punctuation">)</span></span><br><span class="line">cancer_type <span class="operator">=</span> <span class="string">&quot;TCGA-LUAD&quot;</span>   <span class="comment">#肿瘤类型，这里可修改癌症类型</span></span><br><span class="line"><span class="comment">#TCGA 肿瘤缩写：https://www.jianshu.com/p/3c0f74e85825</span></span><br><span class="line">expquery <span class="operator">&lt;-</span> GDCquery<span class="punctuation">(</span>project <span class="operator">=</span> cancer_type<span class="punctuation">,</span></span><br><span class="line">                     data.category <span class="operator">=</span> <span class="string">&quot;Transcriptome Profiling&quot;</span><span class="punctuation">,</span></span><br><span class="line">                     data.type <span class="operator">=</span> <span class="string">&quot;Gene Expression Quantification&quot;</span><span class="punctuation">,</span></span><br><span class="line">                     workflow.type <span class="operator">=</span> <span class="string">&quot;STAR - Counts&quot;</span></span><br><span class="line"><span class="punctuation">)</span></span><br><span class="line">GDCdownload<span class="punctuation">(</span>expquery<span class="punctuation">,</span>directory <span class="operator">=</span> <span class="string">&quot;GDCdata&quot;</span><span class="punctuation">)</span></span><br><span class="line">expquery2 <span class="operator">&lt;-</span> GDCprepare<span class="punctuation">(</span>expquery<span class="punctuation">,</span>directory <span class="operator">=</span> <span class="string">&quot;GDCdata&quot;</span><span class="punctuation">,</span>summarizedExperiment <span class="operator">=</span> <span class="built_in">T</span><span class="punctuation">)</span></span><br><span class="line">gene_annotation <span class="operator">&lt;-</span> as.data.frame<span class="punctuation">(</span>rowData<span class="punctuation">(</span>expquery2<span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">gene_annotation1 <span class="operator">&lt;-</span> data.frame<span class="punctuation">(</span></span><br><span class="line">  ENSEMBL <span class="operator">=</span> rownames<span class="punctuation">(</span>gene_annotation<span class="punctuation">)</span><span class="punctuation">,</span>  </span><br><span class="line">  symbol <span class="operator">=</span> gene_annotation<span class="operator">$</span>gene_name<span class="punctuation">,</span> </span><br><span class="line">  type <span class="operator">=</span> gene_annotation<span class="operator">$</span>gene_type<span class="punctuation">,</span> </span><br><span class="line">  stringsAsFactors <span class="operator">=</span> <span class="literal">FALSE</span></span><br><span class="line"><span class="punctuation">)</span></span><br><span class="line"><span class="comment"># 保存</span></span><br><span class="line">save<span class="punctuation">(</span>gene_annotation1<span class="punctuation">,</span> file <span class="operator">=</span> <span class="string">&quot;gene_annotation_2022.rda&quot;</span><span class="punctuation">)</span></span><br><span class="line">save<span class="punctuation">(</span>expquery2<span class="punctuation">,</span>file <span class="operator">=</span> <span class="string">&quot;luad.gdc_2022.rda&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="step3数据清洗"><a class="markdownIt-Anchor" href="#step3数据清洗"></a> Step3.数据清洗</h2>
+<p>为了方便分析，需要对数据进行清洗。在此期间我们先对数据的格式进行处理，然后进行数据清洗。</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">setwd<span class="punctuation">(</span><span class="string">&#x27;TCGA-LUAD&#x27;</span><span class="punctuation">)</span></span><br><span class="line">setwd<span class="punctuation">(</span><span class="string">&quot;TCGAdata&quot;</span><span class="punctuation">)</span></span><br><span class="line">library<span class="punctuation">(</span>tidyverse<span class="punctuation">)</span><span class="comment">#加载包</span></span><br><span class="line">load<span class="punctuation">(</span><span class="string">&quot;luad.gdc_2022.rda&quot;</span><span class="punctuation">)</span><span class="comment">#导入文件，rda格式文件也可直接从文件夹双击导入)</span></span><br><span class="line"><span class="comment"># 从SummarizedExperiment对象中提取基因信息</span></span><br><span class="line">load<span class="punctuation">(</span><span class="string">&quot;gene_annotation_2022.rda&quot;</span><span class="punctuation">)</span><span class="comment">#导入gene注释文件</span></span><br><span class="line">table<span class="punctuation">(</span>gene_annotation_2022<span class="operator">$</span>type<span class="punctuation">)</span><span class="comment">#table 分组计数</span></span><br></pre></td></tr></table></figure>
+<p>这里介绍一下<code>table()</code>，对分类变量进行统计，返回一个频数分布表。</p>
+<h4 id="提取原始计数矩阵"><a class="markdownIt-Anchor" href="#提取原始计数矩阵"></a> 提取原始计数矩阵</h4>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">counts <span class="operator">&lt;-</span> expquery2<span class="operator">@</span>assays<span class="operator">@</span>data<span class="operator">@</span>listData<span class="punctuation">[[</span><span class="string">&quot;unstranded&quot;</span><span class="punctuation">]</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<p><strong>作用</strong>：从SummarizedExperiment对象中提取原始的基因表达计数矩阵</p>
+<ul>
+<li><code>expquery2@assays</code> → 获取所有实验数据层</li>
+<li><code>@data</code> → 获取数据槽位</li>
+<li><code>@listData</code> → 获取列表形式的数据容器</li>
+<li><code>[[&quot;unstranded&quot;]]</code> → 提取名为&quot;unstranded&quot;的原始链非特异性计数数据</li>
+</ul>
+<p><strong>结果</strong>：得到一个数值矩阵，行=基因，列=样本，值=表达量计数</p>
+<h4 id="第二句设置列名样本名"><a class="markdownIt-Anchor" href="#第二句设置列名样本名"></a> 第二句：设置列名（样本名）</h4>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">colnames<span class="punctuation">(</span>counts<span class="punctuation">)</span> <span class="operator">&lt;-</span> expquery2<span class="operator">@</span>colData<span class="operator">@</span>rownames</span><br></pre></td></tr></table></figure>
+<p><strong>作用</strong>：将计数矩阵的列名设置为样本名称</p>
+<ul>
+<li><code>expquery2@colData</code> → 获取样本信息（临床数据等）</li>
+<li><code>@rownames</code> → 获取样本的行名（即样本ID）</li>
+<li><code>colnames(counts) &lt;-</code> → 将这些样本ID设置为计数矩阵的列名</li>
+</ul>
+<p><strong>结果</strong>：矩阵列名从数字索引变成具体的样本ID</p>
+<h4 id="第三句设置行名基因名"><a class="markdownIt-Anchor" href="#第三句设置行名基因名"></a> 第三句：设置行名（基因名）</h4>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">rownames<span class="punctuation">(</span>counts<span class="punctuation">)</span> <span class="operator">&lt;-</span> expquery2<span class="operator">@</span>rowRanges<span class="operator">@</span>ranges<span class="operator">@</span>NAMES</span><br></pre></td></tr></table></figure>
+<p><strong>作用</strong>：将计数矩阵的行名设置为基因名称</p>
+<ul>
+<li><code>expquery2@rowRanges</code> → 获取基因信息（基因组坐标等）</li>
+<li><code>@ranges</code> → 获取基因组范围数据</li>
+<li><code>@NAMES</code> → 获取基因的名称（通常是ENSEMBL ID）</li>
+<li><code>rownames(counts) &lt;-</code> → 将这些基因ID设置为计数矩阵的行名</li>
+</ul>
+<p><strong>结果</strong>：矩阵行名从数字索引变成具体的基因ID</p>
+<h4 id="最终效果"><a class="markdownIt-Anchor" href="#最终效果"></a> 最终效果</h4>
+<p>将原本结构复杂的SummarizedExperiment对象，转换成了一个标准的R矩阵：</p>
+<ul>
+<li><strong>行</strong>：基因（ENSEMBL ID）</li>
+<li><strong>列</strong>：样本（样本ID）</li>
+<li><strong>值</strong>：基因表达原始计数</li>
+</ul>
+<p>这样就得到了一个可以直接用于下游分析（如DESeq2、edgeR等）的表达矩阵。</p>
+<h4 id="第一段处理counts数据"><a class="markdownIt-Anchor" href="#第一段处理counts数据"></a> 第一段：处理counts数据</h4>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">counts1 <span class="operator">&lt;-</span> expquery2<span class="operator">@</span>assays<span class="operator">@</span>data<span class="operator">@</span>listData<span class="punctuation">[[</span><span class="string">&quot;unstranded&quot;</span><span class="punctuation">]</span><span class="punctuation">]</span></span><br><span class="line">colnames<span class="punctuation">(</span>counts1<span class="punctuation">)</span> <span class="operator">&lt;-</span> expquery2<span class="operator">@</span>colData<span class="operator">@</span>rownames</span><br><span class="line">rownames<span class="punctuation">(</span>counts1<span class="punctuation">)</span> <span class="operator">&lt;-</span> expquery2<span class="operator">@</span>rowRanges<span class="operator">@</span>ranges<span class="operator">@</span>NAMES</span><br><span class="line">counts1 <span class="operator">&lt;-</span> as.data.frame<span class="punctuation">(</span>counts1<span class="punctuation">)</span></span><br><span class="line">counts1 <span class="operator">&lt;-</span> rownames_to_column<span class="punctuation">(</span>counts1<span class="punctuation">,</span>var <span class="operator">=</span> <span class="string">&#x27;ENSEMBL&#x27;</span><span class="punctuation">)</span></span><br><span class="line">counts1 <span class="operator">&lt;-</span> inner_join<span class="punctuation">(</span>counts1<span class="punctuation">,</span>gene_annotation_2022<span class="punctuation">,</span><span class="string">&quot;ENSEMBL&quot;</span><span class="punctuation">)</span></span><br><span class="line">counts1 <span class="operator">&lt;-</span> counts1<span class="punctuation">[</span><span class="operator">!</span>duplicated<span class="punctuation">(</span>counts1<span class="operator">$</span>symbol<span class="punctuation">)</span><span class="punctuation">,</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<p><strong>作用</strong>：提取原始计数数据并添加基因注释</p>
+<ul>
+<li><code>rownames_to_column()</code>: 将行名转换为数据框的一列
+<ul>
+<li><code>var = 'ENSEMBL'</code>: 指定新列名为ENSEMBL</li>
+</ul>
+</li>
+<li><code>inner_join()</code>: 内连接，根据ENSEMBL ID合并基因注释信息</li>
+<li><code>!duplicated(counts1$symbol)</code>: 去除symbol列重复的基因</li>
+</ul>
+<h4 id="第二段设置行名"><a class="markdownIt-Anchor" href="#第二段设置行名"></a> 第二段：设置行名</h4>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">rownames<span class="punctuation">(</span>counts<span class="punctuation">)</span> <span class="operator">&lt;-</span> <span class="literal">NULL</span></span><br><span class="line">counts <span class="operator">&lt;-</span> counts <span class="operator">%&gt;%</span> column_to_rownames<span class="punctuation">(</span><span class="string">&quot;symbol&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<p><strong>作用</strong>：将基因symbol设置为行名</p>
+<ul>
+<li><code>column_to_rownames()</code>: 将指定列转换为行名</li>
+<li><code>%&gt;</code>: 管道操作符，将左侧结果传递给右侧函数</li>
+</ul>
+<h4 id="第三段筛选蛋白编码基因"><a class="markdownIt-Anchor" href="#第三段筛选蛋白编码基因"></a> 第三段：筛选蛋白编码基因</h4>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">table<span class="punctuation">(</span>counts<span class="operator">$</span>type<span class="punctuation">)</span></span><br><span class="line">counts <span class="operator">&lt;-</span> counts<span class="punctuation">[</span>counts<span class="operator">$</span>type <span class="operator">==</span> <span class="string">&quot;protein_coding&quot;</span><span class="punctuation">,</span><span class="punctuation">]</span></span><br><span class="line">counts <span class="operator">&lt;-</span> counts<span class="punctuation">[</span><span class="punctuation">,</span><span class="operator">-</span><span class="built_in">c</span><span class="punctuation">(</span><span class="number">1</span><span class="punctuation">,</span>ncol<span class="punctuation">(</span>counts<span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<p><strong>作用</strong>：保留蛋白编码基因，移除类型列</p>
+<ul>
+<li><code>table()</code>: 统计基因类型分布</li>
+<li><code>counts[counts$type == &quot;protein_coding&quot;,]</code>: 逻辑索引，保留蛋白编码基因</li>
+<li><code>-c(1,ncol(counts))</code>: 移除第1列和最后一列（通常是ENSEMBL ID和type列）</li>
+</ul>
+<h4 id="第四段处理样本barcode"><a class="markdownIt-Anchor" href="#第四段处理样本barcode"></a> 第四段：处理样本barcode</h4>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">colnames<span class="punctuation">(</span>counts<span class="punctuation">)</span> <span class="operator">&lt;-</span> substring<span class="punctuation">(</span>colnames<span class="punctuation">(</span>counts<span class="punctuation">)</span><span class="punctuation">,</span><span class="number">1</span><span class="punctuation">,</span><span class="number">16</span><span class="punctuation">)</span></span><br><span class="line">counts <span class="operator">&lt;-</span> counts<span class="punctuation">[</span><span class="punctuation">,</span><span class="operator">!</span>duplicated<span class="punctuation">(</span>colnames<span class="punctuation">(</span>counts<span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">]</span></span><br><span class="line">table<span class="punctuation">(</span>substring<span class="punctuation">(</span>colnames<span class="punctuation">(</span>counts<span class="punctuation">)</span><span class="punctuation">,</span><span class="number">14</span><span class="punctuation">,</span><span class="number">16</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<p><strong>作用</strong>：标准化样本名称并去重</p>
+<ul>
+<li><code>substring(text, first, last)</code>: 提取子字符串
+<ul>
+<li><code>text</code>: 原字符串</li>
+<li><code>first</code>: 起始位置</li>
+<li><code>last</code>: 结束位置</li>
+</ul>
+</li>
+<li><code>!duplicated(colnames(counts))</code>: 去除重复的样本</li>
+</ul>
+<h4 id="第五段分割肿瘤和正常样本"><a class="markdownIt-Anchor" href="#第五段分割肿瘤和正常样本"></a> 第五段：分割肿瘤和正常样本</h4>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">counts01A <span class="operator">&lt;-</span> counts<span class="punctuation">[</span><span class="punctuation">,</span>substring<span class="punctuation">(</span>colnames<span class="punctuation">(</span>counts<span class="punctuation">)</span><span class="punctuation">,</span><span class="number">14</span><span class="punctuation">,</span><span class="number">16</span><span class="punctuation">)</span> <span class="operator">==</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;01A&quot;</span><span class="punctuation">)</span><span class="punctuation">]</span></span><br><span class="line">counts11A <span class="operator">&lt;-</span> counts<span class="punctuation">[</span><span class="punctuation">,</span>substring<span class="punctuation">(</span>colnames<span class="punctuation">(</span>counts<span class="punctuation">)</span><span class="punctuation">,</span><span class="number">14</span><span class="punctuation">,</span><span class="number">16</span><span class="punctuation">)</span> <span class="operator">==</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;11A&quot;</span><span class="punctuation">)</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<p><strong>作用</strong>：根据barcode第14-16位分离肿瘤(01A)和正常(11A)样本</p>
+<h4 id="第六段处理tpm数据"><a class="markdownIt-Anchor" href="#第六段处理tpm数据"></a> 第六段：处理TPM数据</h4>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">tpms <span class="operator">&lt;-</span> expquery2<span class="operator">@</span>assays<span class="operator">@</span>data<span class="operator">@</span>listData<span class="punctuation">[[</span><span class="string">&quot;tpm_unstrand&quot;</span><span class="punctuation">]</span><span class="punctuation">]</span></span><br><span class="line"><span class="comment"># ... 后续处理与counts相同</span></span><br></pre></td></tr></table></figure>
+<p><strong>作用</strong>：提取和处理TPM标准化表达数据，流程与counts相同</p>
+<h4 id="第七段数据验证和保存"><a class="markdownIt-Anchor" href="#第七段数据验证和保存"></a> 第七段：数据验证和保存</h4>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">identical<span class="punctuation">(</span>rownames<span class="punctuation">(</span>counts01A<span class="punctuation">)</span><span class="punctuation">,</span>rownames<span class="punctuation">(</span>counts11A<span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">write.table<span class="punctuation">(</span>counts01A<span class="punctuation">,</span><span class="string">&quot;counts01A.txt&quot;</span><span class="punctuation">,</span>sep <span class="operator">=</span> <span class="string">&quot;\t&quot;</span><span class="punctuation">,</span>row.names <span class="operator">=</span> <span class="built_in">T</span><span class="punctuation">,</span>col.names <span class="operator">=</span> <span class="literal">NA</span><span class="punctuation">,</span><span class="built_in">quote</span> <span class="operator">=</span> <span class="built_in">F</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<p><strong>作用</strong>：验证数据一致性并保存文件</p>
+<ul>
+<li><code>identical(a, b)</code>: 比较两个对象是否完全相同</li>
+<li><code>write.table()</code>: 写入文本文件
+<ul>
+<li><code>row.names = T</code>: 保留行名</li>
+<li><code>col.names = NA</code>: 列名对齐</li>
+<li><code>quote = F</code>: 不添加引号</li>
+</ul>
+</li>
+</ul>
+<h4 id="第八段数据合并"><a class="markdownIt-Anchor" href="#第八段数据合并"></a> 第八段：数据合并</h4>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">counts <span class="operator">&lt;-</span> cbind<span class="punctuation">(</span>counts01A<span class="punctuation">,</span>counts11A<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<p><strong>作用</strong>：合并肿瘤和正常样本数据</p>
+<ul>
+<li><code>cbind()</code>: 按列合并数据框</li>
+</ul>
+<h4 id="第九段log2转换"><a class="markdownIt-Anchor" href="#第九段log2转换"></a> 第九段：log2转换</h4>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">tpms_log2 <span class="operator">&lt;-</span> log2<span class="punctuation">(</span>tpms<span class="operator">+</span><span class="number">1</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<p><strong>作用</strong>：对TPM数据进行log2转换</p>
+<ul>
+<li><code>log2(x)</code>: 计算以2为底的对数</li>
+<li><code>+1</code>: 避免对0取对数（防止负无穷大）</li>
+</ul>
+<p><strong>整个代码的作用</strong>：从原始数据中提取counts和TPM表达矩阵，添加基因注释，筛选蛋白编码基因，分离肿瘤和正常样本，进行数据标准化和转换，最终生成可用于差异表达分析的干净数据集。</p>
+]]></content>
+      <categories>
+        <category>生物信息学</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>生物信息学</tag>
+      </tags>
+  </entry>
 </search>
