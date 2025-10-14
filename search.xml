@@ -431,6 +431,161 @@ $$y^{(n-2)} = \int\left[\int f(x)dx + C_1\right]dx + C_2$$<br>
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2025/08/07/Hello-World/</url>
+    <content><![CDATA[<h2 id="Hello-World">Hello World!</h2>
+]]></content>
+  </entry>
+  <entry>
+    <title>README</title>
+    <url>/2025/08/07/README/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>局部解剖学札记</title>
+    <url>/2025/10/12/RegionalAnatomy/</url>
+    <content><![CDATA[<h1>颈部</h1>
+<h2 id="颈前区">颈前区</h2>
+<h3 id="舌骨上区">舌骨上区</h3>
+<h4 id="下颌下三角">下颌下三角</h4>
+<h4 id="舌骨上肌群">舌骨上肌群</h4>
+<h3 id="舌骨下区">舌骨下区</h3>
+<h4 id="颈动脉三角">颈动脉三角</h4>
+<h4 id="肌三角">肌三角</h4>
+<h2 id="胸锁乳突肌区-sternocleidomastoid-region">胸锁乳突肌区 sternocleidomastoid region</h2>
+<h3 id="范围">范围</h3>
+<p>该肌在颈部所在及覆盖的区域</p>
+<h3 id="内容">内容</h3>
+<ul>
+<li>
+<p>颈动脉鞘 carotid sheath</p>
+<ul>
+<li>
+<p>上起自颅底部，下至颈根部续于纵隔的颈筋膜。</p>
+</li>
+<li>
+<p>鞘内有颈内静脉和迷走神经贯通全长，颈内动脉行于鞘的上部，颈总动脉行于鞘的下部。</p>
+</li>
+<li>
+<p>鞘的下部，颈总动脉居后内侧，颈内静脉居前外侧，迷走神经位于两者之间的后外方。</p>
+</li>
+<li>
+<p>鞘的上部，颈内动脉位于前内侧，颈内静脉在动脉的后外方，迷走神经在两者之间的后内方。</p>
+</li>
+<li>
+<p>后方：胸锁乳突肌、胸骨舌骨肌、胸骨甲状肌、肩胛舌骨肌下腹、颈袢（或鞘内）和甲状腺上、中静脉。</p>
+</li>
+<li>
+<p>后方：有甲状腺下动脉越过，左侧还有胸导管弓，隔椎前筋膜有颈交感干、椎前肌和颈椎横突等。</p>
+</li>
+<li>
+<p>内侧：咽和食管、喉与气管、甲状腺侧叶和喉返神经。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>颈袢 cervical ansa</p>
+<ul>
+<li>
+<p>由 C1-3 的前支构成</p>
+</li>
+<li>
+<p>C1 前支部分纤维随舌下神经走行，在颈动脉三角内离开舌下神经，称为 <strong>舌下神经降支</strong> 。沿颈内动脉及经总动脉前面下行，又名 <strong>颈袢上根</strong> 。</p>
+</li>
+<li>
+<p>C2-3 前支经过颈丛联合发出降支，称为 <strong>颈袢下根</strong> ，沿颈内静脉浅面或深面下行。</p>
+</li>
+<li>
+<p>颈袢上下两根在肩胛舌骨肌中间腱上缘，平环状软骨弓水平，在颈动脉鞘浅面或鞘内合成颈袢。</p>
+</li>
+<li>
+<p>颈袢发支支配肩胛舌骨肌、胸骨舌骨肌和胸骨甲状肌。</p>
+</li>
+<li>
+<p>甲状腺手术多平环状软骨切断舌骨下诸肌，可避免损伤颈袢肌支。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>颈丛 cervical plexus</p>
+<ul>
+<li>C1-4 颈神经前支构成。胸锁乳突肌上部深面，中斜角肌和肩胛提肌深面。</li>
+</ul>
+</li>
+<li>
+<p>颈交感干 cervical part of sympthetic trunk</p>
+<ul>
+<li>
+<p>由颈上、中、下交感神经节及节间支构成。</p>
+</li>
+<li>
+<p>位于脊柱颈部两侧，椎前筋膜深面。</p>
+</li>
+<li>
+<p>**</p>
+</li>
+<li></li>
+<li></li>
+<li>
+<p>上述三神经节各发出一心支参与心丛的构成。颈交感干受压，可出现霍纳综合征。</p>
+</li>
+</ul>
+</li>
+<li>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">肌群</th>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">起点</th>
+<th style="text-align:center">止点</th>
+<th style="text-align:center">作用</th>
+<th style="text-align:center">神经支配</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">颈浅肌</td>
+<td style="text-align:center">颈阔肌</td>
+<td style="text-align:center">胸大肌筋膜 <br> 三角肌筋膜</td>
+<td style="text-align:center">下颌骨下缘 <br> 腮腺咬肌区筋膜</td>
+<td style="text-align:center">紧张颈部皮肤</td>
+<td style="text-align:center">面神经颈支</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="颈根部">颈根部</h2>
+<h2 id="颈外侧区">颈外侧区</h2>
+<h4 id="枕三角">枕三角</h4>
+<h4 id="锁骨上三角">锁骨上三角</h4>
+<h2 id="颈根部-2">颈根部</h2>
+]]></content>
+      <categories>
+        <category>解剖学</category>
+      </categories>
+      <tags>
+        <tag>解剖学</tag>
+        <tag>局部解剖学</tag>
+        <tag>札记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>生信速通</title>
     <url>/2025/10/12/EasyBioinformatics/</url>
     <content><![CDATA[<h1>生信速通之零：？？？</h1>
@@ -1022,142 +1177,6 @@ $$y^{(n-2)} = \int\left[\int f(x)dx + C_1\right]dx + C_2$$<br>
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/08/07/Hello-World/</url>
-    <content><![CDATA[<h2 id="Hello-World">Hello World!</h2>
-]]></content>
-  </entry>
-  <entry>
-    <title>局部解剖学札记</title>
-    <url>/2025/10/12/RegionalAnatomy/</url>
-    <content><![CDATA[<h1>颈部</h1>
-<h2 id="颈前区">颈前区</h2>
-<h3 id="舌骨上区">舌骨上区</h3>
-<h4 id="下颌下三角">下颌下三角</h4>
-<h4 id="舌骨上肌群">舌骨上肌群</h4>
-<h3 id="舌骨下区">舌骨下区</h3>
-<h4 id="颈动脉三角">颈动脉三角</h4>
-<h4 id="肌三角">肌三角</h4>
-<h2 id="胸锁乳突肌区-sternocleidomastoid-region">胸锁乳突肌区 sternocleidomastoid region</h2>
-<h3 id="范围">范围</h3>
-<p>该肌在颈部所在及覆盖的区域</p>
-<h3 id="内容">内容</h3>
-<ul>
-<li>
-<p>颈动脉鞘 carotid sheath</p>
-<ul>
-<li>
-<p>上起自颅底部，下至颈根部续于纵隔的颈筋膜。</p>
-</li>
-<li>
-<p>鞘内有颈内静脉和迷走神经贯通全长，颈内动脉行于鞘的上部，颈总动脉行于鞘的下部。</p>
-</li>
-<li>
-<p>鞘的下部，颈总动脉居后内侧，颈内静脉居前外侧，迷走神经位于两者之间的后外方。</p>
-</li>
-<li>
-<p>鞘的上部，颈内动脉位于前内侧，颈内静脉在动脉的后外方，迷走神经在两者之间的后内方。</p>
-</li>
-<li>
-<p>后方：胸锁乳突肌、胸骨舌骨肌、胸骨甲状肌、肩胛舌骨肌下腹、颈袢（或鞘内）和甲状腺上、中静脉。</p>
-</li>
-<li>
-<p>后方：有甲状腺下动脉越过，左侧还有胸导管弓，隔椎前筋膜有颈交感干、椎前肌和颈椎横突等。</p>
-</li>
-<li>
-<p>内侧：咽和食管、喉与气管、甲状腺侧叶和喉返神经。</p>
-</li>
-</ul>
-</li>
-<li>
-<p>颈袢 cervical ansa</p>
-<ul>
-<li>
-<p>由 C1-3 的前支构成</p>
-</li>
-<li>
-<p>C1 前支部分纤维随舌下神经走行，在颈动脉三角内离开舌下神经，称为 <strong>舌下神经降支</strong> 。沿颈内动脉及经总动脉前面下行，又名 <strong>颈袢上根</strong> 。</p>
-</li>
-<li>
-<p>C2-3 前支经过颈丛联合发出降支，称为 <strong>颈袢下根</strong> ，沿颈内静脉浅面或深面下行。</p>
-</li>
-<li>
-<p>颈袢上下两根在肩胛舌骨肌中间腱上缘，平环状软骨弓水平，在颈动脉鞘浅面或鞘内合成颈袢。</p>
-</li>
-<li>
-<p>颈袢发支支配肩胛舌骨肌、胸骨舌骨肌和胸骨甲状肌。</p>
-</li>
-<li>
-<p>甲状腺手术多平环状软骨切断舌骨下诸肌，可避免损伤颈袢肌支。</p>
-</li>
-</ul>
-</li>
-<li>
-<p>颈丛 cervical plexus</p>
-<ul>
-<li>C1-4 颈神经前支构成。胸锁乳突肌上部深面，中斜角肌和肩胛提肌深面。</li>
-</ul>
-</li>
-<li>
-<p>颈交感干 cervical part of sympthetic trunk</p>
-<ul>
-<li>
-<p>由颈上、中、下交感神经节及节间支构成。</p>
-</li>
-<li>
-<p>位于脊柱颈部两侧，椎前筋膜深面。</p>
-</li>
-<li>
-<p>**</p>
-</li>
-<li></li>
-<li></li>
-<li>
-<p>上述三神经节各发出一心支参与心丛的构成。颈交感干受压，可出现霍纳综合征。</p>
-</li>
-</ul>
-</li>
-<li>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">肌群</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">起点</th>
-<th style="text-align:center">止点</th>
-<th style="text-align:center">作用</th>
-<th style="text-align:center">神经支配</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">颈浅肌</td>
-<td style="text-align:center">颈阔肌</td>
-<td style="text-align:center">胸大肌筋膜 <br> 三角肌筋膜</td>
-<td style="text-align:center">下颌骨下缘 <br> 腮腺咬肌区筋膜</td>
-<td style="text-align:center">紧张颈部皮肤</td>
-<td style="text-align:center">面神经颈支</td>
-</tr>
-</tbody>
-</table>
-</li>
-</ul>
-<h2 id="颈根部">颈根部</h2>
-<h2 id="颈外侧区">颈外侧区</h2>
-<h4 id="枕三角">枕三角</h4>
-<h4 id="锁骨上三角">锁骨上三角</h4>
-<h2 id="颈根部-2">颈根部</h2>
-]]></content>
-      <categories>
-        <category>解剖学</category>
-      </categories>
-      <tags>
-        <tag>解剖学</tag>
-        <tag>局部解剖学</tag>
-        <tag>札记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>R语言语法</title>
     <url>/2025/10/12/Rgrammar/</url>
     <content><![CDATA[<h1>R语言语法</h1>
@@ -1428,24 +1447,5 @@ $$y^{(n-2)} = \int\left[\int f(x)dx + C_1\right]dx + C_2$$<br>
         <tag>R</tag>
         <tag>绘图</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>README</title>
-    <url>/2025/08/07/README/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
 </search>
