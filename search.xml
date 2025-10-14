@@ -1,452 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>高等数学极速版</title>
-    <url>/2025/10/13/BasicMath/</url>
-    <content><![CDATA[<h1>同济高数上册</h1>
-<h2 id="第一章-函数与极限">第一章 函数与极限</h2>
-<h3 id="1-1-函数">1.1 函数</h3>
-<p><strong>重要定义：</strong></p>
-<ul>
-<li><strong>函数定义</strong>：设 $x$ 和 $y$ 是两个变量，$D$ 是一个给定的数集。如果对于每个 $x \in D$，按照对应法则 $f$，总有唯一确定的 $y$ 值与之对应，则称 $y$ 是 $x$ 的函数。</li>
-<li><strong>反函数</strong>：设函数 $y = f(x)$ 的定义域为 $D$，值域为 $R$。若对于每个 $y \in R$，有唯一确定的 $x \in D$ 与之对应，则得到 $x = \varphi(y)$，称为 $y = f(x)$ 的反函数。</li>
-</ul>
-<p><strong>重要结论：</strong></p>
-<ul>
-<li>函数 $y = f(x)$ 与它的反函数 $x = f^{-1}(y)$ 的图像关于直线 $y = x$ 对称。</li>
-</ul>
-<h3 id="1-2-极限">1.2 极限</h3>
-<p><strong>重要定义：</strong></p>
-<ul>
-<li><strong>数列极限</strong>：$\lim\limits_{n \to \infty} x_n = a$ 表示 $\forall \varepsilon &gt; 0, \exists N &gt; 0$，当 $n &gt; N$ 时，有 $|x_n - a| &lt; \varepsilon$</li>
-<li><strong>函数极限</strong>：$\lim\limits_{x \to x_0} f(x) = A$ 表示 $\forall \varepsilon &gt; 0, \exists \delta &gt; 0$，当 $0 &lt; |x - x_0| &lt; \delta$ 时，有 $|f(x) - A| &lt; \varepsilon$</li>
-</ul>
-<p><strong>重要极限公式：</strong></p>
-<ul>
-<li>$\lim\limits_{x \to 0} \frac{\sin x}{x} = 1$</li>
-<li>$\lim\limits_{x \to \infty} \left(1 + \frac{1}{x}\right)^x = e$</li>
-<li>$\lim\limits_{x \to 0} (1 + x)^{\frac{1}{x}} = e$</li>
-</ul>
-<p><strong>极限运算法则：</strong></p>
-<ul>
-<li>和、差、积、商的极限等于极限的和、差、积、商（分母极限不为零）</li>
-</ul>
-<h3 id="1-3-无穷小与无穷大">1.3 无穷小与无穷大</h3>
-<p><strong>重要定义：</strong></p>
-<ul>
-<li><strong>无穷小</strong>：极限为零的变量称为无穷小</li>
-<li><strong>无穷大</strong>：绝对值无限增大的变量称为无穷大</li>
-</ul>
-<p><strong>重要结论：</strong></p>
-<ul>
-<li>有限个无穷小的和、积仍是无穷小</li>
-<li>有界函数与无穷小的乘积是无穷小</li>
-</ul>
-<h3 id="1-4-连续性">1.4 连续性</h3>
-<p><strong>重要定义：</strong></p>
-<ul>
-<li><strong>函数连续</strong>：$\lim\limits_{\Delta x \to 0} \Delta y = 0$ 或 $\lim\limits_{x \to x_0} f(x) = f(x_0)$</li>
-<li><strong>左连续、右连续</strong>：$\lim\limits_{x \to x_0^-} f(x) = f(x_0)$（左连续），$\lim\limits_{x \to x_0^+} f(x) = f(x_0)$（右连续）</li>
-</ul>
-<p><strong>重要定理：</strong></p>
-<ul>
-<li><strong>零点定理</strong>：若 $f(x)$ 在 $[a,b]$ 上连续，且 $f(a) \cdot f(b) &lt; 0$，则至少存在一点 $\xi \in (a,b)$，使 $f(\xi) = 0$</li>
-<li><strong>介值定理</strong>：若 $f(x)$ 在 $[a,b]$ 上连续，$f(a) = A$，$f(b) = B$，则对于 $A$ 与 $B$ 之间的任意数 $C$，至少存在一点 $\xi \in (a,b)$，使 $f(\xi) = C$</li>
-</ul>
-<h2 id="第二章-导数与微分">第二章 导数与微分</h2>
-<h3 id="2-1-导数概念">2.1 导数概念</h3>
-<p><strong>重要定义：</strong></p>
-<ul>
-<li><strong>导数</strong>：$f^\prime(x_0) = \lim\limits_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \lim\limits_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$</li>
-<li><strong>左导数、右导数</strong>：$f^\prime_-(x_0) = \lim\limits_{\Delta x \to 0^-} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$，$f^\prime_+(x_0) = \lim\limits_{\Delta x \to 0^+} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$</li>
-</ul>
-<p><strong>几何意义：</strong></p>
-<ul>
-<li>导数 $f^\prime(x_0)$ 表示曲线 $y = f(x)$ 在点 $(x_0, f(x_0))$ 处的切线斜率</li>
-</ul>
-<h3 id="2-2-求导法则">2.2 求导法则</h3>
-<p><strong>基本公式：</strong></p>
-<ul>
-<li>$©^\prime = 0$（常数导数）</li>
-<li>$(x^\mu)^\prime = \mu x^{\mu-1}$（幂函数导数）</li>
-<li>$(\sin x)^\prime = \cos x$</li>
-<li>$(\cos x)^\prime = -\sin x$</li>
-<li>$(a^x)^\prime = a^x \ln a$</li>
-<li>$(e^x)^\prime = e^x$</li>
-<li>$(\log_a x)^\prime = \frac{1}{x \ln a}$</li>
-<li>$(\ln x)^\prime = \frac{1}{x}$</li>
-</ul>
-<p><strong>求导法则：</strong></p>
-<ul>
-<li>$(u \pm v)^\prime = u’ \pm v’$</li>
-<li>$(uv)^\prime = u’v + uv’$</li>
-<li>$(\frac{u}{v})^\prime = \frac{u’v - uv’}{v^2}$（$v \neq 0$）</li>
-<li><strong>链式法则</strong>：$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$</li>
-</ul>
-<h3 id="2-3-高阶导数">2.3 高阶导数</h3>
-<p><strong>重要定义：</strong></p>
-<ul>
-<li><strong>二阶导数</strong>：$f’^\prime(x) = [f^\prime(x)]'$</li>
-<li><strong>n阶导数</strong>：$f^{(n)}(x) = [f^{(n-1)}(x)]'$</li>
-</ul>
-<p><strong>常见高阶导数公式：</strong></p>
-<ul>
-<li>$(e^x)^{(n)} = e^x$</li>
-<li>$(\sin x)^{(n)} = \sin(x + \frac{n\pi}{2})$</li>
-<li>$(\cos x)^{(n)} = \cos(x + \frac{n\pi}{2})$</li>
-<li>$(x^\mu)^{(n)} = \mu(\mu-1)\cdots(\mu-n+1)x^{\mu-n}$（$\mu$ 为实数）</li>
-</ul>
-<h3 id="2-4-微分">2.4 微分</h3>
-<p><strong>重要定义：</strong></p>
-<ul>
-<li><strong>微分</strong>：$dy = f^\prime(x)dx$</li>
-</ul>
-<p><strong>微分公式：</strong></p>
-<ul>
-<li>$d(u \pm v) = du \pm dv$</li>
-<li>$d(uv) = vdu + udv$</li>
-<li>$d(\frac{u}{v}) = \frac{vdu - udv}{v^2}$（$v \neq 0$）</li>
-</ul>
-<h2 id="第三章-微分中值定理与导数的应用">第三章 微分中值定理与导数的应用</h2>
-<h3 id="3-1-微分中值定理">3.1 微分中值定理</h3>
-<p><strong>重要定理：</strong></p>
-<ul>
-<li><strong>罗尔定理</strong>：若 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $f(a) = f(b)$，则存在 $\xi \in (a,b)$，使 $f^\prime(\xi) = 0$</li>
-</ul>
-<p><strong>证明思路：</strong><br>
-由于 $f(x)$ 在闭区间上连续，必取得最大值 $M$ 和最小值 $m$</p>
-<ol>
-<li>若 $M = m$，则 $f(x)$ 为常数函数，导数处处为零</li>
-<li>若 $M &gt; m$，则最大值和最小值至少有一个在 $(a,b)$ 内取得，该点处导数为零</li>
-</ol>
-<ul>
-<li><strong>拉格朗日中值定理</strong>：若 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，则存在 $\xi \in (a,b)$，使 $f^\prime(\xi) = \frac{f(b) - f(a)}{b - a}$</li>
-</ul>
-<p><strong>证明思路：</strong><br>
-构造辅助函数 $\varphi(x) = f(x) - f(a) - \frac{f(b) - f(a)}{b - a}(x - a)$<br>
-验证 $\varphi(x)$ 满足罗尔定理条件，应用罗尔定理得出结论</p>
-<ul>
-<li><strong>柯西中值定理</strong>：若 $f(x)$，$g(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $g^\prime(x) \neq 0$，则存在 $\xi \in (a,b)$，使 $\frac{f(b) - f(a)}{g(b) - g(a)} = \frac{f^\prime(\xi)}{g^\prime(\xi)}$</li>
-</ul>
-<h3 id="3-2-洛必达法则">3.2 洛必达法则</h3>
-<p><strong>重要定理：</strong></p>
-<ul>
-<li>$\frac{0}{0}$ 型：若 $\lim\limits_{x \to a} f(x) = 0$，$\lim\limits_{x \to a} g(x) = 0$，且 $\lim\limits_{x \to a} \frac{f^\prime(x)}{g^\prime(x)}$ 存在（或为无穷大），则 $\lim\limits_{x \to a} \frac{f(x)}{g(x)} = \lim\limits_{x \to a} \frac{f^\prime(x)}{g^\prime(x)}$</li>
-<li>$\frac{\infty}{\infty}$ 型有类似结论</li>
-</ul>
-<h3 id="3-3-泰勒公式">3.3 泰勒公式</h3>
-<p><strong>重要定理：</strong></p>
-<ul>
-<li><strong>泰勒中值定理</strong>：若 $f(x)$ 在 $x_0$ 处有 $n$ 阶导数，则<br>
-$$f(x) = f(x_0) + f^\prime(x_0)(x - x_0) + \frac{f’^\prime(x_0)}{2!}(x - x_0)^2 + \cdots + \frac{f^{(n)}(x_0)}{n!}(x - x_0)^n + R_n(x)$$<br>
-其中 $R_n(x) = o((x - x_0)^n)$（佩亚诺余项）</li>
-</ul>
-<p><strong>常见展开式：</strong></p>
-<ul>
-<li>$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots + \frac{x^n}{n!} + o(x^n)$</li>
-<li>$\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots + (-1)^n \frac{x^{2n+1}}{(2n+1)!} + o(x^{2n+2})$</li>
-<li>$\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots + (-1)^n \frac{x^{2n}}{(2n)!} + o(x^{2n+1})$</li>
-<li>$\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1} \frac{x^n}{n} + o(x^n)$</li>
-</ul>
-<h3 id="3-4-函数单调性与极值">3.4 函数单调性与极值</h3>
-<p><strong>判定定理：</strong></p>
-<ul>
-<li>
-<p><strong>单调性</strong>：设 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导</p>
-<ul>
-<li>若在 $(a,b)$ 内 $f^\prime(x) &gt; 0$，则 $f(x)$ 在 $[a,b]$ 上单调增加</li>
-<li>若在 $(a,b)$ 内 $f^\prime(x) &lt; 0$，则 $f(x)$ 在 $[a,b]$ 上单调减少</li>
-</ul>
-</li>
-<li>
-<p><strong>极值第一充分条件</strong>：设 $f(x)$ 在 $x_0$ 处连续，在 $x_0$ 的某去心邻域内可导</p>
-<ul>
-<li>若 $x &lt; x_0$ 时 $f^\prime(x) &gt; 0$，$x &gt; x_0$ 时 $f^\prime(x) &lt; 0$，则 $f(x_0)$ 为极大值</li>
-<li>若 $x &lt; x_0$ 时 $f^\prime(x) &lt; 0$，$x &gt; x_0$ 时 $f^\prime(x) &gt; 0$，则 $f(x_0)$ 为极小值</li>
-</ul>
-</li>
-<li>
-<p><strong>极值第二充分条件</strong>：设 $f(x)$ 在 $x_0$ 处具有二阶导数，且 $f^\prime(x_0) = 0$，$f’^\prime(x_0) \neq 0$</p>
-<ul>
-<li>若 $f’^\prime(x_0) &lt; 0$，则 $f(x_0)$ 为极大值</li>
-<li>若 $f’^\prime(x_0) &gt; 0$，则 $f(x_0)$ 为极小值</li>
-</ul>
-</li>
-</ul>
-<h2 id="第四章-不定积分">第四章 不定积分</h2>
-<h3 id="4-1-不定积分概念">4.1 不定积分概念</h3>
-<p><strong>重要定义：</strong></p>
-<ul>
-<li><strong>原函数</strong>：若在区间 $I$ 上，$F^\prime(x) = f(x)$，则称 $F(x)$ 为 $f(x)$ 在 $I$ 上的原函数</li>
-<li><strong>不定积分</strong>：$f(x)$ 的全体原函数称为 $f(x)$ 的不定积分，记作 $\int f(x)dx = F(x) + C$</li>
-</ul>
-<p><strong>基本性质：</strong></p>
-<ul>
-<li>$\left[\int f(x)dx\right]’ = f(x)$</li>
-<li>$\int F^\prime(x)dx = F(x) + C$</li>
-<li>$\int kf(x)dx = k\int f(x)dx$（$k$ 为常数）</li>
-<li>$\int [f(x) \pm g(x)]dx = \int f(x)dx \pm \int g(x)dx$</li>
-</ul>
-<h3 id="4-2-基本积分公式">4.2 基本积分公式</h3>
-<p><strong>基本积分表：</strong></p>
-<ul>
-<li>$\int x^\mu dx = \frac{x^{\mu+1}}{\mu+1} + C$（$\mu \neq -1$）</li>
-<li>$\int \frac{1}{x}dx = \ln|x| + C$</li>
-<li>$\int a^x dx = \frac{a^x}{\ln a} + C$</li>
-<li>$\int e^x dx = e^x + C$</li>
-<li>$\int \sin x dx = -\cos x + C$</li>
-<li>$\int \cos x dx = \sin x + C$</li>
-<li>$\int \sec^2 x dx = \tan x + C$</li>
-<li>$\int \csc^2 x dx = -\cot x + C$</li>
-<li>$\int \frac{1}{\sqrt{1-x^2}}dx = \arcsin x + C$</li>
-<li>$\int \frac{1}{1+x^2}dx = \arctan x + C$</li>
-</ul>
-<h3 id="4-3-换元积分法">4.3 换元积分法</h3>
-<p><strong>第一类换元法（凑微分）：</strong><br>
-若 $\int f(u)du = F(u) + C$，且 $u = \varphi(x)$ 可导，则<br>
-$$\int f[\varphi(x)]\varphi^\prime(x)dx = F[\varphi(x)] + C$$</p>
-<p><strong>第二类换元法：</strong><br>
-设 $x = \psi(t)$ 单调可导，且 $\psi^\prime(t) \neq 0$，若 $\int f[\psi(t)]\psi^\prime(t)dt = F(t) + C$，则<br>
-$$\int f(x)dx = F[\psi^{-1}(x)] + C$$</p>
-<h3 id="4-4-分部积分法">4.4 分部积分法</h3>
-<p><strong>分部积分公式：</strong><br>
-$$\int u dv = uv - \int v du$$<br>
-或<br>
-$$\int uv’ dx = uv - \int u’v dx$$</p>
-<p><strong>常见应用：</strong></p>
-<ul>
-<li>$\int P_n(x)e^{ax}dx$，设 $u = P_n(x)$，$dv = e^{ax}dx$</li>
-<li>$\int P_n(x)\sin ax dx$ 或 $\int P_n(x)\cos ax dx$，设 $u = P_n(x)$</li>
-<li>$\int e^{ax}\sin bx dx$ 或 $\int e^{ax}\cos bx dx$，循环使用分部积分</li>
-</ul>
-<h2 id="第五章-定积分">第五章 定积分</h2>
-<h3 id="5-1-定积分概念">5.1 定积分概念</h3>
-<p><strong>重要定义：</strong></p>
-<ul>
-<li><strong>定积分</strong>：$\int_a^b f(x)dx = \lim\limits_{\lambda \to 0} \sum\limits_{i=1}^n f(\xi_i)\Delta x_i$，其中 $\lambda = \max{\Delta x_1, \Delta x_2, \cdots, \Delta x_n}$</li>
-</ul>
-<p><strong>几何意义：</strong></p>
-<ul>
-<li>曲边梯形的面积</li>
-</ul>
-<p><strong>可积充分条件：</strong></p>
-<ul>
-<li>若 $f(x)$ 在 $[a,b]$ 上连续，则 $f(x)$ 在 $[a,b]$ 上可积</li>
-<li>若 $f(x)$ 在 $[a,b]$ 上有界且只有有限个间断点，则 $f(x)$ 在 $[a,b]$ 上可积</li>
-</ul>
-<h3 id="5-2-定积分性质">5.2 定积分性质</h3>
-<p><strong>基本性质：</strong></p>
-<ul>
-<li>$\int_a^b [f(x) \pm g(x)]dx = \int_a^b f(x)dx \pm \int_a^b g(x)dx$</li>
-<li>$\int_a^b kf(x)dx = k\int_a^b f(x)dx$（$k$ 为常数）</li>
-<li>$\int_a^b f(x)dx = \int_a^c f(x)dx + \int_c^b f(x)dx$</li>
-<li>若在 $[a,b]$ 上 $f(x) \geq 0$，则 $\int_a^b f(x)dx \geq 0$</li>
-<li>若在 $[a,b]$ 上 $f(x) \leq g(x)$，则 $\int_a^b f(x)dx \leq \int_a^b g(x)dx$</li>
-</ul>
-<p><strong>积分中值定理：</strong></p>
-<ul>
-<li>若 $f(x)$ 在 $[a,b]$ 上连续，则存在 $\xi \in [a,b]$，使 $\int_a^b f(x)dx = f(\xi)(b-a)$</li>
-</ul>
-<h3 id="5-3-微积分基本公式">5.3 微积分基本公式</h3>
-<p><strong>重要定理：</strong></p>
-<ul>
-<li><strong>微积分基本定理</strong>：若 $f(x)$ 在 $[a,b]$ 上连续，则 $\Phi(x) = \int_a^x f(t)dt$ 在 $[a,b]$ 上可导，且 $\Phi^\prime(x) = f(x)$</li>
-</ul>
-<p><strong>证明思路：</strong><br>
-$$\Phi^\prime(x) = \lim_{\Delta x \to 0} \frac{\Phi(x+\Delta x) - \Phi(x)}{\Delta x} = \lim_{\Delta x \to 0} \frac{\int_x^{x+\Delta x} f(t)dt}{\Delta x}$$<br>
-由积分中值定理，存在 $\xi$ 介于 $x$ 与 $x+\Delta x$ 之间，使得<br>
-$$\frac{\int_x^{x+\Delta x} f(t)dt}{\Delta x} = f(\xi)$$<br>
-当 $\Delta x \to 0$ 时，$\xi \to x$，由 $f(x)$ 的连续性得 $\Phi^\prime(x) = f(x)$</p>
-<ul>
-<li><strong>牛顿-莱布尼茨公式</strong>：若 $F(x)$ 是 $f(x)$ 在 $[a,b]$ 上的一个原函数，则<br>
-$$\int_a^b f(x)dx = F(b) - F(a)$$</li>
-</ul>
-<h3 id="5-4-定积分换元法与分部积分法">5.4 定积分换元法与分部积分法</h3>
-<p><strong>换元公式：</strong><br>
-设 $f(x)$ 在 $[a,b]$ 上连续，$x = \varphi(t)$ 满足：</p>
-<ol>
-<li>$\varphi(\alpha) = a$，$\varphi(\beta) = b$</li>
-<li>$\varphi(t)$ 在 $[\alpha,\beta]$（或 $[\beta,\alpha]$）上具有连续导数，且值域包含于 $[a,b]$<br>
-则<br>
-$$\int_a^b f(x)dx = \int_\alpha^\beta f[\varphi(t)]\varphi^\prime(t)dt$$</li>
-</ol>
-<p><strong>分部积分公式：</strong><br>
-$$\int_a^b u(x)v^\prime(x)dx = [u(x)v(x)]\bigg|_a^b - \int_a^b u^\prime(x)v(x)dx$$</p>
-<h2 id="第六章-定积分的应用">第六章 定积分的应用</h2>
-<h3 id="6-1-平面图形面积">6.1 平面图形面积</h3>
-<p><strong>直角坐标系：</strong></p>
-<ul>
-<li>由曲线 $y = f(x)$，$y = g(x)$ 及直线 $x = a$，$x = b$ 所围图形面积：<br>
-$$S = \int_a^b |f(x) - g(x)|dx$$</li>
-</ul>
-<p><strong>极坐标系：</strong></p>
-<ul>
-<li>由曲线 $r = r(\theta)$ 及射线 $\theta = \alpha$，$\theta = \beta$ 所围图形面积：<br>
-$$S = \frac{1}{2}\int_\alpha^\beta r^2(\theta)d\theta$$</li>
-</ul>
-<h3 id="6-2-体积">6.2 体积</h3>
-<p><strong>旋转体体积：</strong></p>
-<ul>
-<li>由曲线 $y = f(x)$，直线 $x = a$，$x = b$ 及 $x$ 轴所围图形绕 $x$ 轴旋转一周所得旋转体体积：<br>
-$$V = \pi\int_a^b [f(x)]^2dx$$</li>
-</ul>
-<p><strong>平行截面面积已知的立体体积：</strong></p>
-<ul>
-<li>过点 $x$ 且垂直于 $x$ 轴的截面面积为 $A(x)$，则立体体积：<br>
-$$V = \int_a^b A(x)dx$$</li>
-</ul>
-<h3 id="6-3-平面曲线弧长">6.3 平面曲线弧长</h3>
-<p><strong>直角坐标系：</strong></p>
-<ul>
-<li>曲线 $y = f(x)$（$a \leq x \leq b$）的弧长：<br>
-$$s = \int_a^b \sqrt{1 + [f^\prime(x)]^2}dx$$</li>
-</ul>
-<p><strong>参数方程：</strong></p>
-<ul>
-<li>曲线 $\begin{cases} x = \varphi(t) \ y = \psi(t) \end{cases}$（$\alpha \leq t \leq \beta$）的弧长：<br>
-$$s = \int_\alpha^\beta \sqrt{[\varphi^\prime(t)]^2 + [\psi^\prime(t)]^2}dt$$</li>
-</ul>
-<p><strong>极坐标系：</strong></p>
-<ul>
-<li>曲线 $r = r(\theta)$（$\alpha \leq \theta \leq \beta$）的弧长：<br>
-$$s = \int_\alpha^\beta \sqrt{[r(\theta)]^2 + [r^\prime(\theta)]^2}d\theta$$</li>
-</ul>
-<h2 id="第七章-微分方程">第七章 微分方程</h2>
-<h3 id="7-1-微分方程基本概念">7.1 微分方程基本概念</h3>
-<p><strong>重要定义：</strong></p>
-<ul>
-<li><strong>微分方程</strong>：表示未知函数、未知函数的导数与自变量之间关系的方程</li>
-<li><strong>阶</strong>：微分方程中出现的未知函数的最高阶导数的阶数</li>
-<li><strong>解</strong>：代入微分方程能使该方程成为恒等式的函数</li>
-<li><strong>通解</strong>：含有与微分方程阶数相同个数的独立任意常数的解</li>
-<li><strong>特解</strong>：确定了通解中任意常数后的解</li>
-</ul>
-<h3 id="7-2-一阶微分方程">7.2 一阶微分方程</h3>
-<h4 id="可分离变量方程">可分离变量方程</h4>
-<p><strong>形式：</strong> $\frac{dy}{dx} = f(x)g(y)$</p>
-<p><strong>解法：</strong><br>
-$$\frac{dy}{g(y)} = f(x)dx \quad (g(y) \neq 0)$$<br>
-$$\int \frac{dy}{g(y)} = \int f(x)dx + C$$</p>
-<h4 id="齐次方程">齐次方程</h4>
-<p><strong>形式：</strong> $\frac{dy}{dx} = \varphi\left(\frac{y}{x}\right)$</p>
-<p><strong>解法：</strong><br>
-令 $u = \frac{y}{x}$，则 $y = ux$，$\frac{dy}{dx} = u + x\frac{du}{dx}$<br>
-代入得：$u + x\frac{du}{dx} = \varphi(u)$<br>
-$$\frac{du}{\varphi(u) - u} = \frac{dx}{x}$$</p>
-<h4 id="一阶线性微分方程">一阶线性微分方程</h4>
-<p><strong>形式：</strong> $\frac{dy}{dx} + P(x)y = Q(x)$</p>
-<p><strong>通解公式：</strong><br>
-$$y = e^{-\int P(x)dx}\left[\int Q(x)e^{\int P(x)dx}dx + C\right]$$</p>
-<p><strong>推导：</strong><br>
-两边同乘积分因子 $e^{\int P(x)dx}$：<br>
-$$e^{\int P(x)dx}\frac{dy}{dx} + P(x)e^{\int P(x)dx}y = Q(x)e^{\int P(x)dx}$$<br>
-左边为 $\frac{d}{dx}\left(ye^{\int P(x)dx}\right)$，积分即得通解</p>
-<h4 id="伯努利方程">伯努利方程</h4>
-<p><strong>形式：</strong> $\frac{dy}{dx} + P(x)y = Q(x)y^n \quad (n \neq 0,1)$</p>
-<p><strong>解法：</strong><br>
-令 $z = y^{1-n}$，则 $\frac{dz}{dx} = (1-n)y^{-n}\frac{dy}{dx}$<br>
-化为线性方程：$\frac{dz}{dx} + (1-n)P(x)z = (1-n)Q(x)$</p>
-<h3 id="7-3-可降阶的高阶微分方程">7.3 可降阶的高阶微分方程</h3>
-<h4 id="y-n-f-x-型">$y^{(n)} = f(x)$ 型</h4>
-<p><strong>解法：</strong> 连续积分 $n$ 次<br>
-$$y^{(n-1)} = \int f(x)dx + C_1$$<br>
-$$y^{(n-2)} = \int\left[\int f(x)dx + C_1\right]dx + C_2$$<br>
-依此类推</p>
-<h4 id="y’’-f-x-y’-型（不显含-y-）">$y’’ = f(x, y’)$ 型（不显含 $y$）</h4>
-<p><strong>解法：</strong> 令 $y’ = p$，则 $y’’ = \frac{dp}{dx}$<br>
-化为：$\frac{dp}{dx} = f(x, p)$（一阶方程）</p>
-<h4 id="y’’-f-y-y’-型（不显含-x-）">$y’’ = f(y, y’)$ 型（不显含 $x$）</h4>
-<p><strong>解法：</strong> 令 $y’ = p$，则 $y’’ = \frac{dp}{dx} = \frac{dp}{dy}\frac{dy}{dx} = p\frac{dp}{dy}$<br>
-化为：$p\frac{dp}{dy} = f(y, p)$（一阶方程）</p>
-<h3 id="7-4-高阶线性微分方程">7.4 高阶线性微分方程</h3>
-<h4 id="基本概念">基本概念</h4>
-<p><strong>形式：</strong> $y^{(n)} + a_1(x)y^{(n-1)} + \cdots + a_{n-1}(x)y’ + a_n(x)y = f(x)$</p>
-<p><strong>齐次方程：</strong> $f(x) = 0$<br>
-<strong>非齐次方程：</strong> $f(x) \neq 0$</p>
-<h4 id="解的结构">解的结构</h4>
-<p><strong>齐次方程：</strong></p>
-<ul>
-<li>叠加原理：若 $y_1, y_2, \cdots, y_n$ 是解，则它们的线性组合也是解</li>
-<li>通解结构：$y = C_1y_1 + C_2y_2 + \cdots + C_ny_n$</li>
-</ul>
-<p><strong>非齐次方程：</strong></p>
-<ul>
-<li>通解结构：$y = Y + y^<em>$，其中 $Y$ 是对应齐次方程的通解，$y^</em>$ 是非齐次方程的特解</li>
-</ul>
-<h4 id="常数变易法">常数变易法</h4>
-<p>用于求解非齐次线性方程的特解</p>
-<h3 id="7-5-常系数线性微分方程">7.5 常系数线性微分方程</h3>
-<h4 id="二阶常系数齐次线性方程">二阶常系数齐次线性方程</h4>
-<p><strong>形式：</strong> $y’’ + py’ + qy = 0$</p>
-<p><strong>特征方程：</strong> $r^2 + pr + q = 0$</p>
-<p><strong>通解情况：</strong></p>
-<ol>
-<li>两个不等实根 $r_1 \neq r_2$：$y = C_1e^{r_1x} + C_2e^{r_2x}$</li>
-<li>两个相等实根 $r_1 = r_2$：$y = (C_1 + C_2x)e^{r_1x}$</li>
-<li>一对共轭复根 $r = \alpha \pm i\beta$：$y = e^{\alpha x}(C_1\cos\beta x + C_2\sin\beta x)$</li>
-</ol>
-<h4 id="二阶常系数非齐次线性方程">二阶常系数非齐次线性方程</h4>
-<p><strong>形式：</strong> $y’’ + py’ + qy = f(x)$</p>
-<p><strong>特解求法（待定系数法）：</strong></p>
-<p><strong>$f(x) = P_m(x)e^{\lambda x}$ 型：</strong><br>
-设特解 $y^* = x^kQ_m(x)e^{\lambda x}$，其中：</p>
-<ul>
-<li>$k = 0$ 当 $\lambda$ 不是特征根</li>
-<li>$k = 1$ 当 $\lambda$ 是单特征根</li>
-<li>$k = 2$ 当 $\lambda$ 是重特征根</li>
-</ul>
-<p><strong>$f(x) = e^{\alpha x}[P_l(x)\cos\beta x + P_n(x)\sin\beta x]$ 型：</strong><br>
-设特解 $y^* = x^ke^{\alpha x}[R_m^{(1)}(x)\cos\beta x + R_m^{(2)}(x)\sin\beta x]$，其中 $m = \max(l, n)$</p>
-<ul>
-<li>$k = 0$ 当 $\alpha \pm i\beta$ 不是特征根</li>
-<li>$k = 1$ 当 $\alpha \pm i\beta$ 是特征根</li>
-</ul>
-<h4 id="欧拉方程">欧拉方程</h4>
-<p><strong>形式：</strong> $x^ny^{(n)} + a_1x^{n-1}y^{(n-1)} + \cdots + a_{n-1}xy’ + a_ny = 0$</p>
-<p><strong>解法：</strong> 令 $x = e^t$，则方程化为常系数线性方程</p>
-<h3 id="7-6-微分方程应用">7.6 微分方程应用</h3>
-<h4 id="几何应用">几何应用</h4>
-<ul>
-<li>已知曲线切线、法线等几何性质建立微分方程</li>
-</ul>
-<h4 id="物理应用">物理应用</h4>
-<ul>
-<li>牛顿第二定律：$m\frac{d^2s}{dt^2} = F$</li>
-<li>RC电路：$RC\frac{du_c}{dt} + u_c = E$</li>
-<li>弹簧振动：$m\frac{d^2x}{dt^2} + c\frac{dx}{dt} + kx = F(t)$</li>
-</ul>
-<h4 id="人口模型">人口模型</h4>
-<ul>
-<li>马尔萨斯模型：$\frac{dP}{dt} = kP$</li>
-<li>逻辑斯蒂模型：$\frac{dP}{dt} = kP\left(1 - \frac{P}{M}\right)$</li>
-</ul>
-]]></content>
-      <categories>
-        <category>高等数学</category>
-      </categories>
-      <tags>
-        <tag>高等数学</tag>
-        <tag>微积分</tag>
-        <tag>应试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>README</title>
-    <url>/2025/08/07/README/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>Hello World</title>
+    <url>/2025/08/07/Hello-World/</url>
+    <content><![CDATA[<h2 id="Hello-World">Hello World!</h2>
 ]]></content>
   </entry>
   <entry>
@@ -1041,10 +598,583 @@ $$y^{(n-2)} = \int\left[\int f(x)dx + C_1\right]dx + C_2$$<br>
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/08/07/Hello-World/</url>
-    <content><![CDATA[<h2 id="Hello-World">Hello World!</h2>
+    <title>README</title>
+    <url>/2025/08/07/README/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>高等数学极速版</title>
+    <url>/2025/10/13/BasicMath/</url>
+    <content><![CDATA[<h1>同济高数上册</h1>
+<h2 id="第一章-函数与极限">第一章 函数与极限</h2>
+<h3 id="1-1-函数">1.1 函数</h3>
+<p><strong>重要定义：</strong></p>
+<ul>
+<li><strong>函数定义</strong>：设 $x$ 和 $y$ 是两个变量，$D$ 是一个给定的数集。如果对于每个 $x \in D$，按照对应法则 $f$，总有唯一确定的 $y$ 值与之对应，则称 $y$ 是 $x$ 的函数。</li>
+<li><strong>反函数</strong>：设函数 $y = f(x)$ 的定义域为 $D$，值域为 $R$。若对于每个 $y \in R$，有唯一确定的 $x \in D$ 与之对应，则得到 $x = \varphi(y)$，称为 $y = f(x)$ 的反函数。</li>
+</ul>
+<p><strong>重要结论：</strong></p>
+<ul>
+<li>函数 $y = f(x)$ 与它的反函数 $x = f^{-1}(y)$ 的图像关于直线 $y = x$ 对称。</li>
+</ul>
+<h3 id="1-2-极限">1.2 极限</h3>
+<p><strong>重要定义：</strong></p>
+<ul>
+<li><strong>数列极限</strong>：$\lim\limits_{n \to \infty} x_n = a$ 表示 $\forall \varepsilon &gt; 0, \exists N &gt; 0$，当 $n &gt; N$ 时，有 $|x_n - a| &lt; \varepsilon$</li>
+<li><strong>函数极限</strong>：$\lim\limits_{x \to x_0} f(x) = A$ 表示 $\forall \varepsilon &gt; 0, \exists \delta &gt; 0$，当 $0 &lt; |x - x_0| &lt; \delta$ 时，有 $|f(x) - A| &lt; \varepsilon$</li>
+</ul>
+<p><strong>重要极限公式：</strong></p>
+<ul>
+<li>$\lim\limits_{x \to 0} \frac{\sin x}{x} = 1$</li>
+<li>$\lim\limits_{x \to \infty} \left(1 + \frac{1}{x}\right)^x = e$</li>
+<li>$\lim\limits_{x \to 0} (1 + x)^{\frac{1}{x}} = e$</li>
+</ul>
+<p><strong>极限运算法则：</strong></p>
+<ul>
+<li>和、差、积、商的极限等于极限的和、差、积、商（分母极限不为零）</li>
+</ul>
+<h3 id="1-3-无穷小与无穷大">1.3 无穷小与无穷大</h3>
+<p><strong>重要定义：</strong></p>
+<ul>
+<li><strong>无穷小</strong>：极限为零的变量称为无穷小</li>
+<li><strong>无穷大</strong>：绝对值无限增大的变量称为无穷大</li>
+</ul>
+<p><strong>重要结论：</strong></p>
+<ul>
+<li>有限个无穷小的和、积仍是无穷小</li>
+<li>有界函数与无穷小的乘积是无穷小</li>
+</ul>
+<h3 id="1-4-连续性">1.4 连续性</h3>
+<p><strong>重要定义：</strong></p>
+<ul>
+<li><strong>函数连续</strong>：$\lim\limits_{\Delta x \to 0} \Delta y = 0$ 或 $\lim\limits_{x \to x_0} f(x) = f(x_0)$</li>
+<li><strong>左连续、右连续</strong>：$\lim\limits_{x \to x_0^-} f(x) = f(x_0)$（左连续），$\lim\limits_{x \to x_0^+} f(x) = f(x_0)$（右连续）</li>
+</ul>
+<p><strong>重要定理：</strong></p>
+<ul>
+<li><strong>零点定理</strong>：若 $f(x)$ 在 $[a,b]$ 上连续，且 $f(a) \cdot f(b) &lt; 0$，则至少存在一点 $\xi \in (a,b)$，使 $f(\xi) = 0$</li>
+<li><strong>介值定理</strong>：若 $f(x)$ 在 $[a,b]$ 上连续，$f(a) = A$，$f(b) = B$，则对于 $A$ 与 $B$ 之间的任意数 $C$，至少存在一点 $\xi \in (a,b)$，使 $f(\xi) = C$</li>
+</ul>
+<h2 id="第二章-导数与微分">第二章 导数与微分</h2>
+<h3 id="2-1-导数概念">2.1 导数概念</h3>
+<p><strong>重要定义：</strong></p>
+<ul>
+<li><strong>导数</strong>：$f^\prime(x_0) = \lim\limits_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \lim\limits_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$</li>
+<li><strong>左导数、右导数</strong>：$f^\prime_-(x_0) = \lim\limits_{\Delta x \to 0^-} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$，$f^\prime_+(x_0) = \lim\limits_{\Delta x \to 0^+} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$</li>
+</ul>
+<p><strong>几何意义：</strong></p>
+<ul>
+<li>导数 $f^\prime(x_0)$ 表示曲线 $y = f(x)$ 在点 $(x_0, f(x_0))$ 处的切线斜率</li>
+</ul>
+<h3 id="2-2-求导法则">2.2 求导法则</h3>
+<p><strong>基本公式：</strong></p>
+<ul>
+<li>$©^\prime = 0$（常数导数）</li>
+<li>$(x^\mu)^\prime = \mu x^{\mu-1}$（幂函数导数）</li>
+<li>$(\sin x)^\prime = \cos x$</li>
+<li>$(\cos x)^\prime = -\sin x$</li>
+<li>$(a^x)^\prime = a^x \ln a$</li>
+<li>$(e^x)^\prime = e^x$</li>
+<li>$(\log_a x)^\prime = \frac{1}{x \ln a}$</li>
+<li>$(\ln x)^\prime = \frac{1}{x}$</li>
+</ul>
+<p><strong>求导法则：</strong></p>
+<ul>
+<li>$(u \pm v)^\prime = u’ \pm v’$</li>
+<li>$(uv)^\prime = u’v + uv’$</li>
+<li>$(\frac{u}{v})^\prime = \frac{u’v - uv’}{v^2}$（$v \neq 0$）</li>
+<li><strong>链式法则</strong>：$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$</li>
+</ul>
+<h3 id="2-3-高阶导数">2.3 高阶导数</h3>
+<p><strong>重要定义：</strong></p>
+<ul>
+<li><strong>二阶导数</strong>：$f’^\prime(x) = [f^\prime(x)]'$</li>
+<li><strong>n阶导数</strong>：$f^{(n)}(x) = [f^{(n-1)}(x)]'$</li>
+</ul>
+<p><strong>常见高阶导数公式：</strong></p>
+<ul>
+<li>$(e^x)^{(n)} = e^x$</li>
+<li>$(\sin x)^{(n)} = \sin(x + \frac{n\pi}{2})$</li>
+<li>$(\cos x)^{(n)} = \cos(x + \frac{n\pi}{2})$</li>
+<li>$(x^\mu)^{(n)} = \mu(\mu-1)\cdots(\mu-n+1)x^{\mu-n}$（$\mu$ 为实数）</li>
+</ul>
+<h3 id="2-4-微分">2.4 微分</h3>
+<p><strong>重要定义：</strong></p>
+<ul>
+<li><strong>微分</strong>：$dy = f^\prime(x)dx$</li>
+</ul>
+<p><strong>微分公式：</strong></p>
+<ul>
+<li>$d(u \pm v) = du \pm dv$</li>
+<li>$d(uv) = vdu + udv$</li>
+<li>$d(\frac{u}{v}) = \frac{vdu - udv}{v^2}$（$v \neq 0$）</li>
+</ul>
+<h2 id="第三章-微分中值定理与导数的应用">第三章 微分中值定理与导数的应用</h2>
+<h3 id="3-1-微分中值定理">3.1 微分中值定理</h3>
+<p><strong>重要定理：</strong></p>
+<ul>
+<li><strong>罗尔定理</strong>：若 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $f(a) = f(b)$，则存在 $\xi \in (a,b)$，使 $f^\prime(\xi) = 0$</li>
+</ul>
+<p><strong>证明思路：</strong><br>
+由于 $f(x)$ 在闭区间上连续，必取得最大值 $M$ 和最小值 $m$</p>
+<ol>
+<li>若 $M = m$，则 $f(x)$ 为常数函数，导数处处为零</li>
+<li>若 $M &gt; m$，则最大值和最小值至少有一个在 $(a,b)$ 内取得，该点处导数为零</li>
+</ol>
+<ul>
+<li><strong>拉格朗日中值定理</strong>：若 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，则存在 $\xi \in (a,b)$，使 $f^\prime(\xi) = \frac{f(b) - f(a)}{b - a}$</li>
+</ul>
+<p><strong>证明思路：</strong><br>
+构造辅助函数 $\varphi(x) = f(x) - f(a) - \frac{f(b) - f(a)}{b - a}(x - a)$<br>
+验证 $\varphi(x)$ 满足罗尔定理条件，应用罗尔定理得出结论</p>
+<ul>
+<li><strong>柯西中值定理</strong>：若 $f(x)$，$g(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $g^\prime(x) \neq 0$，则存在 $\xi \in (a,b)$，使 $\frac{f(b) - f(a)}{g(b) - g(a)} = \frac{f^\prime(\xi)}{g^\prime(\xi)}$</li>
+</ul>
+<h3 id="3-2-洛必达法则">3.2 洛必达法则</h3>
+<p><strong>重要定理：</strong></p>
+<ul>
+<li>$\frac{0}{0}$ 型：若 $\lim\limits_{x \to a} f(x) = 0$，$\lim\limits_{x \to a} g(x) = 0$，且 $\lim\limits_{x \to a} \frac{f^\prime(x)}{g^\prime(x)}$ 存在（或为无穷大），则 $\lim\limits_{x \to a} \frac{f(x)}{g(x)} = \lim\limits_{x \to a} \frac{f^\prime(x)}{g^\prime(x)}$</li>
+<li>$\frac{\infty}{\infty}$ 型有类似结论</li>
+</ul>
+<h3 id="3-3-泰勒公式">3.3 泰勒公式</h3>
+<p><strong>重要定理：</strong></p>
+<ul>
+<li><strong>泰勒中值定理</strong>：若 $f(x)$ 在 $x_0$ 处有 $n$ 阶导数，则<br>
+$$f(x) = f(x_0) + f^\prime(x_0)(x - x_0) + \frac{f’^\prime(x_0)}{2!}(x - x_0)^2 + \cdots + \frac{f^{(n)}(x_0)}{n!}(x - x_0)^n + R_n(x)$$<br>
+其中 $R_n(x) = o((x - x_0)^n)$（佩亚诺余项）</li>
+</ul>
+<p><strong>常见展开式：</strong></p>
+<ul>
+<li>$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots + \frac{x^n}{n!} + o(x^n)$</li>
+<li>$\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots + (-1)^n \frac{x^{2n+1}}{(2n+1)!} + o(x^{2n+2})$</li>
+<li>$\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots + (-1)^n \frac{x^{2n}}{(2n)!} + o(x^{2n+1})$</li>
+<li>$\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1} \frac{x^n}{n} + o(x^n)$</li>
+</ul>
+<h3 id="3-4-函数单调性与极值">3.4 函数单调性与极值</h3>
+<p><strong>判定定理：</strong></p>
+<ul>
+<li>
+<p><strong>单调性</strong>：设 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导</p>
+<ul>
+<li>若在 $(a,b)$ 内 $f^\prime(x) &gt; 0$，则 $f(x)$ 在 $[a,b]$ 上单调增加</li>
+<li>若在 $(a,b)$ 内 $f^\prime(x) &lt; 0$，则 $f(x)$ 在 $[a,b]$ 上单调减少</li>
+</ul>
+</li>
+<li>
+<p><strong>极值第一充分条件</strong>：设 $f(x)$ 在 $x_0$ 处连续，在 $x_0$ 的某去心邻域内可导</p>
+<ul>
+<li>若 $x &lt; x_0$ 时 $f^\prime(x) &gt; 0$，$x &gt; x_0$ 时 $f^\prime(x) &lt; 0$，则 $f(x_0)$ 为极大值</li>
+<li>若 $x &lt; x_0$ 时 $f^\prime(x) &lt; 0$，$x &gt; x_0$ 时 $f^\prime(x) &gt; 0$，则 $f(x_0)$ 为极小值</li>
+</ul>
+</li>
+<li>
+<p><strong>极值第二充分条件</strong>：设 $f(x)$ 在 $x_0$ 处具有二阶导数，且 $f^\prime(x_0) = 0$，$f’^\prime(x_0) \neq 0$</p>
+<ul>
+<li>若 $f’^\prime(x_0) &lt; 0$，则 $f(x_0)$ 为极大值</li>
+<li>若 $f’^\prime(x_0) &gt; 0$，则 $f(x_0)$ 为极小值</li>
+</ul>
+</li>
+</ul>
+<h2 id="第四章-不定积分">第四章 不定积分</h2>
+<h3 id="4-1-不定积分概念">4.1 不定积分概念</h3>
+<p><strong>重要定义：</strong></p>
+<ul>
+<li><strong>原函数</strong>：若在区间 $I$ 上，$F^\prime(x) = f(x)$，则称 $F(x)$ 为 $f(x)$ 在 $I$ 上的原函数</li>
+<li><strong>不定积分</strong>：$f(x)$ 的全体原函数称为 $f(x)$ 的不定积分，记作 $\int f(x)dx = F(x) + C$</li>
+</ul>
+<p><strong>基本性质：</strong></p>
+<ul>
+<li>$\left[\int f(x)dx\right]’ = f(x)$</li>
+<li>$\int F^\prime(x)dx = F(x) + C$</li>
+<li>$\int kf(x)dx = k\int f(x)dx$（$k$ 为常数）</li>
+<li>$\int [f(x) \pm g(x)]dx = \int f(x)dx \pm \int g(x)dx$</li>
+</ul>
+<h3 id="4-2-基本积分公式">4.2 基本积分公式</h3>
+<p><strong>基本积分表：</strong></p>
+<ul>
+<li>$\int x^\mu dx = \frac{x^{\mu+1}}{\mu+1} + C$（$\mu \neq -1$）</li>
+<li>$\int \frac{1}{x}dx = \ln|x| + C$</li>
+<li>$\int a^x dx = \frac{a^x}{\ln a} + C$</li>
+<li>$\int e^x dx = e^x + C$</li>
+<li>$\int \sin x dx = -\cos x + C$</li>
+<li>$\int \cos x dx = \sin x + C$</li>
+<li>$\int \sec^2 x dx = \tan x + C$</li>
+<li>$\int \csc^2 x dx = -\cot x + C$</li>
+<li>$\int \frac{1}{\sqrt{1-x^2}}dx = \arcsin x + C$</li>
+<li>$\int \frac{1}{1+x^2}dx = \arctan x + C$</li>
+</ul>
+<h3 id="4-3-换元积分法">4.3 换元积分法</h3>
+<p><strong>第一类换元法（凑微分）：</strong><br>
+若 $\int f(u)du = F(u) + C$，且 $u = \varphi(x)$ 可导，则<br>
+$$\int f[\varphi(x)]\varphi^\prime(x)dx = F[\varphi(x)] + C$$</p>
+<p><strong>第二类换元法：</strong><br>
+设 $x = \psi(t)$ 单调可导，且 $\psi^\prime(t) \neq 0$，若 $\int f[\psi(t)]\psi^\prime(t)dt = F(t) + C$，则<br>
+$$\int f(x)dx = F[\psi^{-1}(x)] + C$$</p>
+<h3 id="4-4-分部积分法">4.4 分部积分法</h3>
+<p><strong>分部积分公式：</strong><br>
+$$\int u dv = uv - \int v du$$<br>
+或<br>
+$$\int uv’ dx = uv - \int u’v dx$$</p>
+<p><strong>常见应用：</strong></p>
+<ul>
+<li>$\int P_n(x)e^{ax}dx$，设 $u = P_n(x)$，$dv = e^{ax}dx$</li>
+<li>$\int P_n(x)\sin ax dx$ 或 $\int P_n(x)\cos ax dx$，设 $u = P_n(x)$</li>
+<li>$\int e^{ax}\sin bx dx$ 或 $\int e^{ax}\cos bx dx$，循环使用分部积分</li>
+</ul>
+<h2 id="第五章-定积分">第五章 定积分</h2>
+<h3 id="5-1-定积分概念">5.1 定积分概念</h3>
+<p><strong>重要定义：</strong></p>
+<ul>
+<li><strong>定积分</strong>：$\int_a^b f(x)dx = \lim\limits_{\lambda \to 0} \sum\limits_{i=1}^n f(\xi_i)\Delta x_i$，其中 $\lambda = \max{\Delta x_1, \Delta x_2, \cdots, \Delta x_n}$</li>
+</ul>
+<p><strong>几何意义：</strong></p>
+<ul>
+<li>曲边梯形的面积</li>
+</ul>
+<p><strong>可积充分条件：</strong></p>
+<ul>
+<li>若 $f(x)$ 在 $[a,b]$ 上连续，则 $f(x)$ 在 $[a,b]$ 上可积</li>
+<li>若 $f(x)$ 在 $[a,b]$ 上有界且只有有限个间断点，则 $f(x)$ 在 $[a,b]$ 上可积</li>
+</ul>
+<h3 id="5-2-定积分性质">5.2 定积分性质</h3>
+<p><strong>基本性质：</strong></p>
+<ul>
+<li>$\int_a^b [f(x) \pm g(x)]dx = \int_a^b f(x)dx \pm \int_a^b g(x)dx$</li>
+<li>$\int_a^b kf(x)dx = k\int_a^b f(x)dx$（$k$ 为常数）</li>
+<li>$\int_a^b f(x)dx = \int_a^c f(x)dx + \int_c^b f(x)dx$</li>
+<li>若在 $[a,b]$ 上 $f(x) \geq 0$，则 $\int_a^b f(x)dx \geq 0$</li>
+<li>若在 $[a,b]$ 上 $f(x) \leq g(x)$，则 $\int_a^b f(x)dx \leq \int_a^b g(x)dx$</li>
+</ul>
+<p><strong>积分中值定理：</strong></p>
+<ul>
+<li>若 $f(x)$ 在 $[a,b]$ 上连续，则存在 $\xi \in [a,b]$，使 $\int_a^b f(x)dx = f(\xi)(b-a)$</li>
+</ul>
+<h3 id="5-3-微积分基本公式">5.3 微积分基本公式</h3>
+<p><strong>重要定理：</strong></p>
+<ul>
+<li><strong>微积分基本定理</strong>：若 $f(x)$ 在 $[a,b]$ 上连续，则 $\Phi(x) = \int_a^x f(t)dt$ 在 $[a,b]$ 上可导，且 $\Phi^\prime(x) = f(x)$</li>
+</ul>
+<p><strong>证明思路：</strong><br>
+$$\Phi^\prime(x) = \lim_{\Delta x \to 0} \frac{\Phi(x+\Delta x) - \Phi(x)}{\Delta x} = \lim_{\Delta x \to 0} \frac{\int_x^{x+\Delta x} f(t)dt}{\Delta x}$$<br>
+由积分中值定理，存在 $\xi$ 介于 $x$ 与 $x+\Delta x$ 之间，使得<br>
+$$\frac{\int_x^{x+\Delta x} f(t)dt}{\Delta x} = f(\xi)$$<br>
+当 $\Delta x \to 0$ 时，$\xi \to x$，由 $f(x)$ 的连续性得 $\Phi^\prime(x) = f(x)$</p>
+<ul>
+<li><strong>牛顿-莱布尼茨公式</strong>：若 $F(x)$ 是 $f(x)$ 在 $[a,b]$ 上的一个原函数，则<br>
+$$\int_a^b f(x)dx = F(b) - F(a)$$</li>
+</ul>
+<h3 id="5-4-定积分换元法与分部积分法">5.4 定积分换元法与分部积分法</h3>
+<p><strong>换元公式：</strong><br>
+设 $f(x)$ 在 $[a,b]$ 上连续，$x = \varphi(t)$ 满足：</p>
+<ol>
+<li>$\varphi(\alpha) = a$，$\varphi(\beta) = b$</li>
+<li>$\varphi(t)$ 在 $[\alpha,\beta]$（或 $[\beta,\alpha]$）上具有连续导数，且值域包含于 $[a,b]$<br>
+则<br>
+$$\int_a^b f(x)dx = \int_\alpha^\beta f[\varphi(t)]\varphi^\prime(t)dt$$</li>
+</ol>
+<p><strong>分部积分公式：</strong><br>
+$$\int_a^b u(x)v^\prime(x)dx = [u(x)v(x)]\bigg|_a^b - \int_a^b u^\prime(x)v(x)dx$$</p>
+<h2 id="第六章-定积分的应用">第六章 定积分的应用</h2>
+<h3 id="6-1-平面图形面积">6.1 平面图形面积</h3>
+<p><strong>直角坐标系：</strong></p>
+<ul>
+<li>由曲线 $y = f(x)$，$y = g(x)$ 及直线 $x = a$，$x = b$ 所围图形面积：<br>
+$$S = \int_a^b |f(x) - g(x)|dx$$</li>
+</ul>
+<p><strong>极坐标系：</strong></p>
+<ul>
+<li>由曲线 $r = r(\theta)$ 及射线 $\theta = \alpha$，$\theta = \beta$ 所围图形面积：<br>
+$$S = \frac{1}{2}\int_\alpha^\beta r^2(\theta)d\theta$$</li>
+</ul>
+<h3 id="6-2-体积">6.2 体积</h3>
+<p><strong>旋转体体积：</strong></p>
+<ul>
+<li>由曲线 $y = f(x)$，直线 $x = a$，$x = b$ 及 $x$ 轴所围图形绕 $x$ 轴旋转一周所得旋转体体积：<br>
+$$V = \pi\int_a^b [f(x)]^2dx$$</li>
+</ul>
+<p><strong>平行截面面积已知的立体体积：</strong></p>
+<ul>
+<li>过点 $x$ 且垂直于 $x$ 轴的截面面积为 $A(x)$，则立体体积：<br>
+$$V = \int_a^b A(x)dx$$</li>
+</ul>
+<h3 id="6-3-平面曲线弧长">6.3 平面曲线弧长</h3>
+<p><strong>直角坐标系：</strong></p>
+<ul>
+<li>曲线 $y = f(x)$（$a \leq x \leq b$）的弧长：<br>
+$$s = \int_a^b \sqrt{1 + [f^\prime(x)]^2}dx$$</li>
+</ul>
+<p><strong>参数方程：</strong></p>
+<ul>
+<li>曲线 $\begin{cases} x = \varphi(t) \ y = \psi(t) \end{cases}$（$\alpha \leq t \leq \beta$）的弧长：<br>
+$$s = \int_\alpha^\beta \sqrt{[\varphi^\prime(t)]^2 + [\psi^\prime(t)]^2}dt$$</li>
+</ul>
+<p><strong>极坐标系：</strong></p>
+<ul>
+<li>曲线 $r = r(\theta)$（$\alpha \leq \theta \leq \beta$）的弧长：<br>
+$$s = \int_\alpha^\beta \sqrt{[r(\theta)]^2 + [r^\prime(\theta)]^2}d\theta$$</li>
+</ul>
+<h2 id="第七章-微分方程">第七章 微分方程</h2>
+<h3 id="7-1-微分方程基本概念">7.1 微分方程基本概念</h3>
+<p><strong>重要定义：</strong></p>
+<ul>
+<li><strong>微分方程</strong>：表示未知函数、未知函数的导数与自变量之间关系的方程</li>
+<li><strong>阶</strong>：微分方程中出现的未知函数的最高阶导数的阶数</li>
+<li><strong>解</strong>：代入微分方程能使该方程成为恒等式的函数</li>
+<li><strong>通解</strong>：含有与微分方程阶数相同个数的独立任意常数的解</li>
+<li><strong>特解</strong>：确定了通解中任意常数后的解</li>
+</ul>
+<h3 id="7-2-一阶微分方程">7.2 一阶微分方程</h3>
+<h4 id="可分离变量方程">可分离变量方程</h4>
+<p><strong>形式：</strong> $\frac{dy}{dx} = f(x)g(y)$</p>
+<p><strong>解法：</strong><br>
+$$\frac{dy}{g(y)} = f(x)dx \quad (g(y) \neq 0)$$<br>
+$$\int \frac{dy}{g(y)} = \int f(x)dx + C$$</p>
+<h4 id="齐次方程">齐次方程</h4>
+<p><strong>形式：</strong> $\frac{dy}{dx} = \varphi\left(\frac{y}{x}\right)$</p>
+<p><strong>解法：</strong><br>
+令 $u = \frac{y}{x}$，则 $y = ux$，$\frac{dy}{dx} = u + x\frac{du}{dx}$<br>
+代入得：$u + x\frac{du}{dx} = \varphi(u)$<br>
+$$\frac{du}{\varphi(u) - u} = \frac{dx}{x}$$</p>
+<h4 id="一阶线性微分方程">一阶线性微分方程</h4>
+<p><strong>形式：</strong> $\frac{dy}{dx} + P(x)y = Q(x)$</p>
+<p><strong>通解公式：</strong><br>
+$$y = e^{-\int P(x)dx}\left[\int Q(x)e^{\int P(x)dx}dx + C\right]$$</p>
+<p><strong>推导：</strong><br>
+两边同乘积分因子 $e^{\int P(x)dx}$：<br>
+$$e^{\int P(x)dx}\frac{dy}{dx} + P(x)e^{\int P(x)dx}y = Q(x)e^{\int P(x)dx}$$<br>
+左边为 $\frac{d}{dx}\left(ye^{\int P(x)dx}\right)$，积分即得通解</p>
+<h4 id="伯努利方程">伯努利方程</h4>
+<p><strong>形式：</strong> $\frac{dy}{dx} + P(x)y = Q(x)y^n \quad (n \neq 0,1)$</p>
+<p><strong>解法：</strong><br>
+令 $z = y^{1-n}$，则 $\frac{dz}{dx} = (1-n)y^{-n}\frac{dy}{dx}$<br>
+化为线性方程：$\frac{dz}{dx} + (1-n)P(x)z = (1-n)Q(x)$</p>
+<h3 id="7-3-可降阶的高阶微分方程">7.3 可降阶的高阶微分方程</h3>
+<h4 id="y-n-f-x-型">$y^{(n)} = f(x)$ 型</h4>
+<p><strong>解法：</strong> 连续积分 $n$ 次<br>
+$$y^{(n-1)} = \int f(x)dx + C_1$$<br>
+$$y^{(n-2)} = \int\left[\int f(x)dx + C_1\right]dx + C_2$$<br>
+依此类推</p>
+<h4 id="y’’-f-x-y’-型（不显含-y-）">$y’’ = f(x, y’)$ 型（不显含 $y$）</h4>
+<p><strong>解法：</strong> 令 $y’ = p$，则 $y’’ = \frac{dp}{dx}$<br>
+化为：$\frac{dp}{dx} = f(x, p)$（一阶方程）</p>
+<h4 id="y’’-f-y-y’-型（不显含-x-）">$y’’ = f(y, y’)$ 型（不显含 $x$）</h4>
+<p><strong>解法：</strong> 令 $y’ = p$，则 $y’’ = \frac{dp}{dx} = \frac{dp}{dy}\frac{dy}{dx} = p\frac{dp}{dy}$<br>
+化为：$p\frac{dp}{dy} = f(y, p)$（一阶方程）</p>
+<h3 id="7-4-高阶线性微分方程">7.4 高阶线性微分方程</h3>
+<h4 id="基本概念">基本概念</h4>
+<p><strong>形式：</strong> $y^{(n)} + a_1(x)y^{(n-1)} + \cdots + a_{n-1}(x)y’ + a_n(x)y = f(x)$</p>
+<p><strong>齐次方程：</strong> $f(x) = 0$<br>
+<strong>非齐次方程：</strong> $f(x) \neq 0$</p>
+<h4 id="解的结构">解的结构</h4>
+<p><strong>齐次方程：</strong></p>
+<ul>
+<li>叠加原理：若 $y_1, y_2, \cdots, y_n$ 是解，则它们的线性组合也是解</li>
+<li>通解结构：$y = C_1y_1 + C_2y_2 + \cdots + C_ny_n$</li>
+</ul>
+<p><strong>非齐次方程：</strong></p>
+<ul>
+<li>通解结构：$y = Y + y^<em>$，其中 $Y$ 是对应齐次方程的通解，$y^</em>$ 是非齐次方程的特解</li>
+</ul>
+<h4 id="常数变易法">常数变易法</h4>
+<p>用于求解非齐次线性方程的特解</p>
+<h3 id="7-5-常系数线性微分方程">7.5 常系数线性微分方程</h3>
+<h4 id="二阶常系数齐次线性方程">二阶常系数齐次线性方程</h4>
+<p><strong>形式：</strong> $y’’ + py’ + qy = 0$</p>
+<p><strong>特征方程：</strong> $r^2 + pr + q = 0$</p>
+<p><strong>通解情况：</strong></p>
+<ol>
+<li>两个不等实根 $r_1 \neq r_2$：$y = C_1e^{r_1x} + C_2e^{r_2x}$</li>
+<li>两个相等实根 $r_1 = r_2$：$y = (C_1 + C_2x)e^{r_1x}$</li>
+<li>一对共轭复根 $r = \alpha \pm i\beta$：$y = e^{\alpha x}(C_1\cos\beta x + C_2\sin\beta x)$</li>
+</ol>
+<h4 id="二阶常系数非齐次线性方程">二阶常系数非齐次线性方程</h4>
+<p><strong>形式：</strong> $y’’ + py’ + qy = f(x)$</p>
+<p><strong>特解求法（待定系数法）：</strong></p>
+<p><strong>$f(x) = P_m(x)e^{\lambda x}$ 型：</strong><br>
+设特解 $y^* = x^kQ_m(x)e^{\lambda x}$，其中：</p>
+<ul>
+<li>$k = 0$ 当 $\lambda$ 不是特征根</li>
+<li>$k = 1$ 当 $\lambda$ 是单特征根</li>
+<li>$k = 2$ 当 $\lambda$ 是重特征根</li>
+</ul>
+<p><strong>$f(x) = e^{\alpha x}[P_l(x)\cos\beta x + P_n(x)\sin\beta x]$ 型：</strong><br>
+设特解 $y^* = x^ke^{\alpha x}[R_m^{(1)}(x)\cos\beta x + R_m^{(2)}(x)\sin\beta x]$，其中 $m = \max(l, n)$</p>
+<ul>
+<li>$k = 0$ 当 $\alpha \pm i\beta$ 不是特征根</li>
+<li>$k = 1$ 当 $\alpha \pm i\beta$ 是特征根</li>
+</ul>
+<h4 id="欧拉方程">欧拉方程</h4>
+<p><strong>形式：</strong> $x^ny^{(n)} + a_1x^{n-1}y^{(n-1)} + \cdots + a_{n-1}xy’ + a_ny = 0$</p>
+<p><strong>解法：</strong> 令 $x = e^t$，则方程化为常系数线性方程</p>
+<h3 id="7-6-微分方程应用">7.6 微分方程应用</h3>
+<h4 id="几何应用">几何应用</h4>
+<ul>
+<li>已知曲线切线、法线等几何性质建立微分方程</li>
+</ul>
+<h4 id="物理应用">物理应用</h4>
+<ul>
+<li>牛顿第二定律：$m\frac{d^2s}{dt^2} = F$</li>
+<li>RC电路：$RC\frac{du_c}{dt} + u_c = E$</li>
+<li>弹簧振动：$m\frac{d^2x}{dt^2} + c\frac{dx}{dt} + kx = F(t)$</li>
+</ul>
+<h4 id="人口模型">人口模型</h4>
+<ul>
+<li>马尔萨斯模型：$\frac{dP}{dt} = kP$</li>
+<li>逻辑斯蒂模型：$\frac{dP}{dt} = kP\left(1 - \frac{P}{M}\right)$</li>
+</ul>
+]]></content>
+      <categories>
+        <category>高等数学</category>
+      </categories>
+      <tags>
+        <tag>高等数学</tag>
+        <tag>微积分</tag>
+        <tag>应试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>局部解剖学札记</title>
+    <url>/2025/10/12/RegionalAnatomy/</url>
+    <content><![CDATA[<h1>颈部</h1>
+<h2 id="颈前区">颈前区</h2>
+<h3 id="舌骨上区">舌骨上区</h3>
+<h4 id="下颌下三角">下颌下三角</h4>
+<h4 id="舌骨上肌群">舌骨上肌群</h4>
+<h3 id="舌骨下区">舌骨下区</h3>
+<h4 id="颈动脉三角">颈动脉三角</h4>
+<h4 id="肌三角">肌三角</h4>
+<h2 id="胸锁乳突肌区-sternocleidomastoid-region">胸锁乳突肌区 sternocleidomastoid region</h2>
+<h3 id="范围">范围</h3>
+<p>该肌在颈部所在及覆盖的区域</p>
+<h3 id="内容">内容</h3>
+<ul>
+<li>
+<p>颈动脉鞘 carotid sheath</p>
+<ul>
+<li>
+<p>上起自颅底部，下至颈根部续于纵隔的颈筋膜。</p>
+</li>
+<li>
+<p>鞘内有颈内静脉和迷走神经贯通全长，颈内动脉行于鞘的上部，颈总动脉行于鞘的下部。</p>
+</li>
+<li>
+<p>鞘的下部，颈总动脉居后内侧，颈内静脉居前外侧，迷走神经位于两者之间的后外方。</p>
+</li>
+<li>
+<p>鞘的上部，颈内动脉位于前内侧，颈内静脉在动脉的后外方，迷走神经在两者之间的后内方。</p>
+</li>
+<li>
+<p>后方：胸锁乳突肌、胸骨舌骨肌、胸骨甲状肌、肩胛舌骨肌下腹、颈袢（或鞘内）和甲状腺上、中静脉。</p>
+</li>
+<li>
+<p>后方：有甲状腺下动脉越过，左侧还有胸导管弓，隔椎前筋膜有颈交感干、椎前肌和颈椎横突等。</p>
+</li>
+<li>
+<p>内侧：咽和食管、喉与气管、甲状腺侧叶和喉返神经。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>颈袢 cervical ansa</p>
+<ul>
+<li>
+<p>由 C1-3 的前支构成</p>
+</li>
+<li>
+<p>C1 前支部分纤维随舌下神经走行，在颈动脉三角内离开舌下神经，称为 <strong>舌下神经降支</strong> 。沿颈内动脉及经总动脉前面下行，又名 <strong>颈袢上根</strong> 。</p>
+</li>
+<li>
+<p>C2-3 前支经过颈丛联合发出降支，称为 <strong>颈袢下根</strong> ，沿颈内静脉浅面或深面下行。</p>
+</li>
+<li>
+<p>颈袢上下两根在肩胛舌骨肌中间腱上缘，平环状软骨弓水平，在颈动脉鞘浅面或鞘内合成颈袢。</p>
+</li>
+<li>
+<p>颈袢发支支配肩胛舌骨肌、胸骨舌骨肌和胸骨甲状肌。</p>
+</li>
+<li>
+<p>甲状腺手术多平环状软骨切断舌骨下诸肌，可避免损伤颈袢肌支。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>颈丛 cervical plexus</p>
+<ul>
+<li>C1-4 颈神经前支构成。胸锁乳突肌上部深面，中斜角肌和肩胛提肌深面。</li>
+</ul>
+</li>
+<li>
+<p>颈交感干 cervical part of sympthetic trunk</p>
+<ul>
+<li>
+<p>由颈上、中、下交感神经节及节间支构成。</p>
+</li>
+<li>
+<p>位于脊柱颈部两侧，椎前筋膜深面。</p>
+</li>
+<li>
+<p>**</p>
+</li>
+<li></li>
+<li></li>
+<li>
+<p>上述三神经节各发出一心支参与心丛的构成。颈交感干受压，可出现霍纳综合征。</p>
+</li>
+</ul>
+</li>
+<li>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">肌群</th>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">起点</th>
+<th style="text-align:center">止点</th>
+<th style="text-align:center">作用</th>
+<th style="text-align:center">神经支配</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">颈浅肌</td>
+<td style="text-align:center">颈阔肌</td>
+<td style="text-align:center">胸大肌筋膜 <br> 三角肌筋膜</td>
+<td style="text-align:center">下颌骨下缘 <br> 腮腺咬肌区筋膜</td>
+<td style="text-align:center">紧张颈部皮肤</td>
+<td style="text-align:center">面神经颈支</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="颈根部">颈根部</h2>
+<h2 id="颈外侧区">颈外侧区</h2>
+<h4 id="枕三角">枕三角</h4>
+<h4 id="锁骨上三角">锁骨上三角</h4>
+<h2 id="颈根部-2">颈根部</h2>
+]]></content>
+      <categories>
+        <category>解剖学</category>
+      </categories>
+      <tags>
+        <tag>解剖学</tag>
+        <tag>局部解剖学</tag>
+        <tag>札记</tag>
+      </tags>
   </entry>
   <entry>
     <title>R语言语法</title>
@@ -1295,136 +1425,6 @@ $$y^{(n-2)} = \int\left[\int f(x)dx + C_1\right]dx + C_2$$<br>
       <tags>
         <tag>R</tag>
         <tag>绘图</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>局部解剖学札记</title>
-    <url>/2025/10/12/RegionalAnatomy/</url>
-    <content><![CDATA[<h1>颈部</h1>
-<h2 id="颈前区">颈前区</h2>
-<h3 id="舌骨上区">舌骨上区</h3>
-<h4 id="下颌下三角">下颌下三角</h4>
-<h4 id="舌骨上肌群">舌骨上肌群</h4>
-<h3 id="舌骨下区">舌骨下区</h3>
-<h4 id="颈动脉三角">颈动脉三角</h4>
-<h4 id="肌三角">肌三角</h4>
-<h2 id="胸锁乳突肌区-sternocleidomastoid-region">胸锁乳突肌区 sternocleidomastoid region</h2>
-<h3 id="范围">范围</h3>
-<p>该肌在颈部所在及覆盖的区域</p>
-<h3 id="内容">内容</h3>
-<ul>
-<li>
-<p>颈动脉鞘 carotid sheath</p>
-<ul>
-<li>
-<p>上起自颅底部，下至颈根部续于纵隔的颈筋膜。</p>
-</li>
-<li>
-<p>鞘内有颈内静脉和迷走神经贯通全长，颈内动脉行于鞘的上部，颈总动脉行于鞘的下部。</p>
-</li>
-<li>
-<p>鞘的下部，颈总动脉居后内侧，颈内静脉居前外侧，迷走神经位于两者之间的后外方。</p>
-</li>
-<li>
-<p>鞘的上部，颈内动脉位于前内侧，颈内静脉在动脉的后外方，迷走神经在两者之间的后内方。</p>
-</li>
-<li>
-<p>后方：胸锁乳突肌、胸骨舌骨肌、胸骨甲状肌、肩胛舌骨肌下腹、颈袢（或鞘内）和甲状腺上、中静脉。</p>
-</li>
-<li>
-<p>后方：有甲状腺下动脉越过，左侧还有胸导管弓，隔椎前筋膜有颈交感干、椎前肌和颈椎横突等。</p>
-</li>
-<li>
-<p>内侧：咽和食管、喉与气管、甲状腺侧叶和喉返神经。</p>
-</li>
-</ul>
-</li>
-<li>
-<p>颈袢 cervical ansa</p>
-<ul>
-<li>
-<p>由 C1-3 的前支构成</p>
-</li>
-<li>
-<p>C1 前支部分纤维随舌下神经走行，在颈动脉三角内离开舌下神经，称为 <strong>舌下神经降支</strong> 。沿颈内动脉及经总动脉前面下行，又名 <strong>颈袢上根</strong> 。</p>
-</li>
-<li>
-<p>C2-3 前支经过颈丛联合发出降支，称为 <strong>颈袢下根</strong> ，沿颈内静脉浅面或深面下行。</p>
-</li>
-<li>
-<p>颈袢上下两根在肩胛舌骨肌中间腱上缘，平环状软骨弓水平，在颈动脉鞘浅面或鞘内合成颈袢。</p>
-</li>
-<li>
-<p>颈袢发支支配肩胛舌骨肌、胸骨舌骨肌和胸骨甲状肌。</p>
-</li>
-<li>
-<p>甲状腺手术多平环状软骨切断舌骨下诸肌，可避免损伤颈袢肌支。</p>
-</li>
-</ul>
-</li>
-<li>
-<p>颈丛 cervical plexus</p>
-<ul>
-<li>C1-4 颈神经前支构成。胸锁乳突肌上部深面，中斜角肌和肩胛提肌深面。</li>
-</ul>
-</li>
-<li>
-<p>颈交感干 cervical part of sympthetic trunk</p>
-<ul>
-<li>
-<p>由颈上、中、下交感神经节及节间支构成。</p>
-</li>
-<li>
-<p>位于脊柱颈部两侧，椎前筋膜深面。</p>
-</li>
-<li>
-<p>**</p>
-</li>
-<li></li>
-<li></li>
-<li>
-<p>上述三神经节各发出一心支参与心丛的构成。颈交感干受压，可出现霍纳综合征。</p>
-</li>
-</ul>
-</li>
-<li>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">肌群</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">起点</th>
-<th style="text-align:center">止点</th>
-<th style="text-align:center">作用</th>
-<th style="text-align:center">神经支配</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">颈浅肌</td>
-<td style="text-align:center">颈阔肌</td>
-<td style="text-align:center">胸大肌筋膜 <br> 三角肌筋膜</td>
-<td style="text-align:center">下颌骨下缘 <br> 腮腺咬肌区筋膜</td>
-<td style="text-align:center">紧张颈部皮肤</td>
-<td style="text-align:center">面神经颈支</td>
-</tr>
-</tbody>
-</table>
-</li>
-</ul>
-<h2 id="颈根部">颈根部</h2>
-<h2 id="颈外侧区">颈外侧区</h2>
-<h4 id="枕三角">枕三角</h4>
-<h4 id="锁骨上三角">锁骨上三角</h4>
-<h2 id="颈根部-2">颈根部</h2>
-]]></content>
-      <categories>
-        <category>解剖学</category>
-      </categories>
-      <tags>
-        <tag>解剖学</tag>
-        <tag>局部解剖学</tag>
-        <tag>札记</tag>
       </tags>
   </entry>
   <entry>
