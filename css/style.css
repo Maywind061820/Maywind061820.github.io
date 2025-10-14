@@ -2513,6 +2513,8 @@ pre .javascript .function {
   font-family: "iconfont";
   box-shadow: var(--shadow-card-hover);
   z-index: 999;
+  left: 30px;
+  right: auto;
 }
 .sidebar-top .sidebar-top-taichi {
   width: 48px;
