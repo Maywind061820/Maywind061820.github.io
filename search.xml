@@ -1703,7 +1703,7 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v600 v585 h43z"/></svg></span></span>
       </tags>
   </entry>
   <entry>
-    <title></title>
+    <title>基本组织学</title>
     <url>/2025/10/17/medicine/BasicHistology/</url>
     <content><![CDATA[<h1 id="上皮组织"><a class="markdownIt-Anchor" href="#上皮组织"></a> 上皮组织</h1>
 <h1 id="固有结缔组织"><a class="markdownIt-Anchor" href="#固有结缔组织"></a> 固有结缔组织</h1>
@@ -1712,6 +1712,14 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v600 v585 h43z"/></svg></span></span>
 <h1 id="肌组织"><a class="markdownIt-Anchor" href="#肌组织"></a> 肌组织</h1>
 <h1 id="神经组织"><a class="markdownIt-Anchor" href="#神经组织"></a> 神经组织</h1>
 ]]></content>
+      <categories>
+        <category>基础医学</category>
+        <category>组织学</category>
+      </categories>
+      <tags>
+        <tag>人体结构与功能基础</tag>
+        <tag>组织学</tag>
+      </tags>
   </entry>
   <entry>
     <title>局部解剖学-颈部</title>
@@ -1940,7 +1948,7 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v600 v585 h43z"/></svg></span></span>
       </tags>
   </entry>
   <entry>
-    <title></title>
+    <title>细胞的适应、损伤与修复</title>
     <url>/2025/10/17/medicine/IntroductionPathology/</url>
     <content><![CDATA[<h1 id="适应-adaptation"><a class="markdownIt-Anchor" href="#适应-adaptation"></a> 适应 adaptation</h1>
 <h2 id="肥大-hypertrophy"><a class="markdownIt-Anchor" href="#肥大-hypertrophy"></a> 肥大 hypertrophy</h2>
@@ -2211,6 +2219,14 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v600 v585 h43z"/></svg></span></span>
 <h3 id="钙化"><a class="markdownIt-Anchor" href="#钙化"></a> 钙化</h3>
 <h2 id="凋亡-apoptosis"><a class="markdownIt-Anchor" href="#凋亡-apoptosis"></a> 凋亡 apoptosis</h2>
 ]]></content>
+      <categories>
+        <category>基础医学</category>
+        <category>病理学</category>
+      </categories>
+      <tags>
+        <tag>病理学</tag>
+        <tag>人体结构与功能基础</tag>
+      </tags>
   </entry>
   <entry>
     <title>生信速通deepseek</title>
