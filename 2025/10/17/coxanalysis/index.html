@@ -17,7 +17,7 @@
   <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_4k4bc36ef96';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';</script>
   
   <title>
-    局部解剖学-胸部 |
+    COX比例风险模型 |
     
     May_wind&#39;s Blog
   </title>
@@ -35,18 +35,17 @@
 
   
   
-    <meta name="description" content="概述  胸壁  膈  胸腔  纵隔 mediastinum  上纵隔   从前到后分为3层  前层：胸腺、上腔静脉、左右头臂静脉 中层：主动脉弓及其三大分支、膈神经、迷走神经 后层：器官、食管、胸导管、胸交感干、左喉返神经    胸腺 thymus  位置：上纵隔前层，胸腺三角内。 范围：上达胸廓上口，下至前纵隔，前邻胸骨，后附着于心包和大血管。 血管：动脉来自胸廓内动脉和甲状腺下动脉的分支，伴">
+    <meta name="description" content="您的要求非常合理。我将从数学专业的角度，深入剖析Cox回归模型的起源、推导和计算过程。  Cox比例风险模型的数学原理深度解析  1. 模型的定义与动机 Cox模型的核心是风险函数。在生存分析中，风险函数 λ(t)（或称 h(t)）定义为： λ(t) &#x3D; lim (Δt→0) [ P(t ≤ T &lt; t+Δt | T ≥ t) &#x2F; Δt ] 它表示一个个体在存活到时间 t 的前提下，在接下来">
 <meta property="og:type" content="article">
-<meta property="og:title" content="局部解剖学-胸部">
-<meta property="og:url" content="http://example.com/2025/10/12/medicine/AnatomyThorax/index.html">
+<meta property="og:title" content="COX比例风险模型">
+<meta property="og:url" content="http://example.com/2025/10/17/coxanalysis/index.html">
 <meta property="og:site_name" content="May_wind&#39;s Blog">
-<meta property="og:description" content="概述  胸壁  膈  胸腔  纵隔 mediastinum  上纵隔   从前到后分为3层  前层：胸腺、上腔静脉、左右头臂静脉 中层：主动脉弓及其三大分支、膈神经、迷走神经 后层：器官、食管、胸导管、胸交感干、左喉返神经    胸腺 thymus  位置：上纵隔前层，胸腺三角内。 范围：上达胸廓上口，下至前纵隔，前邻胸骨，后附着于心包和大血管。 血管：动脉来自胸廓内动脉和甲状腺下动脉的分支，伴">
+<meta property="og:description" content="您的要求非常合理。我将从数学专业的角度，深入剖析Cox回归模型的起源、推导和计算过程。  Cox比例风险模型的数学原理深度解析  1. 模型的定义与动机 Cox模型的核心是风险函数。在生存分析中，风险函数 λ(t)（或称 h(t)）定义为： λ(t) &#x3D; lim (Δt→0) [ P(t ≤ T &lt; t+Δt | T ≥ t) &#x2F; Δt ] 它表示一个个体在存活到时间 t 的前提下，在接下来">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-10-12T02:00:00.000Z">
-<meta property="article:modified_time" content="2025-10-16T14:10:48.814Z">
+<meta property="article:published_time" content="2025-10-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-10-17T10:58:01.691Z">
 <meta property="article:author" content="May_wind">
-<meta property="article:tag" content="解剖学">
-<meta property="article:tag" content="局部解剖学">
+<meta property="article:tag" content="生物信息学">
 <meta name="twitter:card" content="summary">
   
   
@@ -202,7 +201,7 @@
           
         </picture>
         
-          <img  fetchpriority="high" src="/images/banner.webp" alt="局部解剖学-胸部">
+          <img  fetchpriority="high" src="/images/banner.webp" alt="COX比例风险模型">
         
       
     
@@ -213,7 +212,7 @@
         
         
           <span id="logo">
-            <h1 data-aos="slide-up">局部解剖学-胸部</h1>
+            <h1 data-aos="slide-up">COX比例风险模型</h1>
           </span>
         
       
@@ -243,7 +242,7 @@
           <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
 <div class="sidebar-toc-wrapper toc-div-class" >
   
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-text"> 概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%83%B8%E5%A3%81"><span class="toc-text"> 胸壁</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%86%88"><span class="toc-text"> 膈</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%83%B8%E8%85%94"><span class="toc-text"> 胸腔</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%B5%E9%9A%94-mediastinum"><span class="toc-text"> 纵隔 mediastinum</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E7%BA%B5%E9%9A%94"><span class="toc-text"> 上纵隔</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E8%85%94%E9%9D%99%E8%84%89"><span class="toc-text"> 上腔静脉</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E7%BA%B5%E9%9A%94"><span class="toc-text"> 下纵隔</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E7%BA%B5%E9%9A%94"><span class="toc-text"> 前纵隔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E7%BA%B5%E9%9A%94"><span class="toc-text"> 中纵隔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E7%BA%B5%E9%9A%94"><span class="toc-text"> 后纵隔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%B5%E9%9A%94%E9%97%B4%E9%9A%99"><span class="toc-text"> 纵隔间隙</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%B5%E9%9A%94%E5%86%85%E6%B7%8B%E5%B7%B4%E7%BB%93"><span class="toc-text"> 纵隔内淋巴结</span></a></li></ol></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#cox%E6%AF%94%E4%BE%8B%E9%A3%8E%E9%99%A9%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90"><span class="toc-text"> Cox比例风险模型的数学原理深度解析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AE%9A%E4%B9%89%E4%B8%8E%E5%8A%A8%E6%9C%BA"><span class="toc-text"> 1. 模型的定义与动机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%81%8F%E4%BC%BC%E7%84%B6%E5%87%BD%E6%95%B0%E7%9A%84%E6%8E%A8%E5%AF%BC%E6%95%B0%E5%AD%A6%E8%B5%B7%E6%BA%90"><span class="toc-text"> 2. 偏似然函数的推导：数学起源</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E7%B3%BB%E6%95%B0-%CE%B2"><span class="toc-text"> 3. 参数估计：如何计算系数 β</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E7%BB%93%E6%9E%9C%E8%A7%A3%E8%AF%BB%E4%B8%8E%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD"><span class="toc-text"> 4. 结果解读与统计推断</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text"> 总结</span></a></li></ol></li></ol>
   
 </div>
 </div>
@@ -336,20 +335,20 @@
   
 </aside>
 
-          <section id="main" aria-label="Main content"><article id="post-medicine/AnatomyThorax" class="h-entry article" itemscope itemtype="https://schema.org/BlogPosting">
+          <section id="main" aria-label="Main content"><article id="post-coxanalysis" class="h-entry article" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner" data-aos="fade-up">
     <div class="article-meta">
       <div class="article-date">
   <span class="article-date-link icon-calendar" data-aos="zoom-in">
-    <time datetime="2025-10-12T02:00:00.000Z" itemprop="datePublished">2025-10-12</time>
-    <time style="display: none;" id="post-update-time">2025-10-16</time>
+    <time datetime="2025-10-16T16:00:00.000Z" itemprop="datePublished">2025-10-17</time>
+    <time style="display: none;" id="post-update-time">2025-10-17</time>
   </span>
   
 </div>
 
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%9F%BA%E7%A1%80%E5%8C%BB%E5%AD%A6/" title="基础医学">基础医学</a><a class="article-category-link" href="/categories/%E5%9F%BA%E7%A1%80%E5%8C%BB%E5%AD%A6/%E8%A7%A3%E5%89%96%E5%AD%A6/" title="解剖学">解剖学</a><a class="article-category-link" href="/categories/%E5%9F%BA%E7%A1%80%E5%8C%BB%E5%AD%A6/%E8%A7%A3%E5%89%96%E5%AD%A6/%E5%B1%80%E9%83%A8%E8%A7%A3%E5%89%96%E5%AD%A6/" title="局部解剖学">局部解剖学</a>
+    <a class="article-category-link" href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/" title="生物信息学">生物信息学</a>
   </div>
 
 
@@ -361,89 +360,86 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
       
-        <h1 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h1>
-<h1 id="胸壁"><a class="markdownIt-Anchor" href="#胸壁"></a> 胸壁</h1>
-<h1 id="膈"><a class="markdownIt-Anchor" href="#膈"></a> 膈</h1>
-<h1 id="胸腔"><a class="markdownIt-Anchor" href="#胸腔"></a> 胸腔</h1>
-<h1 id="纵隔-mediastinum"><a class="markdownIt-Anchor" href="#纵隔-mediastinum"></a> 纵隔 mediastinum</h1>
-<h2 id="上纵隔"><a class="markdownIt-Anchor" href="#上纵隔"></a> 上纵隔</h2>
+        <p>您的要求非常合理。我将从数学专业的角度，深入剖析Cox回归模型的起源、推导和计算过程。</p>
+<h3 id="cox比例风险模型的数学原理深度解析"><a class="markdownIt-Anchor" href="#cox比例风险模型的数学原理深度解析"></a> <strong>Cox比例风险模型的数学原理深度解析</strong></h3>
+<h4 id="1-模型的定义与动机"><a class="markdownIt-Anchor" href="#1-模型的定义与动机"></a> <strong>1. 模型的定义与动机</strong></h4>
+<p>Cox模型的核心是<strong>风险函数</strong>。在生存分析中，风险函数 <code>λ(t)</code>（或称 <code>h(t)</code>）定义为：</p>
+<p><code>λ(t) = lim (Δt→0) [ P(t ≤ T &lt; t+Δt | T ≥ t) / Δt ]</code></p>
+<p>它表示一个个体在存活到时间 <code>t</code> 的前提下，在接下来极短的单位时间内发生事件的瞬时概率。</p>
+<p>David Cox在1972年提出的关键思想是将风险函数分解为两个独立的部分：</p>
+<p><code>λ(t|X) = λ₀(t) * exp(βᵀX)</code></p>
+<p>其中：</p>
 <ul>
-<li>
-<p>从前到后分为3层</p>
+<li><strong><code>λ₀(t)</code></strong>：<strong>基准风险函数</strong>，是任意形式的、只与时间 <code>t</code> 有关的函数。它代表了当所有协变量 <code>X</code> 都为0时的风险。</li>
+<li><strong><code>exp(βᵀX)</code></strong>：<strong>风险比</strong>，是一个与时间无关的、由协变量 <code>X</code> 线性组合的指数函数。<code>β</code> 是待估计的系数向量。</li>
+</ul>
+<p>这种分解的<strong>动机</strong>在于：</p>
 <ul>
-<li>前层：胸腺、上腔静脉、左右头臂静脉</li>
-<li>中层：主动脉弓及其三大分支、膈神经、迷走神经</li>
-<li>后层：器官、食管、胸导管、胸交感干、左喉返神经</li>
+<li>我们通常关心的是协变量 <code>X</code>（如治疗方案、年龄）对风险的<strong>相对影响</strong>，而非风险的绝对水平。</li>
+<li>通过这种形式，我们无需对复杂且通常未知的 <code>λ₀(t)</code> 做出任何参数假设（如它是指数分布或威布尔分布），从而使模型非常灵活，被称为<strong>半参数模型</strong>。</li>
+</ul>
+<h4 id="2-偏似然函数的推导数学起源"><a class="markdownIt-Anchor" href="#2-偏似然函数的推导数学起源"></a> <strong>2. 偏似然函数的推导：数学起源</strong></h4>
+<p>Cox的第二个关键贡献是提出了<strong>偏似然函数</strong>，它允许我们在不估计 <code>λ₀(t)</code> 的情况下估计系数 <code>β</code>。其推导过程如下：</p>
+<p><strong>a) 基本设定</strong><br />
+假设我们有 <code>n</code> 个个体，观察到 <code>k</code> 个互不相同的死亡时间 <code>t₁ &lt; t₂ &lt; ... &lt; tₖ</code>（为简化，先假设无同时发生事件）。设 <code>R(tᵢ)</code> 为在时间 <code>tᵢ</code> 之前的风险集，即所有在 <code>tᵢ</code> 时刻仍存活且处于研究中的个体集合。</p>
+<p><strong>b) 条件概率思想</strong><br />
+在某个死亡时间 <code>tᵢ</code>，假设是第 <code>i</code> 个个体死亡。给定风险集 <code>R(tᵢ)</code> 中恰好有一个个体在 <code>tᵢ</code> 死亡，那么这个个体是 <code>i</code>（而非风险集中的其他任何人）的条件概率是多少？</p>
+<p>这个概率可以写为：<br />
+<code>Lᵢ = P(个体i死于tᵢ | R(tᵢ)中有一人死亡) = λ(tᵢ|Xᵢ) / Σⱼ∈R(tᵢ) λ(tᵢ|Xⱼ)</code></p>
+<p><strong>c) 代入Cox模型</strong><br />
+将 <code>λ(t|X) = λ₀(t) * exp(βᵀX)</code> 代入上式：</p>
+<p><code>Lᵢ = [λ₀(tᵢ) * exp(βᵀXᵢ)] / Σⱼ∈R(tᵢ) [λ₀(tᵢ) * exp(βᵀXⱼ)]</code></p>
+<p>注意到 <code>λ₀(tᵢ)</code> 是公共项，可以在分子和分母中<strong>约去</strong>：</p>
+<p><code>Lᵢ = exp(βᵀXᵢ) / Σⱼ∈R(tᵢ) exp(βᵀXⱼ)</code></p>
+<p>这是一个<strong>极其重要</strong>的结果。它意味着，在每一个死亡时间点，给定风险集中发生一个死亡事件，该事件落到特定个体 <code>i</code> 身上的条件概率，<strong>完全取决于该个体的协变量 <code>Xᵢ</code> 与风险集中所有个体协变量的比较，而与未知的、讨厌的基准风险函数 <code>λ₀(t)</code> 无关</strong>。</p>
+<p><strong>d) 构建偏似然函数</strong><br />
+假设不同死亡时间之间是独立的，那么观察到整个数据中所有死亡事件按实际顺序发生的联合概率，就是所有 <code>Lᵢ</code> 的乘积：</p>
+<p><code>PL(β) = ∏ᵢ₌₁ᵏ Lᵢ = ∏ᵢ₌₁ᵏ [ exp(βᵀXᵢ) / Σⱼ∈R(tᵢ) exp(βᵀXⱼ) ]</code></p>
+<p>这个 <code>PL(β)</code> 就是著名的<strong>Cox偏似然函数</strong>。它“偏”在因为它不是基于完整数据的似然函数，而是基于事件发生顺序所提供的信息构建的条件似然。</p>
+<h4 id="3-参数估计如何计算系数-β"><a class="markdownIt-Anchor" href="#3-参数估计如何计算系数-β"></a> <strong>3. 参数估计：如何计算系数 β</strong></h4>
+<p>我们的目标是找到一组系数 <code>β̂</code>，使得这个偏似然函数 <code>PL(β)</code> 的值达到最大。这称为<strong>最大偏似然估计</strong>。</p>
+<p><strong>a) 对数偏似然函数</strong><br />
+在实践中最常用的是最大化<strong>对数偏似然函数</strong>，因为它能将连乘转化为连加，更易于处理：</p>
+<p><code>ll(β) = log[PL(β)] = Σᵢ₌₁ᵏ &#123; βᵀXᵢ - log[ Σⱼ∈R(tᵢ) exp(βᵀXⱼ) ] &#125;</code></p>
+<p><strong>b) 得分函数与信息矩阵</strong><br />
+为了找到最大值点，我们求 <code>ll(β)</code> 关于 <code>β</code> 的一阶偏导数（即得分函数），并令其为零：</p>
+<p><code>U(β) = ∂ll(β)/∂β = Σᵢ₌₁ᵏ &#123; Xᵢ - [ Σⱼ∈R(tᵢ) Xⱼ exp(βᵀXⱼ) ] / [ Σⱼ∈R(tᵢ) exp(βᵀXⱼ) ] &#125; = 0</code></p>
+<p>这个方程 <code>U(β) = 0</code> 通常没有解析解（闭式解）。</p>
+<p><strong>c) 数值优化算法</strong><br />
+因此，我们需要采用<strong>迭代数值算法</strong>来求解 <code>β̂</code>。最常用的是<strong>牛顿-拉弗森算法</strong>。</p>
+<ol>
+<li><strong>初始化</strong>：选择一个初始值 <code>β⁽⁰⁾</code>（例如，全零向量）。</li>
+<li><strong>迭代更新</strong>： <code>β⁽ᵐ⁺¹⁾ = β⁽ᵐ⁾ - [I(β⁽ᵐ⁾)]⁻¹ U(β⁽ᵐ⁾)</code>
+<ul>
+<li>其中 <code>I(β)</code> 是<strong>观测信息矩阵</strong>，即对数偏似然函数的二阶导数矩阵（海森矩阵）的负值： <code>I(β) = -∂²ll(β)/∂β∂βᵀ</code>。它衡量了似然函数曲率的陡峭程度。</li>
 </ul>
 </li>
-<li>
-<p>胸腺 thymus</p>
+<li><strong>收敛判断</strong>：当 <code>β</code> 的更新值变化非常小（例如，小于一个预设的阈值 <code>ε</code>），或者得分函数 <code>U(β)</code> 足够接近零时，算法停止。此时的 <code>β⁽ᵐ⁾</code> 即为最大偏似然估计量 <code>β̂</code>。</li>
+</ol>
+<p><strong>d) 处理结数据</strong><br />
+当多个事件在同一时间发生时，就产生了“结”。此时上述偏似然需要修正。常用方法有：</p>
 <ul>
-<li>位置：上纵隔前层，胸腺三角内。</li>
-<li>范围：上达胸廓上口，下至前纵隔，前邻胸骨，后附着于心包和大血管。</li>
-<li>血管：动脉来自胸廓内动脉和甲状腺下动脉的分支，伴行静脉注入头臂静脉和胸廓内静脉。</li>
-<li>淋巴：注入纵隔前淋巴结、气管支气管前淋巴结和胸骨旁淋巴结</li>
-<li>支配神经：迷走神经、颈交感干分支。</li>
-<li>小儿胸腺质地柔软呈灰红色，青春期逐渐退化为胸腺遗迹，被脂肪组织代替。</li>
-<li></li>
+<li><strong>Breslow近似</strong>： <code>Lᵢ = [ ∏_&#123;l∈D(tᵢ)&#125; exp(βᵀX_l) ] / [ Σⱼ∈R(tᵢ) exp(βᵀXⱼ) ]^&#123;dᵢ&#125;</code><br />
+(其中 <code>D(tᵢ)</code> 是在 <code>tᵢ</code> 时刻发生事件的个体集合，<code>dᵢ</code> 是该集合的大小)</li>
+<li><strong>Efron近似</strong>： 比Breslow更精确，是默认的常用方法。</li>
+<li><strong>精确偏似然</strong>： 计算量最大，但最精确。</li>
 </ul>
-</li>
-<li>
-<h2 id="上腔静脉"><a class="markdownIt-Anchor" href="#上腔静脉"></a> 上腔静脉</h2>
-</li>
-<li>
-<p>头臂静脉</p>
-</li>
-<li>
-<p>主动脉弓</p>
-</li>
-<li>
-<p>动脉韧带</p>
-</li>
-<li>
-<p>动脉导管三角</p>
-</li>
-<li>
-<p>气管胸部和主支气管</p>
-</li>
-<li>
-<p>食管、胸导管</p>
+<h4 id="4-结果解读与统计推断"><a class="markdownIt-Anchor" href="#4-结果解读与统计推断"></a> <strong>4. 结果解读与统计推断</strong></h4>
+<p>得到 <code>β̂</code> 后：</p>
 <ul>
-<li>行经上纵隔和后纵隔，见后纵隔。</li>
+<li><strong>风险比</strong>： <code>HR = exp(β̂)</code>。这是核心解释指标。例如，对于一个二分类变量（如用药=1 vs 用药=0），<code>HR = 2</code> 意味着用药组的风险是对照组的2倍。</li>
+<li><strong>系数显著性</strong>：基于最大似然理论，<code>β̂</code> 近似服从正态分布。我们可以构造<strong>Wald检验</strong>统计量： <code>Z = β̂ / se(β̂)</code>，其平方近似为卡方分布，用于计算p值。</li>
+<li><strong>置信区间</strong>： <code>β̂</code> 的95%置信区间为 <code>β̂ ± 1.96 * se(β̂)</code>。风险比 <code>HR</code> 的95%置信区间则为 <code>exp(β̂ ± 1.96 * se(β̂))</code>。</li>
 </ul>
-</li>
-</ul>
-<h2 id="下纵隔"><a class="markdownIt-Anchor" href="#下纵隔"></a> 下纵隔</h2>
-<h3 id="前纵隔"><a class="markdownIt-Anchor" href="#前纵隔"></a> 前纵隔</h3>
-<h3 id="中纵隔"><a class="markdownIt-Anchor" href="#中纵隔"></a> 中纵隔</h3>
-<ul>
-<li>
-<p>心包</p>
-</li>
-<li>
-<p>心</p>
-</li>
-</ul>
-<h3 id="后纵隔"><a class="markdownIt-Anchor" href="#后纵隔"></a> 后纵隔</h3>
-<ul>
-<li>
-<p>食管胸部</p>
-</li>
-<li>
-<p>胸主动脉</p>
-</li>
-<li>
-<p>迷走神经</p>
-</li>
-<li>
-<p>奇静脉</p>
-</li>
-<li>
-<p>胸导管</p>
-</li>
-</ul>
-<h3 id="纵隔间隙"><a class="markdownIt-Anchor" href="#纵隔间隙"></a> 纵隔间隙</h3>
-<h3 id="纵隔内淋巴结"><a class="markdownIt-Anchor" href="#纵隔内淋巴结"></a> 纵隔内淋巴结</h3>
+<h4 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> <strong>总结</strong></h4>
+<p>Cox回归的数学原理可以概括为：</p>
+<ol>
+<li><strong>模型设定</strong>：通过 <code>λ(t|X) = λ₀(t) * exp(βᵀX)</code> 将风险分解为时间相关和协变量相关两部分。</li>
+<li><strong>似然构造</strong>：利用条件概率思想，在每一个事件发生时，比较事件个体与风险集中其他个体，巧妙地<strong>消去</strong>了未知的 <code>λ₀(t)</code>，构建出<strong>偏似然函数</strong>。</li>
+<li><strong>参数估计</strong>：通过<strong>牛顿-拉弗森</strong>等数值优化算法，最大化对数偏似然函数，求解出系数估计值 <code>β̂</code>。</li>
+<li><strong>统计推断</strong>：基于 <code>β̂</code> 的渐近分布性质，计算风险比 <code>HR</code>、p值和置信区间，从而对协变量的影响做出统计结论。</li>
+</ol>
+<p>这个过程完美地体现了统计建模的智慧：通过合理的假设和巧妙的构造，绕过无法估计的“ nuisance parameter ” (<code>λ₀(t)</code>)，直接对我们关心的参数 (<code>β</code>) 进行有效的估计和推断。</p>
 
       
     </div>
@@ -457,7 +453,7 @@
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E5%B1%80%E9%83%A8%E8%A7%A3%E5%89%96%E5%AD%A6/" rel="tag" title="局部解剖学">局部解剖学</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E5%89%96%E5%AD%A6/" rel="tag" title="解剖学">解剖学</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/" rel="tag" title="生物信息学">生物信息学</a></li></ul>
 
 
     </footer>
@@ -465,37 +461,20 @@
   
   <nav id="article-nav" aria-label="Article navigation" data-aos="fade-up">
     
-      
-      <div class="article-nav-link-wrap left">
-        
-          
-          
-            <img data-src="/images/banner.webp" data-sizes="auto" alt="局部解剖学-颈部" class="lazyload">
-          
-        
-        <a href="/2025/10/12/medicine/AnatomyNeck/" aria-label="前一篇: 局部解剖学-颈部" title="前一篇: 局部解剖学-颈部"></a>
-        <div class="article-nav-caption">前一篇</div>
-        <h3 class="article-nav-title">
-          
-            局部解剖学-颈部
-          
-        </h3>
-      </div>
-    
     
     
     <div class="article-nav-link-wrap right">
       
         
         
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="生信速通deepseek" class="lazyload">
+          <img data-src="/images/banner.webp" data-sizes="auto" alt="高等数学极速版" class="lazyload">
         
       
-      <a href="/2025/10/12/EasyBioinformaticsAI/" aria-label="后一篇: 生信速通deepseek"  title="后一篇: 生信速通deepseek"></a>
+      <a href="/2025/10/13/math/BasicMath/" aria-label="后一篇: 高等数学极速版"  title="后一篇: 高等数学极速版"></a>
       <div class="article-nav-caption">后一篇</div>
       <h3 class="article-nav-title">
         
-          生信速通deepseek
+          高等数学极速版
         
       </h3>
     </div>
@@ -577,7 +556,7 @@
         <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
 <div class="sidebar-toc-wrapper toc-div-class" >
   
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-text"> 概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%83%B8%E5%A3%81"><span class="toc-text"> 胸壁</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%86%88"><span class="toc-text"> 膈</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%83%B8%E8%85%94"><span class="toc-text"> 胸腔</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%B5%E9%9A%94-mediastinum"><span class="toc-text"> 纵隔 mediastinum</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E7%BA%B5%E9%9A%94"><span class="toc-text"> 上纵隔</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E8%85%94%E9%9D%99%E8%84%89"><span class="toc-text"> 上腔静脉</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E7%BA%B5%E9%9A%94"><span class="toc-text"> 下纵隔</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E7%BA%B5%E9%9A%94"><span class="toc-text"> 前纵隔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E7%BA%B5%E9%9A%94"><span class="toc-text"> 中纵隔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E7%BA%B5%E9%9A%94"><span class="toc-text"> 后纵隔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%B5%E9%9A%94%E9%97%B4%E9%9A%99"><span class="toc-text"> 纵隔间隙</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%B5%E9%9A%94%E5%86%85%E6%B7%8B%E5%B7%B4%E7%BB%93"><span class="toc-text"> 纵隔内淋巴结</span></a></li></ol></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#cox%E6%AF%94%E4%BE%8B%E9%A3%8E%E9%99%A9%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90"><span class="toc-text"> Cox比例风险模型的数学原理深度解析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AE%9A%E4%B9%89%E4%B8%8E%E5%8A%A8%E6%9C%BA"><span class="toc-text"> 1. 模型的定义与动机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%81%8F%E4%BC%BC%E7%84%B6%E5%87%BD%E6%95%B0%E7%9A%84%E6%8E%A8%E5%AF%BC%E6%95%B0%E5%AD%A6%E8%B5%B7%E6%BA%90"><span class="toc-text"> 2. 偏似然函数的推导：数学起源</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E7%B3%BB%E6%95%B0-%CE%B2"><span class="toc-text"> 3. 参数估计：如何计算系数 β</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E7%BB%93%E6%9E%9C%E8%A7%A3%E8%AF%BB%E4%B8%8E%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD"><span class="toc-text"> 4. 结果解读与统计推断</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text"> 总结</span></a></li></ol></li></ol>
   
 </div>
 </div>
@@ -733,13 +712,13 @@
       <script data-pjax>
         window.REIMU_POST = {
           author: "May_wind",
-          title: "局部解剖学-胸部",
-          url: "http://example.com/2025/10/12/medicine/AnatomyThorax/",
+          title: "COX比例风险模型",
+          url: "http://example.com/2025/10/17/coxanalysis/",
           excerpt: "",
           description: "",
-          stripContent: " 概述  胸壁  膈  胸腔  纵隔 mediastinum  上纵隔   从前到后分为3层  前层：胸腺、上腔静脉、左右头臂静脉 中层：主动脉弓及其三大分支、膈神经、迷走神经 后层：器官、食管、胸导管、胸交感干、左喉返神经    胸腺 thymus  位置：上纵隔前层，胸腺三角内。 范围：上达胸廓上口，下至前纵隔，前邻胸骨，后附着于心包和大血管。 血管：动脉来自胸廓内动脉和甲状腺下动脉的分支，伴行静脉注入头臂静脉和胸廓内静脉。 淋巴：注入纵隔前淋巴结、气管支气管前淋巴结和胸骨旁淋巴结 支配神经",
-          date: "Sun Oct 12 2025 10:00:00 GMT+0800",
-          updated: "Thu Oct 16 2025 22:10:48 GMT+0800",
+          stripContent: "您的要求非常合理。我将从数学专业的角度，深入剖析Cox回归模型的起源、推导和计算过程。  Cox比例风险模型的数学原理深度解析  1. 模型的定义与动机 Cox模型的核心是风险函数。在生存分析中，风险函数 λ(t)（或称 h(t)）定义为： λ(t) = lim (Δt→0) [ P(t ≤ T &amp;lt; t+Δt | T ≥ t) / Δt ] 它表示一个个体在存活到时间 t 的前提下，在接下来极短的单位时间内发生事件的瞬时概率。 David Cox在1972年提出的关键思想是将风险函数分解为",
+          date: "Fri Oct 17 2025 00:00:00 GMT+0800",
+          updated: "Fri Oct 17 2025 18:58:01 GMT+0800",
           cover: "/images/banner.webp",
         };
       </script>
