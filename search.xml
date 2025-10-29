@@ -6,6 +6,31 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>README</title>
+    <url>/2025/10/22/README/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
+<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/08/07/Hello-World/Hello-World/</url>
+    <content><![CDATA[<h2 id="hello-world"><a class="markdownIt-Anchor" href="#hello-world"></a> Hello World!</h2>
+]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2025/08/07/Hello-World/</url>
     <content><![CDATA[<h2 id="hello-world"><a class="markdownIt-Anchor" href="#hello-world"></a> Hello World!</h2>
@@ -103,31 +128,6 @@
 </tr>
 </tbody>
 </table>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2025/08/07/Hello-World/Hello-World/</url>
-    <content><![CDATA[<h2 id="hello-world"><a class="markdownIt-Anchor" href="#hello-world"></a> Hello World!</h2>
-]]></content>
-  </entry>
-  <entry>
-    <title>README</title>
-    <url>/2025/10/22/README/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -1395,100 +1395,6 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v600 v585 h43z"/></svg></span></span>
       </tags>
   </entry>
   <entry>
-    <title>基本组织学</title>
-    <url>/2025/10/17/BasicMedicine/Histology/BasicHistology/BasicHistology/</url>
-    <content><![CDATA[<h1 id="上皮组织"><a class="markdownIt-Anchor" href="#上皮组织"></a> 上皮组织</h1>
-<h2 id="被覆上皮"><a class="markdownIt-Anchor" href="#被覆上皮"></a> 被覆上皮</h2>
-<h3 id="单层扁平上皮"><a class="markdownIt-Anchor" href="#单层扁平上皮"></a> 单层扁平上皮</h3>
-<h3 id="单层立方上皮"><a class="markdownIt-Anchor" href="#单层立方上皮"></a> 单层立方上皮</h3>
-<h3 id="单层柱状上皮"><a class="markdownIt-Anchor" href="#单层柱状上皮"></a> 单层柱状上皮</h3>
-<h2 id="特殊结构"><a class="markdownIt-Anchor" href="#特殊结构"></a> 特殊结构</h2>
-<h1 id="固有结缔组织"><a class="markdownIt-Anchor" href="#固有结缔组织"></a> 固有结缔组织</h1>
-<h1 id="血液"><a class="markdownIt-Anchor" href="#血液"></a> 血液</h1>
-<h1 id="骨和软骨"><a class="markdownIt-Anchor" href="#骨和软骨"></a> 骨和软骨</h1>
-<h1 id="肌组织"><a class="markdownIt-Anchor" href="#肌组织"></a> 肌组织</h1>
-<h1 id="神经组织"><a class="markdownIt-Anchor" href="#神经组织"></a> 神经组织</h1>
-]]></content>
-      <categories>
-        <category>基础医学</category>
-        <category>组织学</category>
-      </categories>
-      <tags>
-        <tag>组织学</tag>
-        <tag>人体结构与功能基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IntroductionToStatistic</title>
-    <url>/2025/10/26/Math/Statistics/IntroductionToStatistic/IntroductionToStatistic/</url>
-    <content><![CDATA[<h2 id="基本概念"><a class="markdownIt-Anchor" href="#基本概念"></a> 基本概念</h2>
-<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>Y</mi><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>+</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">Y = f(X) + \varepsilon
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ε</span></span></span></span></span></p>
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>X</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">X = (X_1,X_2,...,X_n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">...</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>
-<ul>
-<li>输入变量 input variable</li>
-<li>预测变量 predictor variable</li>
-<li>自变量 independent variable</li>
-<li>属性变量 feature variable</li>
-<li>有时直接称为 变量</li>
-</ul>
-</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span>
-<ul>
-<li>响应变量 response variable</li>
-<li>因变量 dependent variable</li>
-</ul>
-</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ε</span></span></span></span>
-<ul>
-<li>随机误差项 error term，要求与 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 独立，均值为0</li>
-</ul>
-</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>
-<ul>
-<li>表达了 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 提供给 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> 的系统信息 systematic information</li>
-</ul>
-</li>
-</ul>
-<p>统计学习是估计 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> 的一系列方法。</p>
-<h2 id="估计f"><a class="markdownIt-Anchor" href="#估计f"></a> 估计f</h2>
-<h3 id="预测-prediction"><a class="markdownIt-Anchor" href="#预测-prediction"></a> 预测 prediction</h3>
-<p>目的是为了通过 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 预测 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span></p>
-<p>由于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ε</span></span></span></span> 均值为0，可使用下式预测 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span></p>
-<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><mi>Y</mi><mo>^</mo></mover><mo>=</mo><mover accent="true"><mi>f</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\hat{Y} = \hat{f}(X)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9468em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.2079em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span></span></p>
-<p>假设 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>f</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat{f}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1523em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 固定，计算均方误差(Mean Squared Error,MSE)为：</p>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mi>Y</mi><mo>−</mo><mover accent="true"><mi>Y</mi><mo>^</mo></mover><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo stretchy="false">]</mo><mo>=</mo><mi>E</mi><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>+</mo><mi>ε</mi><mo>+</mo><mover accent="true"><mi>f</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo stretchy="false">]</mo><mo>=</mo><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>−</mo><mover accent="true"><mi>f</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><msup><mo stretchy="false">]</mo><mn>2</mn></msup><mo>+</mo><mi>V</mi><mi>a</mi><mi>r</mi><mo stretchy="false">(</mo><mi>ε</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">E[(Y-\hat{Y})^2] = E[(f(X) + \varepsilon + \hat{f}(X))^2] = [f(X) - \hat{f}(X)]^2 + Var(\varepsilon)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mopen">[(</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.1968em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mopen">[(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">ε</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.2079em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.2079em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Va</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord mathnormal">ε</span><span class="mclose">)</span></span></span></span></p>
-<ul>
-<li>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>−</mo><mover accent="true"><mi>f</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><msup><mo stretchy="false">]</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">[f(X) - \hat{f}(X)]^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.2079em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> 可约误差 reducible error</p>
-<ul>
-<li>可以通过提高 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>f</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat{f}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1523em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span> 的准确度来降低。</li>
-<li></li>
-</ul>
-</li>
-<li>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mi>a</mi><mi>r</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Var(X)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Va</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span> 不可约误差 irreducible error</p>
-</li>
-<li>
-<p>可以通过提高 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>f</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat{f}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1523em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span> 的准确度来降低</p>
-</li>
-</ul>
-<h3 id="推断-inference"><a class="markdownIt-Anchor" href="#推断-inference"></a> 推断 inference</h3>
-<p>目的是为了知道 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 与 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> 的关系</p>
-]]></content>
-      <categories>
-        <category>数学</category>
-        <category>统计学</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-        <tag>统计学</tag>
-        <tag>统计学习导论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>局部解剖学-颈部</title>
     <url>/2025/10/12/BasicMedicine/Anatomy/AnatomyNeck/AnatomyNeck/</url>
     <content><![CDATA[<h1 id="颈前区"><a class="markdownIt-Anchor" href="#颈前区"></a> 颈前区</h1>
@@ -1715,13 +1621,27 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v600 v585 h43z"/></svg></span></span>
       </tags>
   </entry>
   <entry>
-    <title>LinearRegression</title>
-    <url>/2025/10/26/Math/Statistics/LinearRegression/LinearRegression/</url>
-    <content><![CDATA[]]></content>
+    <title>基本组织学</title>
+    <url>/2025/10/17/BasicMedicine/Histology/BasicHistology/BasicHistology/</url>
+    <content><![CDATA[<h1 id="上皮组织"><a class="markdownIt-Anchor" href="#上皮组织"></a> 上皮组织</h1>
+<h2 id="被覆上皮"><a class="markdownIt-Anchor" href="#被覆上皮"></a> 被覆上皮</h2>
+<h3 id="单层扁平上皮"><a class="markdownIt-Anchor" href="#单层扁平上皮"></a> 单层扁平上皮</h3>
+<h3 id="单层立方上皮"><a class="markdownIt-Anchor" href="#单层立方上皮"></a> 单层立方上皮</h3>
+<h3 id="单层柱状上皮"><a class="markdownIt-Anchor" href="#单层柱状上皮"></a> 单层柱状上皮</h3>
+<h2 id="特殊结构"><a class="markdownIt-Anchor" href="#特殊结构"></a> 特殊结构</h2>
+<h1 id="固有结缔组织"><a class="markdownIt-Anchor" href="#固有结缔组织"></a> 固有结缔组织</h1>
+<h1 id="血液"><a class="markdownIt-Anchor" href="#血液"></a> 血液</h1>
+<h1 id="骨和软骨"><a class="markdownIt-Anchor" href="#骨和软骨"></a> 骨和软骨</h1>
+<h1 id="肌组织"><a class="markdownIt-Anchor" href="#肌组织"></a> 肌组织</h1>
+<h1 id="神经组织"><a class="markdownIt-Anchor" href="#神经组织"></a> 神经组织</h1>
+]]></content>
+      <categories>
+        <category>基础医学</category>
+        <category>组织学</category>
+      </categories>
       <tags>
-        <tag>数学</tag>
-        <tag>统计学</tag>
-        <tag>统计学习导论</tag>
+        <tag>组织学</tag>
+        <tag>人体结构与功能基础</tag>
       </tags>
   </entry>
   <entry>
@@ -1917,88 +1837,387 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v600 v585 h43z"/></svg></span></span>
       </tags>
   </entry>
   <entry>
-    <title>TissueRepair</title>
-    <url>/2025/10/22/BasicMedicine/Pathology/TissueRepair/TissueRepair/</url>
-    <content><![CDATA[<p>损伤发生后，机体对所形成缺损进行修补恢复的过程，称为修复。</p>
-<p>修复包括再生和纤维性修复两种，常同时存在，并常有炎症反应。</p>
-<h1 id="再生-regeneration"><a class="markdownIt-Anchor" href="#再生-regeneration"></a> 再生 regeneration</h1>
-<h2 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h2>
+    <title>细胞的适应与损伤</title>
+    <url>/2025/10/17/BasicMedicine/Pathology/CellAdaptationInjury/CellAdaptationInjury/</url>
+    <content><![CDATA[<h1 id="适应-adaptation"><a class="markdownIt-Anchor" href="#适应-adaptation"></a> 适应 adaptation</h1>
 <ul>
-<li>由损伤周围的同种细胞来修复</li>
+<li>定义：细胞和其构成的组织、气管对内外环境中的持续性刺激和各种有害因子而产生的非损伤性应答反应。</li>
 </ul>
-<h4 id="完全再生"><a class="markdownIt-Anchor" href="#完全再生"></a> 完全再生</h4>
+<h2 id="肥大-hypertrophy"><a class="markdownIt-Anchor" href="#肥大-hypertrophy"></a> 肥大 hypertrophy</h2>
 <ul>
-<li>完全恢复了原组织的结构和功能</li>
-<li>完全再生依赖于基质沉积和基质降解的平衡，前提是基质组分和结构不变。</li>
+<li>
+<p>指细胞、组织、或器官体积增大。</p>
+</li>
+<li>
+<p>通常是由于实质细胞的体积增大所致，常伴有实质细胞数量的增加。肥大细胞通常合成代谢增加，功能增强。</p>
+</li>
+<li>
+<p><strong>代偿性肥大 compensatory hypertrophy 或功能性肥大：</strong> 因器官和组织功能负荷过重所致的肥大</p>
+</li>
+<li>
+<p><strong>内分泌性肥大 endocrine hypertrophy:</strong> 因内分泌激素过多作用于效用器所致。</p>
+</li>
 </ul>
-<h4 id="生理性再生"><a class="markdownIt-Anchor" href="#生理性再生"></a> 生理性再生</h4>
+<h3 id="生理性肥大"><a class="markdownIt-Anchor" href="#生理性肥大"></a> 生理性肥大</h3>
 <ul>
-<li>在生理过程中，老化的细胞、组织由新生的同种细胞不断补充，以保持原有的结构和功能的过程。</li>
-<li>再生需要一定数量自我更新的干细胞或具有分化和复制潜能的前体细胞。成体干细胞发挥重要作用
+<li>
+<p>代偿性肥大：需求旺盛、负荷增加。如短跑运动员下肢骨骼肌肥大。</p>
+</li>
+<li>
+<p>内分泌性肥大：妊娠期雌、孕激素作用于平滑肌细胞，使子宫肥大。</p>
+</li>
+</ul>
+<h3 id="病理性肥大"><a class="markdownIt-Anchor" href="#病理性肥大"></a> 病理性肥大</h3>
 <ul>
-<li>例：标题的表层角化细胞、消化道黏膜上皮、子宫内膜</li>
+<li>
+<p>代偿性肥大</p>
+<ul>
+<li>同类器官缺如或功能丧失后正常器官可出现代偿性肥大。
+<ul>
+<li>例：高血压心脏肥大，肾脏一侧切除另一侧肥大。</li>
+</ul>
+</li>
+<li>有限度，超过一定限度会出现衰竭或 <strong>失代偿 decompensation</strong>，如心力衰竭。</li>
+</ul>
+</li>
+<li>
+<p>内分泌性肥大：甲亢，甲状腺激素分泌增多，引起甲状腺滤泡上皮细胞体积增大，呈高柱状，进而引起双侧甲状腺弥漫性肿大。</p>
+</li>
+</ul>
+<h3 id="肥大的病理变化"><a class="markdownIt-Anchor" href="#肥大的病理变化"></a> 肥大的病理变化</h3>
+<ul>
+<li>肥大的细胞体积增大</li>
+<li>细胞核增大深染</li>
+<li>细胞器数目增多</li>
+<li>肥大组织与器官均匀增大。</li>
+</ul>
+<h3 id="肥大的机制"><a class="markdownIt-Anchor" href="#肥大的机制"></a> 肥大的机制</h3>
+<p>细胞原癌基因活化，导致DNA含量和细胞器数量增多，结构蛋白合成活跃，细胞功能增强。</p>
+<h2 id="萎缩-atrophy"><a class="markdownIt-Anchor" href="#萎缩-atrophy"></a> 萎缩 atrophy</h2>
+<ul>
+<li>定义：已发育正常的实质细胞因细胞内物质丢失而致使相应组织或器官的体积缩小。</li>
+<li>细胞合成代谢降低，能量需求减少，原有功能下降。</li>
+<li>可伴有实质细胞数目减少，实质细胞萎缩可伴有间质细胞增生导致组织与器官体积增大（假性肥大）</li>
+<li>不属于萎缩
+<ul>
+<li>未发育 aplasia：器官或组织处于根本未发育的状态。</li>
+<li>发育不全 hypoplasia：器官或组织未充分发育至正常大小。</li>
 </ul>
 </li>
 </ul>
-<h4 id="病理性再生"><a class="markdownIt-Anchor" href="#病理性再生"></a> 病理性再生</h4>
+<h3 id="生理性萎缩"><a class="markdownIt-Anchor" href="#生理性萎缩"></a> 生理性萎缩</h3>
 <ul>
-<li>病理状态下细胞、组织缺损后发生的再生。</li>
+<li>胸腺青春期萎缩</li>
+<li>生殖器官萎缩</li>
+<li>老年人的脏器萎缩</li>
+<li>大部分生理性萎缩的细胞数量减少通过细胞凋亡实现。</li>
 </ul>
-<h2 id="不同类型细胞的再生潜能"><a class="markdownIt-Anchor" href="#不同类型细胞的再生潜能"></a> 不同类型细胞的再生潜能</h2>
+<h3 id="病理性萎缩"><a class="markdownIt-Anchor" href="#病理性萎缩"></a> 病理性萎缩</h3>
+<h4 id="压迫性萎缩-compressive-atrophy"><a class="markdownIt-Anchor" href="#压迫性萎缩-compressive-atrophy"></a> 压迫性萎缩 compressive atrophy</h4>
+<h4 id="营养不良性萎缩-malnutrition-atrophy"><a class="markdownIt-Anchor" href="#营养不良性萎缩-malnutrition-atrophy"></a> 营养不良性萎缩 malnutrition atrophy</h4>
+<h4 id="去神经性萎缩-denervated-atrophy"><a class="markdownIt-Anchor" href="#去神经性萎缩-denervated-atrophy"></a> 去神经性萎缩 denervated atrophy</h4>
+<h4 id="废用性萎缩-disuse-atrophy"><a class="markdownIt-Anchor" href="#废用性萎缩-disuse-atrophy"></a> 废用性萎缩 disuse atrophy</h4>
+<h4 id="内分泌性萎缩-endocrine-atrophy"><a class="markdownIt-Anchor" href="#内分泌性萎缩-endocrine-atrophy"></a> 内分泌性萎缩 endocrine atrophy</h4>
+<h4 id="缺血性萎缩-ischemic-atrophy"><a class="markdownIt-Anchor" href="#缺血性萎缩-ischemic-atrophy"></a> 缺血性萎缩 ischemic atrophy</h4>
+<h3 id="萎缩的机制"><a class="markdownIt-Anchor" href="#萎缩的机制"></a> 萎缩的机制</h3>
+<h3 id="萎缩的病理变化"><a class="markdownIt-Anchor" href="#萎缩的病理变化"></a> 萎缩的病理变化</h3>
+<h2 id="增生-hyperplasia"><a class="markdownIt-Anchor" href="#增生-hyperplasia"></a> 增生 hyperplasia</h2>
+<h2 id="化生-metaplasia"><a class="markdownIt-Anchor" href="#化生-metaplasia"></a> 化生 metaplasia</h2>
+<h1 id="可逆性损伤-reversible-injury"><a class="markdownIt-Anchor" href="#可逆性损伤-reversible-injury"></a> 可逆性损伤 reversible injury</h1>
+<p>又称为 <strong>变性 degeneration</strong></p>
+<h2 id="细胞水肿-cellular-swelling"><a class="markdownIt-Anchor" href="#细胞水肿-cellular-swelling"></a> 细胞水肿 cellular swelling</h2>
+<p>又称 <strong>水样变性 hydropic degeneration</strong></p>
+<h2 id="脂肪变性-steatosisfatty-change"><a class="markdownIt-Anchor" href="#脂肪变性-steatosisfatty-change"></a> 脂肪变性 steatosis/fatty change</h2>
 <ul>
-<li>一般地，再生能力较强的组织，常常是平时易受损伤或生理状态下更新速度较快的组织。</li>
+<li>脂肪蓄积于非脂肪细胞的细胞质中，称为脂肪变性。</li>
+<li>常见于肝细胞、心肌细胞、肾小管上皮细胞。</li>
 </ul>
-<h3 id="不稳定细胞-labile-cells"><a class="markdownIt-Anchor" href="#不稳定细胞-labile-cells"></a> 不稳定细胞 labile cells</h3>
+<h3 id="肝细胞脂肪变性"><a class="markdownIt-Anchor" href="#肝细胞脂肪变性"></a> 肝细胞脂肪变性</h3>
+<h3 id="心肌脂肪变性"><a class="markdownIt-Anchor" href="#心肌脂肪变性"></a> 心肌脂肪变性</h3>
+<h3 id="肾小管上皮细胞脂肪变性"><a class="markdownIt-Anchor" href="#肾小管上皮细胞脂肪变性"></a> 肾小管上皮细胞脂肪变性</h3>
 <ul>
-<li>又称持续分裂细胞 continuously dividing cell</li>
-<li>组成的组织中任何时间都有超过1/5%的细胞处于有丝分裂期。</li>
-<li>分布：胃肠道上皮、皮肤、角膜、呼吸道、生殖器官和泌尿系统、造血干细胞。</li>
-<li>干细胞的存在时这类组织不断更新的必要条件。</li>
-<li>典型的成体干细胞：表皮的基底细胞和胃肠道粘膜的隐窝细胞。</li>
+<li>肾脏体积稍增大，颜色淡黄</li>
 </ul>
-<h3 id="稳定细胞-stable-cells"><a class="markdownIt-Anchor" href="#稳定细胞-stable-cells"></a> 稳定细胞 stable cells</h3>
+<h2 id="玻璃样变性-hyaline-degeneration"><a class="markdownIt-Anchor" href="#玻璃样变性-hyaline-degeneration"></a> 玻璃样变性 hyaline degeneration</h2>
 <ul>
-<li>又称精致细胞 quiescent cell</li>
-<li>分布：各种腺体或腺样气管的实质细胞，包括胰腺、唾液腺、内分泌腺、汗腺、肝脏等。</li>
-<li>生理状态下常处于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">G_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 期，处于有丝分裂状态的细胞少于1.5%.</li>
-<li>受到组织损伤刺激时进入 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">G_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 期，表现出较强的再生能力。</li>
+<li>细胞内或间质中</li>
 </ul>
-<h3 id="永久性细胞-permanent-cells"><a class="markdownIt-Anchor" href="#永久性细胞-permanent-cells"></a> 永久性细胞 permanent cells</h3>
+<h3 id="细胞内玻璃样变性"><a class="markdownIt-Anchor" href="#细胞内玻璃样变性"></a> 细胞内玻璃样变性</h3>
+<h3 id="细小动脉壁玻璃样变性"><a class="markdownIt-Anchor" href="#细小动脉壁玻璃样变性"></a> 细小动脉壁玻璃样变性</h3>
+<h3 id="纤维结缔组织玻璃样变性"><a class="markdownIt-Anchor" href="#纤维结缔组织玻璃样变性"></a> 纤维结缔组织玻璃样变性</h3>
 <ul>
-<li>又称非分裂细胞 nondividing cell</li>
-<li>处于终末分化阶段，丧失再生能力并且不进入细胞周期</li>
-<li>传统意义上中枢神经系统的神经元、心肌细胞和晶状体细胞为此类。</li>
+<li>肉眼呈灰白色半透明状，质韧、弹性减退。</li>
+<li>镜下纤维细胞和血管均减少，胶原纤维变粗，相互融合，形成均质红染的梁状或片状结构。</li>
+<li>常见于瘢痕组织、动脉粥样硬化纤维板块及各种坏死组织的机化等。</li>
 </ul>
-<h2 id="组织器官的再生过程"><a class="markdownIt-Anchor" href="#组织器官的再生过程"></a> 组织器官的再生过程</h2>
-<h3 id="上皮组织的再生"><a class="markdownIt-Anchor" href="#上皮组织的再生"></a> 上皮组织的再生</h3>
-<h3 id="血管的再生"><a class="markdownIt-Anchor" href="#血管的再生"></a> 血管的再生</h3>
-<h3 id="纤维组织的再生"><a class="markdownIt-Anchor" href="#纤维组织的再生"></a> 纤维组织的再生</h3>
-<h3 id="肌肉组织的再生"><a class="markdownIt-Anchor" href="#肌肉组织的再生"></a> 肌肉组织的再生</h3>
-<h3 id="神经组织的再生"><a class="markdownIt-Anchor" href="#神经组织的再生"></a> 神经组织的再生</h3>
-<h1 id="纤维性修复"><a class="markdownIt-Anchor" href="#纤维性修复"></a> 纤维性修复</h1>
+<h2 id="淀粉样变性-amyloid-change"><a class="markdownIt-Anchor" href="#淀粉样变性-amyloid-change"></a> 淀粉样变性 amyloid change</h2>
 <ul>
-<li>定义：由纤维结缔组织增生来修补细胞、组织的损伤，以后形成瘢痕，又称为瘢痕性修复</li>
+<li>
+<p>HE染色为淡红色均质状物，刚果红染色为橘红色，偏振光显微镜下可呈现苹果绿色。</p>
+</li>
+<li></li>
 </ul>
-<h2 id="肉芽组织"><a class="markdownIt-Anchor" href="#肉芽组织"></a> 肉芽组织</h2>
-<h2 id="瘢痕组织-scar-tissue"><a class="markdownIt-Anchor" href="#瘢痕组织-scar-tissue"></a> 瘢痕组织 scar tissue</h2>
+<h2 id="粘液样变性-mucoid-degeneration"><a class="markdownIt-Anchor" href="#粘液样变性-mucoid-degeneration"></a> 粘液样变性 mucoid degeneration</h2>
 <ul>
-<li>是肉芽组织经改建成熟形成的纤维结缔组织。</li>
-<li>形成过程
+<li>细胞间质内黏多糖（透明质酸等）和蛋白质的蓄积。</li>
+<li>肉眼:粘液胶冻状</li>
+<li>镜下：疏松间质内可见多突起的星芒状纤维细胞，散在于灰蓝色粘液基质中</li>
+</ul>
+<h2 id="病理性色素沉着-pathological-pigmentation"><a class="markdownIt-Anchor" href="#病理性色素沉着-pathological-pigmentation"></a> 病理性色素沉着 pathological pigmentation</h2>
 <ul>
-<li>成纤维细胞的迁移和增值</li>
-<li>细胞外基质的沉积和胶原的合成</li>
+<li>病理情况下，有色物质（色素）会增多并积聚于细胞内外。</li>
+<li>色素
+<ul>
+<li>内源性：胆红素、含铁血黄素、脂褐素、黑色素</li>
+<li>外源性：碳末、纹身</li>
 </ul>
 </li>
-<li>组织学状态
+</ul>
+<h3 id="含铁血黄素-hemosiderin"><a class="markdownIt-Anchor" href="#含铁血黄素-hemosiderin"></a> 含铁血黄素 hemosiderin</h3>
+<h3 id="脂褐素-lipofuscin"><a class="markdownIt-Anchor" href="#脂褐素-lipofuscin"></a> 脂褐素 lipofuscin</h3>
+<h3 id="黑色素-melanin"><a class="markdownIt-Anchor" href="#黑色素-melanin"></a> 黑色素 melanin</h3>
+<h3 id="胆红素-bilirubin"><a class="markdownIt-Anchor" href="#胆红素-bilirubin"></a> 胆红素 bilirubin</h3>
 <ul>
-<li>由大量平行或纵横交错排列的胶原纤维束组成。</li>
-<li>老化的胶原纤维发生玻璃样变性，呈均质红染的结构。</li>
+<li>正常 0.5-1.0 mg/dL 黄疸 &gt; 2.0 mg/dL</li>
+<li>来源于血红蛋白，但不含铁</li>
+</ul>
+<h2 id="病理性钙化-pathological-calcification"><a class="markdownIt-Anchor" href="#病理性钙化-pathological-calcification"></a> 病理性钙化 pathological calcification</h2>
+<ul>
+<li>组织中出现异常的固态钙盐沉积</li>
+<li>HE染色呈紫蓝色不规则颗粒或团块状</li>
+</ul>
+<h3 id="营养不良性钙化-dystrophic-calcification"><a class="markdownIt-Anchor" href="#营养不良性钙化-dystrophic-calcification"></a> 营养不良性钙化 dystrophic calcification</h3>
+<ul>
+<li>钙盐沉积于坏死组织或异物中</li>
+<li>此时体内钙磷代谢正常</li>
+<li>结核病、血栓、动脉粥样硬化斑块、心脏瓣膜病、脂肪坏死及瘢痕组织</li>
+<li>可能与局部碱性磷酸酶增多有关</li>
+</ul>
+<h3 id="转移性钙化-metastatic-calcification"><a class="markdownIt-Anchor" href="#转移性钙化-metastatic-calcification"></a> 转移性钙化 metastatic calcification</h3>
+<ul>
+<li>因全身钙磷代谢失调而致钙盐沉积于正常组织内。</li>
+<li>高钙血症。</li>
+<li>甲状旁腺功能亢进、维生素D摄入过多、肾衰竭及某些恶性肿瘤分泌甲状旁腺激素样物质。</li>
+<li>钙盐常沉积于肺泡壁、肾小管和胃黏膜上皮细胞。</li>
+</ul>
+<h1 id="细胞死亡"><a class="markdownIt-Anchor" href="#细胞死亡"></a> 细胞死亡</h1>
+<p>当细胞受到严重损伤累及细胞核时，发生致死性代谢、结构和功能障碍，可引起 <strong>细胞不可逆性损伤 irreversible injury</strong>,即细胞死亡。</p>
+<h2 id="坏死-necrosis"><a class="markdownIt-Anchor" href="#坏死-necrosis"></a> 坏死 necrosis</h2>
+<ul>
+<li>坏死是以 <strong>酶溶性 enzyme solubility 变化</strong> 为特点的活体内局部组织中细胞的死亡。</li>
+<li>可由致病因素较强直接导致，大多由可逆性损伤发展而来</li>
+<li><em>炎症时坏死细胞和周围渗出的中性粒细胞释放溶酶体酶，促进坏死进一步发生和局部实质细胞溶解，故常累及多个细胞。</em></li>
+<li>其基本表现是细胞肿胀、细胞器崩解和蛋白质变形</li>
+<li>特点：质膜崩解、结构自溶、急性炎症反应；代谢完全停止、功能完全丧失、不可逆</li>
+<li>形态学改变：细胞水肿、细胞器降解、细胞核溶解小时、炎细胞浸润</li>
+</ul>
+<h3 id="坏死的基本病变"><a class="markdownIt-Anchor" href="#坏死的基本病变"></a> 坏死的基本病变</h3>
+<ul>
+<li>细胞坏死后数小时后镜下才可见，酶可释放到血液中
+<ul>
+<li>心肌梗死的最早形态学改变在 4-14h 后，但 2h 后可见血清中肌酸激酶、乳酸脱氢酶、谷草转氨酶升高。</li>
 </ul>
 </li>
 </ul>
-<h3 id="对机体的有利作用"><a class="markdownIt-Anchor" href="#对机体的有利作用"></a> 对机体的有利作用</h3>
-<h3 id="对机体的负面作用"><a class="markdownIt-Anchor" href="#对机体的负面作用"></a> 对机体的负面作用</h3>
-<h1 id="皮肤的结构与创伤愈合"><a class="markdownIt-Anchor" href="#皮肤的结构与创伤愈合"></a> 皮肤的结构与创伤愈合</h1>
+<h4 id="细胞核的变化"><a class="markdownIt-Anchor" href="#细胞核的变化"></a> 细胞核的变化</h4>
+<ul>
+<li>
+<p>是细胞坏死的主要形态学标志</p>
+</li>
+<li>
+<p>主要表现</p>
+<ul>
+<li><strong>核固缩 pyknosis</strong>: 细胞核染色质DNA浓聚、皱缩，使核体积减小，嗜碱性增强。</li>
+<li><strong>核碎裂 karyorrhexis</strong>: 由于细胞核染色质崩裂核核膜碎裂，细胞核发生碎裂，使核物质分散于胞质。</li>
+<li><strong>核溶解 karyolysis</strong>: 非特异性DNA酶核蛋白酶激活，染色质降解，核染色质嗜碱性下降，仅能见到核的轮廓。</li>
+</ul>
+</li>
+</ul>
+<h4 id="细胞质和细胞膜的变化"><a class="markdownIt-Anchor" href="#细胞质和细胞膜的变化"></a> 细胞质和细胞膜的变化</h4>
+<ul>
+<li>细胞胞质嗜酸性增强
+<ul>
+<li>原因：核糖体减少、胞质变性、蛋白质增多。</li>
+</ul>
+</li>
+<li>主要超微结构变化
+<ul>
+<li>线粒体内质网肿胀形成空泡</li>
+<li>线粒体基质无定形钙致密物堆积</li>
+<li>溶酶体释放酸性水解酶溶解细胞成分</li>
+</ul>
+</li>
+<li>坏死与凋亡的区别：坏死细胞细胞膜破裂，细胞内容物溢出，可引起周围组织的炎症反应。</li>
+</ul>
+<h4 id="间质的变化"><a class="markdownIt-Anchor" href="#间质的变化"></a> 间质的变化</h4>
+<ul>
+<li>
+<p>早期：变化不大。因为间质细胞对损伤的耐受性大于实质细胞。</p>
+</li>
+<li>
+<p>后期：在各种酶的作用下，细胞外基质肿胀、液化崩解、形成片状模糊的无结构物质。</p>
+</li>
+</ul>
+<h3 id="坏死的类型"><a class="markdownIt-Anchor" href="#坏死的类型"></a> 坏死的类型</h3>
+<h4 id="凝固性坏死-coagulative-necrosis"><a class="markdownIt-Anchor" href="#凝固性坏死-coagulative-necrosis"></a> 凝固性坏死 coagulative necrosis</h4>
+<ul>
+<li>蛋白质变性凝固且溶酶体酶水解作用较弱时，坏死区呈灰黄、干燥、质实状态。</li>
+<li>最常见的坏死类型</li>
+<li>常见原因是缺血性损伤（梗死）也可由细菌毒素、化学腐蚀剂作用引起。</li>
+<li>镜下
+<ul>
+<li>细胞微细结构小时，组织结构轮廓尚存</li>
+<li>坏死区周围常形成充血、出血和炎症反应带</li>
+<li>与周围组织通常界限清楚。</li>
+</ul>
+</li>
+<li>常发生于除脑组织以外的心、肝、肺、肾等 <strong>实质器官</strong>。</li>
+</ul>
+<h4 id="液化性坏死-liquefactive-necrosis"><a class="markdownIt-Anchor" href="#液化性坏死-liquefactive-necrosis"></a> 液化性坏死 liquefactive necrosis</h4>
+<ul>
+<li>自溶和异溶使细胞组织坏死后发生溶解液化。</li>
+<li>通常由于蛋白质较少，或蛋白酶水解作用较强时发生。</li>
+<li>镜下：死亡细胞完全被消化，局部组织快速被溶解。</li>
+<li>可见于细菌或某些真菌感染引起的脓肿，及缺血缺氧引起的脑组织坏死（又称为脑软化）等。</li>
+</ul>
+<h4 id="坏疽-gangrene"><a class="markdownIt-Anchor" href="#坏疽-gangrene"></a> 坏疽 gangrene</h4>
+<ul>
+<li>
+<p>继发腐败菌感染的局部组织大块坏死，又称坏疽性坏死 gangrenous necrosis</p>
+</li>
+<li>
+<p>感染的腐败菌多为梭状芽孢杆菌属的厌氧菌等</p>
+</li>
+<li>
+<p>产生的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>H</mtext><mn>2</mn></msub><mtext>S</mtext></mrow><annotation encoding="application/x-tex">\text{H}_2\text{S}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord text"><span class="mord">H</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord text"><span class="mord">S</span></span></span></span></span> 与血红蛋白中的<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext>Fe</mtext><mrow><mn>3</mn><mo>+</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\text{Fe}^{3+}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8873em;"></span><span class="mord"><span class="mord text"><span class="mord">Fe</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8873em;"><span style="top:-3.1362em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">+</span></span></span></span></span></span></span></span></span></span></span></span> 结合形成 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>Fe</mtext><mn>2</mn></msub><msub><mtext>S</mtext><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">\text{Fe}_2\text{S}_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord text"><span class="mord">Fe</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord text"><span class="mord">S</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 使组织变为黑色或暗绿色。</p>
+</li>
+<li>
+<p><strong>干性坏疽 dry gangrene</strong></p>
+<ul>
+<li>位置
+<ul>
+<li>常见四肢末端尤其是下肢。</li>
+</ul>
+</li>
+<li>特点
+<ul>
+<li>因水分散失较多故坏死区干燥皱缩呈黑色</li>
+<li>与正常组织界限清楚，为凝固性坏死的特殊类型</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>湿性坏疽 moist gangrene</strong></p>
+<ul>
+<li>位置
+<ul>
+<li>多发于与体表相通的内脏，如：肺、肠、子宫、阑尾及胆囊等</li>
+<li>也可发生于动脉阻塞及静脉回流受阻的肢体</li>
+</ul>
+</li>
+<li>特点
+<ul>
+<li>坏死区水分较多，腐败菌易于繁殖，故肿胀呈暗红色或蓝绿色</li>
+<li>与周围正常组织界限不清</li>
+<li>坏死组织腐败分解产生大量的毒性物质被机体吸收，可造成毒血症</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>气性坏疽 gas gangrene</strong></p>
+<ul>
+<li>位置
+<ul>
+<li>系深达肌肉的开放性创伤，合并气荚膜梭菌等厌氧菌感染。</li>
+</ul>
+</li>
+<li>特点
+<ul>
+<li>除发生坏死外，还产生大量气体，使坏死区按之有捻发感，往往伴有恶臭。</li>
+<li>镜下兼具凝固性坏死和液化性坏死的特点。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>总结</p>
+<ul>
+<li>湿性坏疽和气性坏疽常伴全身中毒症状。</li>
+<li>干性坏疽多为凝固性坏死，湿性坏疽和气性坏疽则为凝固性坏死和液化性坏死的混合。</li>
+<li>干性、湿性多为继发于血液循环障碍引起的缺血坏死。</li>
+</ul>
+</li>
+</ul>
+<h4 id="干酪样坏死-caseous-necrosis"><a class="markdownIt-Anchor" href="#干酪样坏死-caseous-necrosis"></a> 干酪样坏死 caseous necrosis</h4>
+<ul>
+<li>因病灶中含脂质较多，坏死区呈黄色，状似干酪。</li>
+<li>镜下：原有组织结构完全崩解破坏，表现为无结构颗粒状红染物，是坏死更为彻底的特殊类型凝固性坏死。</li>
+<li>通常见于肉芽肿性炎，尤其是结核病。</li>
+</ul>
+<h4 id="纤维素样坏死-fibrinoid-necrosis"><a class="markdownIt-Anchor" href="#纤维素样坏死-fibrinoid-necrosis"></a> 纤维素样坏死 fibrinoid necrosis</h4>
+<ul>
+<li>镜下：形成细丝状、颗粒状无结构物质，形似纤维素。</li>
+<li>结缔组织及小血管壁常见的坏死形式。</li>
+<li>见于某些变态反应性疾病，如风湿病等。</li>
+</ul>
+<h4 id="脂肪坏死-fat-necrosis"><a class="markdownIt-Anchor" href="#脂肪坏死-fat-necrosis"></a> 脂肪坏死 fat necrosis</h4>
+<ul>
+<li>脂肪酶对脂肪细胞的作用引起的，是一种特殊类型的液化性坏死。</li>
+<li>脂肪坏死后，释放的脂肪酸和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext>Ca</mtext><mrow><mn>2</mn><mo>+</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\text{Ca}^{2+}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8873em;"></span><span class="mord"><span class="mord text"><span class="mord">Ca</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8873em;"><span style="top:-3.1362em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mtight">+</span></span></span></span></span></span></span></span></span></span></span></span> 结合，形成肉眼可见的灰白色钙皂。</li>
+<li>通常见于急性胰腺炎或外伤。</li>
+</ul>
+<h3 id="坏死的结局"><a class="markdownIt-Anchor" href="#坏死的结局"></a> 坏死的结局</h3>
+<h4 id="溶解吸收"><a class="markdownIt-Anchor" href="#溶解吸收"></a> 溶解吸收</h4>
+<ul>
+<li>坏死组织与中性粒细胞释放蛋白水解酶使坏死组织溶解液化，由淋巴管、血管吸收</li>
+<li>不能吸收的碎片由吞噬细胞吞噬清除</li>
+<li>坏死液化范围大时可形成囊腔</li>
+<li>坏死细胞溶解后可引发周围组织急性炎症反应</li>
+</ul>
+<h4 id="分离排出"><a class="markdownIt-Anchor" href="#分离排出"></a> 分离排出</h4>
+<h4 id="机化与包裹"><a class="markdownIt-Anchor" href="#机化与包裹"></a> 机化与包裹</h4>
+<ul>
+<li><strong>机化 organization</strong>
+<ul>
+<li>坏死组织不能完全溶解吸收或分离排出，可由肉芽组织长入并替代</li>
+</ul>
+</li>
+<li><strong>包裹 encapsulation</strong>
+<ul>
+<li>坏死组织太大，由周围增生的肉芽组织将其包围</li>
+</ul>
+</li>
+<li>肉芽组织最终都可形成纤维瘢痕</li>
+</ul>
+<h4 id="钙化"><a class="markdownIt-Anchor" href="#钙化"></a> 钙化</h4>
+<p>坏死细胞和细胞碎片若未被及时清除可激发营养不良性钙化</p>
+<h3 id="坏死对机体的影响"><a class="markdownIt-Anchor" href="#坏死对机体的影响"></a> 坏死对机体的影响</h3>
+<ul>
+<li>
+<p>坏死细胞的重要性</p>
+</li>
+<li>
+<p>坏死细胞的数量</p>
+</li>
+<li>
+<p>坏死细胞的再生能力</p>
+</li>
+<li>
+<p>坏死细胞的代偿能力</p>
+</li>
+</ul>
+<h2 id="凋亡-apoptosis"><a class="markdownIt-Anchor" href="#凋亡-apoptosis"></a> 凋亡 apoptosis</h2>
+<ul>
+<li>活体内局部组织中单个细胞内源性酶激活后降解自身DNA和核内及胞质内蛋白质而引起的 <strong>程序性细胞死亡 programmmed cell death</strong></li>
+<li>由体内外因素触发细胞内预存的死亡程序导致的细胞主动性死亡方式。</li>
+</ul>
+<h3 id="凋亡的原因"><a class="markdownIt-Anchor" href="#凋亡的原因"></a> 凋亡的原因</h3>
+<h4 id="生理性凋亡"><a class="markdownIt-Anchor" href="#生理性凋亡"></a> 生理性凋亡</h4>
+<h4 id="病理性凋亡"><a class="markdownIt-Anchor" href="#病理性凋亡"></a> 病理性凋亡</h4>
+<h3 id="凋亡的机制"><a class="markdownIt-Anchor" href="#凋亡的机制"></a> 凋亡的机制</h3>
+<h3 id="凋亡的形态学特征"><a class="markdownIt-Anchor" href="#凋亡的形态学特征"></a> 凋亡的形态学特征</h3>
 ]]></content>
       <categories>
         <category>基础医学</category>
@@ -2010,9 +2229,84 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v600 v585 h43z"/></svg></span></span>
       </tags>
   </entry>
   <entry>
+    <title>IntroductionToStatistic</title>
+    <url>/2025/10/26/Math/Statistics/IntroductionToStatistic/IntroductionToStatistic/</url>
+    <content><![CDATA[<h2 id="基本概念"><a class="markdownIt-Anchor" href="#基本概念"></a> 基本概念</h2>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>Y</mi><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>+</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">Y = f(X) + \varepsilon
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ε</span></span></span></span></span></p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>X</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">X = (X_1,X_2,...,X_n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">...</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>
+<ul>
+<li>输入变量 input variable</li>
+<li>预测变量 predictor variable</li>
+<li>自变量 independent variable</li>
+<li>属性变量 feature variable</li>
+<li>有时直接称为 变量</li>
+</ul>
+</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span>
+<ul>
+<li>响应变量 response variable</li>
+<li>因变量 dependent variable</li>
+</ul>
+</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ε</span></span></span></span>
+<ul>
+<li>随机误差项 error term，要求与 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 独立，均值为0</li>
+</ul>
+</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>
+<ul>
+<li>表达了 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 提供给 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> 的系统信息 systematic information</li>
+</ul>
+</li>
+</ul>
+<p>统计学习是估计 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> 的一系列方法。</p>
+<h2 id="估计f"><a class="markdownIt-Anchor" href="#估计f"></a> 估计f</h2>
+<h3 id="预测-prediction"><a class="markdownIt-Anchor" href="#预测-prediction"></a> 预测 prediction</h3>
+<p>目的是为了通过 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 预测 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span></p>
+<p>由于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ε</span></span></span></span> 均值为0，可使用下式预测 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span></p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><mi>Y</mi><mo>^</mo></mover><mo>=</mo><mover accent="true"><mi>f</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\hat{Y} = \hat{f}(X)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9468em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.2079em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span></span></p>
+<p>假设 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>f</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat{f}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1523em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 固定，计算均方误差(Mean Squared Error,MSE)为：</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mi>Y</mi><mo>−</mo><mover accent="true"><mi>Y</mi><mo>^</mo></mover><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo stretchy="false">]</mo><mo>=</mo><mi>E</mi><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>+</mo><mi>ε</mi><mo>+</mo><mover accent="true"><mi>f</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo stretchy="false">]</mo><mo>=</mo><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>−</mo><mover accent="true"><mi>f</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><msup><mo stretchy="false">]</mo><mn>2</mn></msup><mo>+</mo><mi>V</mi><mi>a</mi><mi>r</mi><mo stretchy="false">(</mo><mi>ε</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">E[(Y-\hat{Y})^2] = E[(f(X) + \varepsilon + \hat{f}(X))^2] = [f(X) - \hat{f}(X)]^2 + Var(\varepsilon)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mopen">[(</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.1968em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mopen">[(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">ε</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.2079em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.2079em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Va</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord mathnormal">ε</span><span class="mclose">)</span></span></span></span></p>
+<ul>
+<li>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>−</mo><mover accent="true"><mi>f</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><msup><mo stretchy="false">]</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">[f(X) - \hat{f}(X)]^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.2079em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> 可约误差 reducible error</p>
+<ul>
+<li>可以通过提高 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>f</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat{f}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1523em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span> 的准确度来降低。</li>
+<li></li>
+</ul>
+</li>
+<li>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mi>a</mi><mi>r</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Var(X)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Va</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span> 不可约误差 irreducible error</p>
+</li>
+<li>
+<p>可以通过提高 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>f</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat{f}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1523em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span> 的准确度来降低</p>
+</li>
+</ul>
+<h3 id="推断-inference"><a class="markdownIt-Anchor" href="#推断-inference"></a> 推断 inference</h3>
+<p>目的是为了知道 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 与 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> 的关系</p>
+]]></content>
+      <categories>
+        <category>数学</category>
+        <category>统计学</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+        <tag>统计学</tag>
+        <tag>统计学习导论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LinearRegression</title>
-    <url>/2025/10/26/Math/Statistics/LinearRegression/LinearRegression/LinearRegression/</url>
+    <url>/2025/10/26/Math/Statistics/LinearRegression/LinearRegression/</url>
     <content><![CDATA[]]></content>
+      <tags>
+        <tag>数学</tag>
+        <tag>统计学</tag>
+        <tag>统计学习导论</tag>
+      </tags>
   </entry>
   <entry>
     <title>炎症</title>
@@ -2662,387 +2956,88 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v600 v585 h43z"/></svg></span></span>
       </tags>
   </entry>
   <entry>
-    <title>细胞的适应与损伤</title>
-    <url>/2025/10/17/BasicMedicine/Pathology/CellAdaptationInjury/CellAdaptationInjury/</url>
-    <content><![CDATA[<h1 id="适应-adaptation"><a class="markdownIt-Anchor" href="#适应-adaptation"></a> 适应 adaptation</h1>
+    <title>TissueRepair</title>
+    <url>/2025/10/22/BasicMedicine/Pathology/TissueRepair/TissueRepair/</url>
+    <content><![CDATA[<p>损伤发生后，机体对所形成缺损进行修补恢复的过程，称为修复。</p>
+<p>修复包括再生和纤维性修复两种，常同时存在，并常有炎症反应。</p>
+<h1 id="再生-regeneration"><a class="markdownIt-Anchor" href="#再生-regeneration"></a> 再生 regeneration</h1>
+<h2 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h2>
 <ul>
-<li>定义：细胞和其构成的组织、气管对内外环境中的持续性刺激和各种有害因子而产生的非损伤性应答反应。</li>
+<li>由损伤周围的同种细胞来修复</li>
 </ul>
-<h2 id="肥大-hypertrophy"><a class="markdownIt-Anchor" href="#肥大-hypertrophy"></a> 肥大 hypertrophy</h2>
+<h4 id="完全再生"><a class="markdownIt-Anchor" href="#完全再生"></a> 完全再生</h4>
 <ul>
-<li>
-<p>指细胞、组织、或器官体积增大。</p>
-</li>
-<li>
-<p>通常是由于实质细胞的体积增大所致，常伴有实质细胞数量的增加。肥大细胞通常合成代谢增加，功能增强。</p>
-</li>
-<li>
-<p><strong>代偿性肥大 compensatory hypertrophy 或功能性肥大：</strong> 因器官和组织功能负荷过重所致的肥大</p>
-</li>
-<li>
-<p><strong>内分泌性肥大 endocrine hypertrophy:</strong> 因内分泌激素过多作用于效用器所致。</p>
-</li>
+<li>完全恢复了原组织的结构和功能</li>
+<li>完全再生依赖于基质沉积和基质降解的平衡，前提是基质组分和结构不变。</li>
 </ul>
-<h3 id="生理性肥大"><a class="markdownIt-Anchor" href="#生理性肥大"></a> 生理性肥大</h3>
+<h4 id="生理性再生"><a class="markdownIt-Anchor" href="#生理性再生"></a> 生理性再生</h4>
 <ul>
-<li>
-<p>代偿性肥大：需求旺盛、负荷增加。如短跑运动员下肢骨骼肌肥大。</p>
-</li>
-<li>
-<p>内分泌性肥大：妊娠期雌、孕激素作用于平滑肌细胞，使子宫肥大。</p>
-</li>
-</ul>
-<h3 id="病理性肥大"><a class="markdownIt-Anchor" href="#病理性肥大"></a> 病理性肥大</h3>
+<li>在生理过程中，老化的细胞、组织由新生的同种细胞不断补充，以保持原有的结构和功能的过程。</li>
+<li>再生需要一定数量自我更新的干细胞或具有分化和复制潜能的前体细胞。成体干细胞发挥重要作用
 <ul>
-<li>
-<p>代偿性肥大</p>
-<ul>
-<li>同类器官缺如或功能丧失后正常器官可出现代偿性肥大。
-<ul>
-<li>例：高血压心脏肥大，肾脏一侧切除另一侧肥大。</li>
-</ul>
-</li>
-<li>有限度，超过一定限度会出现衰竭或 <strong>失代偿 decompensation</strong>，如心力衰竭。</li>
-</ul>
-</li>
-<li>
-<p>内分泌性肥大：甲亢，甲状腺激素分泌增多，引起甲状腺滤泡上皮细胞体积增大，呈高柱状，进而引起双侧甲状腺弥漫性肿大。</p>
-</li>
-</ul>
-<h3 id="肥大的病理变化"><a class="markdownIt-Anchor" href="#肥大的病理变化"></a> 肥大的病理变化</h3>
-<ul>
-<li>肥大的细胞体积增大</li>
-<li>细胞核增大深染</li>
-<li>细胞器数目增多</li>
-<li>肥大组织与器官均匀增大。</li>
-</ul>
-<h3 id="肥大的机制"><a class="markdownIt-Anchor" href="#肥大的机制"></a> 肥大的机制</h3>
-<p>细胞原癌基因活化，导致DNA含量和细胞器数量增多，结构蛋白合成活跃，细胞功能增强。</p>
-<h2 id="萎缩-atrophy"><a class="markdownIt-Anchor" href="#萎缩-atrophy"></a> 萎缩 atrophy</h2>
-<ul>
-<li>定义：已发育正常的实质细胞因细胞内物质丢失而致使相应组织或器官的体积缩小。</li>
-<li>细胞合成代谢降低，能量需求减少，原有功能下降。</li>
-<li>可伴有实质细胞数目减少，实质细胞萎缩可伴有间质细胞增生导致组织与器官体积增大（假性肥大）</li>
-<li>不属于萎缩
-<ul>
-<li>未发育 aplasia：器官或组织处于根本未发育的状态。</li>
-<li>发育不全 hypoplasia：器官或组织未充分发育至正常大小。</li>
+<li>例：标题的表层角化细胞、消化道黏膜上皮、子宫内膜</li>
 </ul>
 </li>
 </ul>
-<h3 id="生理性萎缩"><a class="markdownIt-Anchor" href="#生理性萎缩"></a> 生理性萎缩</h3>
+<h4 id="病理性再生"><a class="markdownIt-Anchor" href="#病理性再生"></a> 病理性再生</h4>
 <ul>
-<li>胸腺青春期萎缩</li>
-<li>生殖器官萎缩</li>
-<li>老年人的脏器萎缩</li>
-<li>大部分生理性萎缩的细胞数量减少通过细胞凋亡实现。</li>
+<li>病理状态下细胞、组织缺损后发生的再生。</li>
 </ul>
-<h3 id="病理性萎缩"><a class="markdownIt-Anchor" href="#病理性萎缩"></a> 病理性萎缩</h3>
-<h4 id="压迫性萎缩-compressive-atrophy"><a class="markdownIt-Anchor" href="#压迫性萎缩-compressive-atrophy"></a> 压迫性萎缩 compressive atrophy</h4>
-<h4 id="营养不良性萎缩-malnutrition-atrophy"><a class="markdownIt-Anchor" href="#营养不良性萎缩-malnutrition-atrophy"></a> 营养不良性萎缩 malnutrition atrophy</h4>
-<h4 id="去神经性萎缩-denervated-atrophy"><a class="markdownIt-Anchor" href="#去神经性萎缩-denervated-atrophy"></a> 去神经性萎缩 denervated atrophy</h4>
-<h4 id="废用性萎缩-disuse-atrophy"><a class="markdownIt-Anchor" href="#废用性萎缩-disuse-atrophy"></a> 废用性萎缩 disuse atrophy</h4>
-<h4 id="内分泌性萎缩-endocrine-atrophy"><a class="markdownIt-Anchor" href="#内分泌性萎缩-endocrine-atrophy"></a> 内分泌性萎缩 endocrine atrophy</h4>
-<h4 id="缺血性萎缩-ischemic-atrophy"><a class="markdownIt-Anchor" href="#缺血性萎缩-ischemic-atrophy"></a> 缺血性萎缩 ischemic atrophy</h4>
-<h3 id="萎缩的机制"><a class="markdownIt-Anchor" href="#萎缩的机制"></a> 萎缩的机制</h3>
-<h3 id="萎缩的病理变化"><a class="markdownIt-Anchor" href="#萎缩的病理变化"></a> 萎缩的病理变化</h3>
-<h2 id="增生-hyperplasia"><a class="markdownIt-Anchor" href="#增生-hyperplasia"></a> 增生 hyperplasia</h2>
-<h2 id="化生-metaplasia"><a class="markdownIt-Anchor" href="#化生-metaplasia"></a> 化生 metaplasia</h2>
-<h1 id="可逆性损伤-reversible-injury"><a class="markdownIt-Anchor" href="#可逆性损伤-reversible-injury"></a> 可逆性损伤 reversible injury</h1>
-<p>又称为 <strong>变性 degeneration</strong></p>
-<h2 id="细胞水肿-cellular-swelling"><a class="markdownIt-Anchor" href="#细胞水肿-cellular-swelling"></a> 细胞水肿 cellular swelling</h2>
-<p>又称 <strong>水样变性 hydropic degeneration</strong></p>
-<h2 id="脂肪变性-steatosisfatty-change"><a class="markdownIt-Anchor" href="#脂肪变性-steatosisfatty-change"></a> 脂肪变性 steatosis/fatty change</h2>
+<h2 id="不同类型细胞的再生潜能"><a class="markdownIt-Anchor" href="#不同类型细胞的再生潜能"></a> 不同类型细胞的再生潜能</h2>
 <ul>
-<li>脂肪蓄积于非脂肪细胞的细胞质中，称为脂肪变性。</li>
-<li>常见于肝细胞、心肌细胞、肾小管上皮细胞。</li>
+<li>一般地，再生能力较强的组织，常常是平时易受损伤或生理状态下更新速度较快的组织。</li>
 </ul>
-<h3 id="肝细胞脂肪变性"><a class="markdownIt-Anchor" href="#肝细胞脂肪变性"></a> 肝细胞脂肪变性</h3>
-<h3 id="心肌脂肪变性"><a class="markdownIt-Anchor" href="#心肌脂肪变性"></a> 心肌脂肪变性</h3>
-<h3 id="肾小管上皮细胞脂肪变性"><a class="markdownIt-Anchor" href="#肾小管上皮细胞脂肪变性"></a> 肾小管上皮细胞脂肪变性</h3>
+<h3 id="不稳定细胞-labile-cells"><a class="markdownIt-Anchor" href="#不稳定细胞-labile-cells"></a> 不稳定细胞 labile cells</h3>
 <ul>
-<li>肾脏体积稍增大，颜色淡黄</li>
+<li>又称持续分裂细胞 continuously dividing cell</li>
+<li>组成的组织中任何时间都有超过1/5%的细胞处于有丝分裂期。</li>
+<li>分布：胃肠道上皮、皮肤、角膜、呼吸道、生殖器官和泌尿系统、造血干细胞。</li>
+<li>干细胞的存在时这类组织不断更新的必要条件。</li>
+<li>典型的成体干细胞：表皮的基底细胞和胃肠道粘膜的隐窝细胞。</li>
 </ul>
-<h2 id="玻璃样变性-hyaline-degeneration"><a class="markdownIt-Anchor" href="#玻璃样变性-hyaline-degeneration"></a> 玻璃样变性 hyaline degeneration</h2>
+<h3 id="稳定细胞-stable-cells"><a class="markdownIt-Anchor" href="#稳定细胞-stable-cells"></a> 稳定细胞 stable cells</h3>
 <ul>
-<li>细胞内或间质中</li>
+<li>又称精致细胞 quiescent cell</li>
+<li>分布：各种腺体或腺样气管的实质细胞，包括胰腺、唾液腺、内分泌腺、汗腺、肝脏等。</li>
+<li>生理状态下常处于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">G_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 期，处于有丝分裂状态的细胞少于1.5%.</li>
+<li>受到组织损伤刺激时进入 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">G_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 期，表现出较强的再生能力。</li>
 </ul>
-<h3 id="细胞内玻璃样变性"><a class="markdownIt-Anchor" href="#细胞内玻璃样变性"></a> 细胞内玻璃样变性</h3>
-<h3 id="细小动脉壁玻璃样变性"><a class="markdownIt-Anchor" href="#细小动脉壁玻璃样变性"></a> 细小动脉壁玻璃样变性</h3>
-<h3 id="纤维结缔组织玻璃样变性"><a class="markdownIt-Anchor" href="#纤维结缔组织玻璃样变性"></a> 纤维结缔组织玻璃样变性</h3>
+<h3 id="永久性细胞-permanent-cells"><a class="markdownIt-Anchor" href="#永久性细胞-permanent-cells"></a> 永久性细胞 permanent cells</h3>
 <ul>
-<li>肉眼呈灰白色半透明状，质韧、弹性减退。</li>
-<li>镜下纤维细胞和血管均减少，胶原纤维变粗，相互融合，形成均质红染的梁状或片状结构。</li>
-<li>常见于瘢痕组织、动脉粥样硬化纤维板块及各种坏死组织的机化等。</li>
+<li>又称非分裂细胞 nondividing cell</li>
+<li>处于终末分化阶段，丧失再生能力并且不进入细胞周期</li>
+<li>传统意义上中枢神经系统的神经元、心肌细胞和晶状体细胞为此类。</li>
 </ul>
-<h2 id="淀粉样变性-amyloid-change"><a class="markdownIt-Anchor" href="#淀粉样变性-amyloid-change"></a> 淀粉样变性 amyloid change</h2>
+<h2 id="组织器官的再生过程"><a class="markdownIt-Anchor" href="#组织器官的再生过程"></a> 组织器官的再生过程</h2>
+<h3 id="上皮组织的再生"><a class="markdownIt-Anchor" href="#上皮组织的再生"></a> 上皮组织的再生</h3>
+<h3 id="血管的再生"><a class="markdownIt-Anchor" href="#血管的再生"></a> 血管的再生</h3>
+<h3 id="纤维组织的再生"><a class="markdownIt-Anchor" href="#纤维组织的再生"></a> 纤维组织的再生</h3>
+<h3 id="肌肉组织的再生"><a class="markdownIt-Anchor" href="#肌肉组织的再生"></a> 肌肉组织的再生</h3>
+<h3 id="神经组织的再生"><a class="markdownIt-Anchor" href="#神经组织的再生"></a> 神经组织的再生</h3>
+<h1 id="纤维性修复"><a class="markdownIt-Anchor" href="#纤维性修复"></a> 纤维性修复</h1>
 <ul>
-<li>
-<p>HE染色为淡红色均质状物，刚果红染色为橘红色，偏振光显微镜下可呈现苹果绿色。</p>
+<li>定义：由纤维结缔组织增生来修补细胞、组织的损伤，以后形成瘢痕，又称为瘢痕性修复</li>
+</ul>
+<h2 id="肉芽组织"><a class="markdownIt-Anchor" href="#肉芽组织"></a> 肉芽组织</h2>
+<h2 id="瘢痕组织-scar-tissue"><a class="markdownIt-Anchor" href="#瘢痕组织-scar-tissue"></a> 瘢痕组织 scar tissue</h2>
+<ul>
+<li>是肉芽组织经改建成熟形成的纤维结缔组织。</li>
+<li>形成过程
+<ul>
+<li>成纤维细胞的迁移和增值</li>
+<li>细胞外基质的沉积和胶原的合成</li>
+</ul>
 </li>
-<li></li>
-</ul>
-<h2 id="粘液样变性-mucoid-degeneration"><a class="markdownIt-Anchor" href="#粘液样变性-mucoid-degeneration"></a> 粘液样变性 mucoid degeneration</h2>
+<li>组织学状态
 <ul>
-<li>细胞间质内黏多糖（透明质酸等）和蛋白质的蓄积。</li>
-<li>肉眼:粘液胶冻状</li>
-<li>镜下：疏松间质内可见多突起的星芒状纤维细胞，散在于灰蓝色粘液基质中</li>
-</ul>
-<h2 id="病理性色素沉着-pathological-pigmentation"><a class="markdownIt-Anchor" href="#病理性色素沉着-pathological-pigmentation"></a> 病理性色素沉着 pathological pigmentation</h2>
-<ul>
-<li>病理情况下，有色物质（色素）会增多并积聚于细胞内外。</li>
-<li>色素
-<ul>
-<li>内源性：胆红素、含铁血黄素、脂褐素、黑色素</li>
-<li>外源性：碳末、纹身</li>
+<li>由大量平行或纵横交错排列的胶原纤维束组成。</li>
+<li>老化的胶原纤维发生玻璃样变性，呈均质红染的结构。</li>
 </ul>
 </li>
 </ul>
-<h3 id="含铁血黄素-hemosiderin"><a class="markdownIt-Anchor" href="#含铁血黄素-hemosiderin"></a> 含铁血黄素 hemosiderin</h3>
-<h3 id="脂褐素-lipofuscin"><a class="markdownIt-Anchor" href="#脂褐素-lipofuscin"></a> 脂褐素 lipofuscin</h3>
-<h3 id="黑色素-melanin"><a class="markdownIt-Anchor" href="#黑色素-melanin"></a> 黑色素 melanin</h3>
-<h3 id="胆红素-bilirubin"><a class="markdownIt-Anchor" href="#胆红素-bilirubin"></a> 胆红素 bilirubin</h3>
-<ul>
-<li>正常 0.5-1.0 mg/dL 黄疸 &gt; 2.0 mg/dL</li>
-<li>来源于血红蛋白，但不含铁</li>
-</ul>
-<h2 id="病理性钙化-pathological-calcification"><a class="markdownIt-Anchor" href="#病理性钙化-pathological-calcification"></a> 病理性钙化 pathological calcification</h2>
-<ul>
-<li>组织中出现异常的固态钙盐沉积</li>
-<li>HE染色呈紫蓝色不规则颗粒或团块状</li>
-</ul>
-<h3 id="营养不良性钙化-dystrophic-calcification"><a class="markdownIt-Anchor" href="#营养不良性钙化-dystrophic-calcification"></a> 营养不良性钙化 dystrophic calcification</h3>
-<ul>
-<li>钙盐沉积于坏死组织或异物中</li>
-<li>此时体内钙磷代谢正常</li>
-<li>结核病、血栓、动脉粥样硬化斑块、心脏瓣膜病、脂肪坏死及瘢痕组织</li>
-<li>可能与局部碱性磷酸酶增多有关</li>
-</ul>
-<h3 id="转移性钙化-metastatic-calcification"><a class="markdownIt-Anchor" href="#转移性钙化-metastatic-calcification"></a> 转移性钙化 metastatic calcification</h3>
-<ul>
-<li>因全身钙磷代谢失调而致钙盐沉积于正常组织内。</li>
-<li>高钙血症。</li>
-<li>甲状旁腺功能亢进、维生素D摄入过多、肾衰竭及某些恶性肿瘤分泌甲状旁腺激素样物质。</li>
-<li>钙盐常沉积于肺泡壁、肾小管和胃黏膜上皮细胞。</li>
-</ul>
-<h1 id="细胞死亡"><a class="markdownIt-Anchor" href="#细胞死亡"></a> 细胞死亡</h1>
-<p>当细胞受到严重损伤累及细胞核时，发生致死性代谢、结构和功能障碍，可引起 <strong>细胞不可逆性损伤 irreversible injury</strong>,即细胞死亡。</p>
-<h2 id="坏死-necrosis"><a class="markdownIt-Anchor" href="#坏死-necrosis"></a> 坏死 necrosis</h2>
-<ul>
-<li>坏死是以 <strong>酶溶性 enzyme solubility 变化</strong> 为特点的活体内局部组织中细胞的死亡。</li>
-<li>可由致病因素较强直接导致，大多由可逆性损伤发展而来</li>
-<li><em>炎症时坏死细胞和周围渗出的中性粒细胞释放溶酶体酶，促进坏死进一步发生和局部实质细胞溶解，故常累及多个细胞。</em></li>
-<li>其基本表现是细胞肿胀、细胞器崩解和蛋白质变形</li>
-<li>特点：质膜崩解、结构自溶、急性炎症反应；代谢完全停止、功能完全丧失、不可逆</li>
-<li>形态学改变：细胞水肿、细胞器降解、细胞核溶解小时、炎细胞浸润</li>
-</ul>
-<h3 id="坏死的基本病变"><a class="markdownIt-Anchor" href="#坏死的基本病变"></a> 坏死的基本病变</h3>
-<ul>
-<li>细胞坏死后数小时后镜下才可见，酶可释放到血液中
-<ul>
-<li>心肌梗死的最早形态学改变在 4-14h 后，但 2h 后可见血清中肌酸激酶、乳酸脱氢酶、谷草转氨酶升高。</li>
-</ul>
-</li>
-</ul>
-<h4 id="细胞核的变化"><a class="markdownIt-Anchor" href="#细胞核的变化"></a> 细胞核的变化</h4>
-<ul>
-<li>
-<p>是细胞坏死的主要形态学标志</p>
-</li>
-<li>
-<p>主要表现</p>
-<ul>
-<li><strong>核固缩 pyknosis</strong>: 细胞核染色质DNA浓聚、皱缩，使核体积减小，嗜碱性增强。</li>
-<li><strong>核碎裂 karyorrhexis</strong>: 由于细胞核染色质崩裂核核膜碎裂，细胞核发生碎裂，使核物质分散于胞质。</li>
-<li><strong>核溶解 karyolysis</strong>: 非特异性DNA酶核蛋白酶激活，染色质降解，核染色质嗜碱性下降，仅能见到核的轮廓。</li>
-</ul>
-</li>
-</ul>
-<h4 id="细胞质和细胞膜的变化"><a class="markdownIt-Anchor" href="#细胞质和细胞膜的变化"></a> 细胞质和细胞膜的变化</h4>
-<ul>
-<li>细胞胞质嗜酸性增强
-<ul>
-<li>原因：核糖体减少、胞质变性、蛋白质增多。</li>
-</ul>
-</li>
-<li>主要超微结构变化
-<ul>
-<li>线粒体内质网肿胀形成空泡</li>
-<li>线粒体基质无定形钙致密物堆积</li>
-<li>溶酶体释放酸性水解酶溶解细胞成分</li>
-</ul>
-</li>
-<li>坏死与凋亡的区别：坏死细胞细胞膜破裂，细胞内容物溢出，可引起周围组织的炎症反应。</li>
-</ul>
-<h4 id="间质的变化"><a class="markdownIt-Anchor" href="#间质的变化"></a> 间质的变化</h4>
-<ul>
-<li>
-<p>早期：变化不大。因为间质细胞对损伤的耐受性大于实质细胞。</p>
-</li>
-<li>
-<p>后期：在各种酶的作用下，细胞外基质肿胀、液化崩解、形成片状模糊的无结构物质。</p>
-</li>
-</ul>
-<h3 id="坏死的类型"><a class="markdownIt-Anchor" href="#坏死的类型"></a> 坏死的类型</h3>
-<h4 id="凝固性坏死-coagulative-necrosis"><a class="markdownIt-Anchor" href="#凝固性坏死-coagulative-necrosis"></a> 凝固性坏死 coagulative necrosis</h4>
-<ul>
-<li>蛋白质变性凝固且溶酶体酶水解作用较弱时，坏死区呈灰黄、干燥、质实状态。</li>
-<li>最常见的坏死类型</li>
-<li>常见原因是缺血性损伤（梗死）也可由细菌毒素、化学腐蚀剂作用引起。</li>
-<li>镜下
-<ul>
-<li>细胞微细结构小时，组织结构轮廓尚存</li>
-<li>坏死区周围常形成充血、出血和炎症反应带</li>
-<li>与周围组织通常界限清楚。</li>
-</ul>
-</li>
-<li>常发生于除脑组织以外的心、肝、肺、肾等 <strong>实质器官</strong>。</li>
-</ul>
-<h4 id="液化性坏死-liquefactive-necrosis"><a class="markdownIt-Anchor" href="#液化性坏死-liquefactive-necrosis"></a> 液化性坏死 liquefactive necrosis</h4>
-<ul>
-<li>自溶和异溶使细胞组织坏死后发生溶解液化。</li>
-<li>通常由于蛋白质较少，或蛋白酶水解作用较强时发生。</li>
-<li>镜下：死亡细胞完全被消化，局部组织快速被溶解。</li>
-<li>可见于细菌或某些真菌感染引起的脓肿，及缺血缺氧引起的脑组织坏死（又称为脑软化）等。</li>
-</ul>
-<h4 id="坏疽-gangrene"><a class="markdownIt-Anchor" href="#坏疽-gangrene"></a> 坏疽 gangrene</h4>
-<ul>
-<li>
-<p>继发腐败菌感染的局部组织大块坏死，又称坏疽性坏死 gangrenous necrosis</p>
-</li>
-<li>
-<p>感染的腐败菌多为梭状芽孢杆菌属的厌氧菌等</p>
-</li>
-<li>
-<p>产生的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>H</mtext><mn>2</mn></msub><mtext>S</mtext></mrow><annotation encoding="application/x-tex">\text{H}_2\text{S}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord text"><span class="mord">H</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord text"><span class="mord">S</span></span></span></span></span> 与血红蛋白中的<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext>Fe</mtext><mrow><mn>3</mn><mo>+</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\text{Fe}^{3+}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8873em;"></span><span class="mord"><span class="mord text"><span class="mord">Fe</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8873em;"><span style="top:-3.1362em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">+</span></span></span></span></span></span></span></span></span></span></span></span> 结合形成 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>Fe</mtext><mn>2</mn></msub><msub><mtext>S</mtext><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">\text{Fe}_2\text{S}_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord text"><span class="mord">Fe</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord text"><span class="mord">S</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 使组织变为黑色或暗绿色。</p>
-</li>
-<li>
-<p><strong>干性坏疽 dry gangrene</strong></p>
-<ul>
-<li>位置
-<ul>
-<li>常见四肢末端尤其是下肢。</li>
-</ul>
-</li>
-<li>特点
-<ul>
-<li>因水分散失较多故坏死区干燥皱缩呈黑色</li>
-<li>与正常组织界限清楚，为凝固性坏死的特殊类型</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>湿性坏疽 moist gangrene</strong></p>
-<ul>
-<li>位置
-<ul>
-<li>多发于与体表相通的内脏，如：肺、肠、子宫、阑尾及胆囊等</li>
-<li>也可发生于动脉阻塞及静脉回流受阻的肢体</li>
-</ul>
-</li>
-<li>特点
-<ul>
-<li>坏死区水分较多，腐败菌易于繁殖，故肿胀呈暗红色或蓝绿色</li>
-<li>与周围正常组织界限不清</li>
-<li>坏死组织腐败分解产生大量的毒性物质被机体吸收，可造成毒血症</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>气性坏疽 gas gangrene</strong></p>
-<ul>
-<li>位置
-<ul>
-<li>系深达肌肉的开放性创伤，合并气荚膜梭菌等厌氧菌感染。</li>
-</ul>
-</li>
-<li>特点
-<ul>
-<li>除发生坏死外，还产生大量气体，使坏死区按之有捻发感，往往伴有恶臭。</li>
-<li>镜下兼具凝固性坏死和液化性坏死的特点。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>总结</p>
-<ul>
-<li>湿性坏疽和气性坏疽常伴全身中毒症状。</li>
-<li>干性坏疽多为凝固性坏死，湿性坏疽和气性坏疽则为凝固性坏死和液化性坏死的混合。</li>
-<li>干性、湿性多为继发于血液循环障碍引起的缺血坏死。</li>
-</ul>
-</li>
-</ul>
-<h4 id="干酪样坏死-caseous-necrosis"><a class="markdownIt-Anchor" href="#干酪样坏死-caseous-necrosis"></a> 干酪样坏死 caseous necrosis</h4>
-<ul>
-<li>因病灶中含脂质较多，坏死区呈黄色，状似干酪。</li>
-<li>镜下：原有组织结构完全崩解破坏，表现为无结构颗粒状红染物，是坏死更为彻底的特殊类型凝固性坏死。</li>
-<li>通常见于肉芽肿性炎，尤其是结核病。</li>
-</ul>
-<h4 id="纤维素样坏死-fibrinoid-necrosis"><a class="markdownIt-Anchor" href="#纤维素样坏死-fibrinoid-necrosis"></a> 纤维素样坏死 fibrinoid necrosis</h4>
-<ul>
-<li>镜下：形成细丝状、颗粒状无结构物质，形似纤维素。</li>
-<li>结缔组织及小血管壁常见的坏死形式。</li>
-<li>见于某些变态反应性疾病，如风湿病等。</li>
-</ul>
-<h4 id="脂肪坏死-fat-necrosis"><a class="markdownIt-Anchor" href="#脂肪坏死-fat-necrosis"></a> 脂肪坏死 fat necrosis</h4>
-<ul>
-<li>脂肪酶对脂肪细胞的作用引起的，是一种特殊类型的液化性坏死。</li>
-<li>脂肪坏死后，释放的脂肪酸和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext>Ca</mtext><mrow><mn>2</mn><mo>+</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\text{Ca}^{2+}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8873em;"></span><span class="mord"><span class="mord text"><span class="mord">Ca</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8873em;"><span style="top:-3.1362em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mtight">+</span></span></span></span></span></span></span></span></span></span></span></span> 结合，形成肉眼可见的灰白色钙皂。</li>
-<li>通常见于急性胰腺炎或外伤。</li>
-</ul>
-<h3 id="坏死的结局"><a class="markdownIt-Anchor" href="#坏死的结局"></a> 坏死的结局</h3>
-<h4 id="溶解吸收"><a class="markdownIt-Anchor" href="#溶解吸收"></a> 溶解吸收</h4>
-<ul>
-<li>坏死组织与中性粒细胞释放蛋白水解酶使坏死组织溶解液化，由淋巴管、血管吸收</li>
-<li>不能吸收的碎片由吞噬细胞吞噬清除</li>
-<li>坏死液化范围大时可形成囊腔</li>
-<li>坏死细胞溶解后可引发周围组织急性炎症反应</li>
-</ul>
-<h4 id="分离排出"><a class="markdownIt-Anchor" href="#分离排出"></a> 分离排出</h4>
-<h4 id="机化与包裹"><a class="markdownIt-Anchor" href="#机化与包裹"></a> 机化与包裹</h4>
-<ul>
-<li><strong>机化 organization</strong>
-<ul>
-<li>坏死组织不能完全溶解吸收或分离排出，可由肉芽组织长入并替代</li>
-</ul>
-</li>
-<li><strong>包裹 encapsulation</strong>
-<ul>
-<li>坏死组织太大，由周围增生的肉芽组织将其包围</li>
-</ul>
-</li>
-<li>肉芽组织最终都可形成纤维瘢痕</li>
-</ul>
-<h4 id="钙化"><a class="markdownIt-Anchor" href="#钙化"></a> 钙化</h4>
-<p>坏死细胞和细胞碎片若未被及时清除可激发营养不良性钙化</p>
-<h3 id="坏死对机体的影响"><a class="markdownIt-Anchor" href="#坏死对机体的影响"></a> 坏死对机体的影响</h3>
-<ul>
-<li>
-<p>坏死细胞的重要性</p>
-</li>
-<li>
-<p>坏死细胞的数量</p>
-</li>
-<li>
-<p>坏死细胞的再生能力</p>
-</li>
-<li>
-<p>坏死细胞的代偿能力</p>
-</li>
-</ul>
-<h2 id="凋亡-apoptosis"><a class="markdownIt-Anchor" href="#凋亡-apoptosis"></a> 凋亡 apoptosis</h2>
-<ul>
-<li>活体内局部组织中单个细胞内源性酶激活后降解自身DNA和核内及胞质内蛋白质而引起的 <strong>程序性细胞死亡 programmmed cell death</strong></li>
-<li>由体内外因素触发细胞内预存的死亡程序导致的细胞主动性死亡方式。</li>
-</ul>
-<h3 id="凋亡的原因"><a class="markdownIt-Anchor" href="#凋亡的原因"></a> 凋亡的原因</h3>
-<h4 id="生理性凋亡"><a class="markdownIt-Anchor" href="#生理性凋亡"></a> 生理性凋亡</h4>
-<h4 id="病理性凋亡"><a class="markdownIt-Anchor" href="#病理性凋亡"></a> 病理性凋亡</h4>
-<h3 id="凋亡的机制"><a class="markdownIt-Anchor" href="#凋亡的机制"></a> 凋亡的机制</h3>
-<h3 id="凋亡的形态学特征"><a class="markdownIt-Anchor" href="#凋亡的形态学特征"></a> 凋亡的形态学特征</h3>
+<h3 id="对机体的有利作用"><a class="markdownIt-Anchor" href="#对机体的有利作用"></a> 对机体的有利作用</h3>
+<h3 id="对机体的负面作用"><a class="markdownIt-Anchor" href="#对机体的负面作用"></a> 对机体的负面作用</h3>
+<h1 id="皮肤的结构与创伤愈合"><a class="markdownIt-Anchor" href="#皮肤的结构与创伤愈合"></a> 皮肤的结构与创伤愈合</h1>
 ]]></content>
       <categories>
         <category>基础医学</category>
@@ -3052,5 +3047,10 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v600 v585 h43z"/></svg></span></span>
         <tag>人体结构与功能基础</tag>
         <tag>病理学</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>LinearRegression</title>
+    <url>/2025/10/26/Math/Statistics/LinearRegression/LinearRegression/LinearRegression/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
