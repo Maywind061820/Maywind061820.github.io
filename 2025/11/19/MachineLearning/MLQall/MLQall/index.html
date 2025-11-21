@@ -1,0 +1,1028 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-CN"  
+    
+      data-theme-mode="auto"
+    
+  >
+  <head>
+  
+  <meta charset="utf-8">
+  
+
+  
+
+  
+
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_4k4bc36ef96';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';</script>
+  
+  <title>
+    MLQall |
+    
+    May_wind&#39;s Blog
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
+  
+  
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_4k4bc36ef96.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+    
+<link rel="stylesheet" href="../../../../../../../../../../../../css/loader.css">
+
+  
+  
+    <meta name="description" content="Question1 flowchart TD     A[定义问题与目标] --&gt; B[数据收集与理解];     C[数据清洗和预处理];     D[特征工程];     D --&gt; E[模型训练];     E --&gt; F[模型评估];     G{性能是否满意?};     G -- 否 --&gt; D;     G -- 否 --&gt; E;     G -- 是 --&gt; H[模型预测&#x2F;应用]">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MLQall">
+<meta property="og:url" content="http://example.com/2025/11/19/MachineLearning/MLQall/MLQall/index.html">
+<meta property="og:site_name" content="May_wind&#39;s Blog">
+<meta property="og:description" content="Question1 flowchart TD     A[定义问题与目标] --&gt; B[数据收集与理解];     C[数据清洗和预处理];     D[特征工程];     D --&gt; E[模型训练];     E --&gt; F[模型评估];     G{性能是否满意?};     G -- 否 --&gt; D;     G -- 否 --&gt; E;     G -- 是 --&gt; H[模型预测&#x2F;应用]">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/11/19/MachineLearning/MLQall/MLQall/11.png">
+<meta property="article:published_time" content="2025-11-19T05:21:40.000Z">
+<meta property="article:modified_time" content="2025-11-21T05:31:54.635Z">
+<meta property="article:author" content="May_wind">
+<meta property="article:tag" content="机器学习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2025/11/19/MachineLearning/MLQall/MLQall/11.png">
+  
+  
+    <link rel="alternate" href="../../../../../../atom.xml" title="May_wind's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="../../../../../../images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="../../../../../../../../../../../../css/style.css">
+
+  <link rel="preload" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL&#x2F;toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx&#x2F;1oA&#x2F;0l8ysE" crossorigin="anonymous">
+  
+  
+  
+  
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css" integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous">
+
+  
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    
+    
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate">
+        
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+        
+      </div>
+      
+      
+        
+      
+      <div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var loaderEl = document.getElementById('loader');
+    var startLoading = () => {
+      time = Date.now();
+      loaderEl.classList.remove("loading");
+    }
+    var hideLoader = () => {
+      document.body.style.overflow = 'auto';
+      loader.classList.add('loading');
+    };
+
+    var endLoading = () => {
+      if (!time) {
+        hideLoader();
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          hideLoader();
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    loaderEl.addEventListener('click', endLoading);
+  </script>
+
+<div id="copy-tooltip"></div>
+<div id="heatmap-tooltip"></div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav" aria-label="Primary navigation">
+    
+      
+        <a class="main-nav-link-wrap" href="../../../../../../index.html">
+          <div class="main-nav-icon icon rotate">
+             
+              &#xe62b;
+             
+          </div>
+          <span class="main-nav-link">首页</span>
+        </span>
+      
+        <a class="main-nav-link-wrap" href="../../../../../../archives">
+          <div class="main-nav-icon icon rotate">
+             
+              &#xe62b;
+             
+          </div>
+          <span class="main-nav-link">归档</span>
+        </span>
+      
+        <a class="main-nav-link-wrap" href="../../../../../../about">
+          <div class="main-nav-icon icon rotate">
+             
+              &#xe62b;
+             
+          </div>
+          <span class="main-nav-link">关于</span>
+        </span>
+      
+        <a class="main-nav-link-wrap" href="../../../../../../friend">
+          <div class="main-nav-icon icon rotate">
+             
+              &#xe62b;
+             
+          </div>
+          <span class="main-nav-link">友链</span>
+        </span>
+      
+    
+    <a id="main-nav-toggle" class="nav-icon" aria-label="Toggle navigation" role="button"></a>
+  </nav>
+  <nav id="sub-nav" aria-label="Secondary navigation">
+    
+      <a id="nav-rss-link" class="nav-icon" href="../../../../../../atom.xml" title="RSS 订阅" aria-label="RSS 订阅" target="_blank"></a>
+    
+    
+  </nav>
+  
+  
+</div>
+<header id="header" aria-label="Site header">
+  
+    
+      
+        <picture>
+          
+        </picture>
+        
+          <img  fetchpriority="high" src="/images/banner.webp" alt="MLQall">
+        
+      
+    
+  
+  <div id="header-outer">
+    <div id="header-title">
+      
+        
+        
+          <span id="logo">
+            <h1 data-aos="slide-up">MLQall</h1>
+          </span>
+        
+      
+      
+        
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+          
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+        <div id="content" aria-label="Page content"  class="sidebar-right" >
+          <aside id="sidebar" aria-label="Sidebar">
+  
+  <div class="sidebar-wrapper-container sticky">
+  
+    
+    
+  
+ 
+  <div class="sidebar-wrapper">
+    <div class="sidebar-wrap" data-aos="fade-up">
+      
+        
+          <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class" >
+  
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#question1"><span class="toc-number">1.</span> <span class="toc-text"> Question1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question2"><span class="toc-number">2.</span> <span class="toc-text"> Question2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question3"><span class="toc-number">3.</span> <span class="toc-text"> Question3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question4"><span class="toc-number">4.</span> <span class="toc-text"> Question4</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9E%E5%BD%92"><span class="toc-number">4.1.</span> <span class="toc-text"> 回归</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%B1%BB"><span class="toc-number">4.2.</span> <span class="toc-text"> 分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81"><span class="toc-number">4.3.</span> <span class="toc-text"> 交叉验证</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question5"><span class="toc-number">5.</span> <span class="toc-text"> Question5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question6"><span class="toc-number">6.</span> <span class="toc-text"> Question6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question7"><span class="toc-number">7.</span> <span class="toc-text"> Question7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question8"><span class="toc-number">8.</span> <span class="toc-text"> Question8</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="toc-number">8.1.</span> <span class="toc-text"> 神经网络的基本组成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question9"><span class="toc-number">9.</span> <span class="toc-text"> Question9</span></a></li></ol>
+  
+</div>
+</div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="May_wind" class="lazyload">
+  <div class="sidebar-author-name">May_wind</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">25</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">10</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">15</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+        
+      
+      
+        
+          <div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div>
+        
+      
+    </div>
+  </div>
+  
+  <div class="sidebar-widget">
+  
+  </div>
+  
+  </div>
+  
+</aside>
+
+          <section id="main" aria-label="Main content"><article id="post-MachineLearning/MLQall/MLQall" class="h-entry article" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <span class="article-date-link icon-calendar" data-aos="zoom-in">
+    <time datetime="2025-11-19T05:21:40.000Z" itemprop="datePublished">2025-11-19</time>
+    <time style="display: none;" id="post-update-time">2025-11-21</time>
+  </span>
+  
+</div>
+
+      
+  <div class="article-category">
+    <a class="article-category-link" href="../../../../../../categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" title="机器学习">机器学习</a>
+  </div>
+
+
+    </div>
+    
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <h2 id="question1"><a class="markdownIt-Anchor" href="#question1"></a> Question1</h2>
+<pre class="mermaid">flowchart TD
+    A[定义问题与目标] --> B[数据收集与理解];
+    C[数据清洗和预处理];
+    D[特征工程];
+    D --> E[模型训练];
+    E --> F[模型评估];
+    G{性能是否满意?};
+    G -- 否 --> D;
+    G -- 否 --> E;
+    G -- 是 --> H[模型预测/应用];
+    
+    subgraph A [阶段一：问题定义]
+    end
+    
+    subgraph B_C_D [阶段二：数据准备]
+        direction LR
+        B --> C --> D;
+    end
+    
+    subgraph E_F_G [阶段三：建模与迭代]
+        direction LR
+        E --> F --> G;
+    end
+    
+    subgraph H [阶段四：应用]
+    end</pre>
+<h2 id="question2"><a class="markdownIt-Anchor" href="#question2"></a> Question2</h2>
+<ul>
+<li>训练集
+<ul>
+<li>用于训练模型的数据集</li>
+</ul>
+</li>
+<li>测试集
+<ul>
+<li>用于测试模型效果的数据集</li>
+</ul>
+</li>
+<li>意义
+<ul>
+<li>验证模型的可靠性</li>
+<li>多模型时选择最优模型的方式</li>
+</ul>
+</li>
+<li>欠拟合
+<ul>
+<li>模型在训练集上表现不佳，模型能力过弱</li>
+</ul>
+</li>
+<li>过拟合
+<ul>
+<li>模型过度捕捉训练集信息，导致其在测试集上表现不佳，模型能力过强（加入噪声等）</li>
+</ul>
+</li>
+</ul>
+<h2 id="question3"><a class="markdownIt-Anchor" href="#question3"></a> Question3</h2>
+<ul>
+<li>
+<p>监督学习</p>
+<ul>
+<li>根据某种已知的结果对模型进行评分和调整，预测变量和响应变量已知。</li>
+</ul>
+</li>
+<li>
+<p>无监督学习</p>
+<ul>
+<li>模型从数据中总结预测函数f和信息，自行决定已知结果并调整参数。</li>
+</ul>
+</li>
+<li>
+<p>回归</p>
+<ul>
+<li>响应变量为定量变量</li>
+</ul>
+</li>
+<li>
+<p>分类</p>
+<ul>
+<li>响应变量为定性变量</li>
+</ul>
+</li>
+<li>
+<p>混合类</p>
+</li>
+<li>
+<p>Summary</p>
+<table>
+<thead>
+<tr>
+<th>学习类型</th>
+<th>数据特点</th>
+<th>任务目标</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>监督学习</strong></td>
+<td>有标签数据</td>
+<td>学习输入到输出的映射</td>
+<td>线性回归、逻辑回归、决策树</td>
+</tr>
+<tr>
+<td><strong>无监督学习</strong></td>
+<td>无标签数据</td>
+<td>发现数据内在结构</td>
+<td>K-means、PCA、关联规则</td>
+</tr>
+<tr>
+<td><strong>分类任务</strong></td>
+<td>离散输出</td>
+<td>预测类别标签</td>
+<td>逻辑回归、SVM、随机森林</td>
+</tr>
+<tr>
+<td><strong>回归任务</strong></td>
+<td>连续输出</td>
+<td>预测数值</td>
+<td>线性回归、决策树回归</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="question4"><a class="markdownIt-Anchor" href="#question4"></a> Question4</h2>
+<h3 id="回归"><a class="markdownIt-Anchor" href="#回归"></a> 回归</h3>
+<ul>
+<li>
+<p><strong>均方误差（MSE）</strong>：预测值与真实值之差的平方的平均值</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>M</mi><mi>S</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent="true"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">MSE</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.9291em;vertical-align:-1.2777em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">n</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6944em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1944em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>均方根误差（RMSE）</strong>：MSE的平方根，与目标变量单位相同</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mi>M</mi><mi>S</mi><mi>E</mi><mo>=</mo><msqrt><mrow><mi>M</mi><mi>S</mi><mi>E</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">RMSE = \sqrt{MSE}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">RMSE</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.0645em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9755em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord mathnormal" style="margin-right:0.05764em;">MSE</span></span></span><span style="top:-2.9355em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.0645em;"><span></span></span></span></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>平均绝对误差（MAE）</strong>：预测值与真实值之差的绝对值的平均值</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>M</mi><mi>A</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi mathvariant="normal">∣</mi><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent="true"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">MAE = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.9291em;vertical-align:-1.2777em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">n</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6944em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1944em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>决定系数（R²）</strong>：模型解释的方差比例，取值范围0-1，越接近1越好</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mrow><mo>∑</mo><mo stretchy="false">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent="true"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><mrow><mo>∑</mo><mo stretchy="false">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><mover accent="true"><mi>y</mi><mo>ˉ</mo></mover><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">R^2 = 1 - \frac{\sum(y_i - \hat{y}_i)^2}{\sum(y_i - \bar{y})^2}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8641em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:2.4271em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.4911em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.5678em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1944em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6944em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1944em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+</ul>
+<h3 id="分类"><a class="markdownIt-Anchor" href="#分类"></a> 分类</h3>
+<ul>
+<li>
+<p>TP:真阳性</p>
+</li>
+<li>
+<p>TN:真阴性</p>
+</li>
+<li>
+<p>FP:假阳性</p>
+</li>
+<li>
+<p>FN:假阴性</p>
+</li>
+<li>
+<p><strong>准确度 Accuracy</strong>：判断的正确率</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>y</mi><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>T</mi><mi>N</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>T</mi><mi>N</mi><mo>+</mo><mi>F</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>N</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">cc</span><span class="mord mathnormal">u</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.03588em;">cy</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.1297em;vertical-align:-0.7693em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">TP</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">TN</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">FP</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">FN</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">TP</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">TN</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>灵敏度sensitivity/召回率recall/命中率hit rate</strong>：真实阳性被检测出的比例</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>S</mi><mi>e</mi><mi>n</mi><mi>s</mi><mi>i</mi><mi>t</mi><mi>i</mi><mi>v</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>N</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">Sensitivity = \frac{TP}{TP + FN}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">s</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.1297em;vertical-align:-0.7693em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">TP</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">FN</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">TP</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>特异度specificity</strong>：真实阴性被检测出的比例</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>S</mi><mi>p</mi><mi>e</mi><mi>c</mi><mi>i</mi><mi>f</mi><mi>i</mi><mi>c</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>=</mo><mfrac><mrow><mi>T</mi><mi>N</mi></mrow><mrow><mi>T</mi><mi>N</mi><mo>+</mo><mi>F</mi><mi>P</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">Specificity = \frac{TN}{TN + FP}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Sp</span><span class="mord mathnormal">ec</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.1297em;vertical-align:-0.7693em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">TN</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">FP</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">TN</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>精度</strong> : 判断为阳性的正确率</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>i</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>P</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">Precision = \frac{TP}{TP + FP}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">rec</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.1297em;vertical-align:-0.7693em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">TP</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">FP</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">TP</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>F1分数</strong>：精度和召回度的调和平均数</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mn>1</mn><mo>=</mo><mn>2</mn><mo>×</mo><mfrac><mrow><mi>P</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>i</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo>×</mo><mi>R</mi><mi>e</mi><mi>c</mi><mi>a</mi><mi>l</mi><mi>l</mi></mrow><mrow><mi>P</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>i</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo>+</mo><mi>R</mi><mi>e</mi><mi>c</mi><mi>a</mi><mi>l</mi><mi>l</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:2.1408em;vertical-align:-0.7693em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">rec</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal">ec</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">rec</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal">ec</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+</ul>
+<h3 id="交叉验证"><a class="markdownIt-Anchor" href="#交叉验证"></a> 交叉验证</h3>
+<p>将整个数据集分割为多个训练块和测试块，评估每块数据的误差，然后取最终误差的平均值进行评估</p>
+<ul>
+<li><strong>k折交叉验证</strong>：将数据分为k个子集，每次用k-1个子集训练，1个子集测试，重复k次</li>
+<li><strong>留一交叉验证</strong>：k折交叉验证的特例，k等于样本数</li>
+<li><strong>分层k折交叉验证</strong>：保持每个折中类别比例与原始数据集相同</li>
+</ul>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 汽车数据集</span></span><br><span class="line">head<span class="punctuation">(</span>mtcars<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 分测试集和训练集</span></span><br><span class="line">split_size <span class="operator">=</span> <span class="number">0.8</span></span><br><span class="line">sample_size <span class="operator">=</span> <span class="built_in">floor</span><span class="punctuation">(</span>split_size <span class="operator">*</span> nrow<span class="punctuation">(</span>mtcars<span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">set.seed<span class="punctuation">(</span><span class="number">123</span><span class="punctuation">)</span></span><br><span class="line">train_indices <span class="operator">&lt;-</span> sample<span class="punctuation">(</span><span class="built_in">seq_len</span><span class="punctuation">(</span>nrow<span class="punctuation">(</span>mtcars<span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">,</span> size <span class="operator">=</span> sample_size<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line">train <span class="operator">&lt;-</span> mtcars<span class="punctuation">[</span>train_indices<span class="punctuation">,</span> <span class="punctuation">]</span></span><br><span class="line">test <span class="operator">&lt;-</span> mtcars<span class="punctuation">[</span><span class="operator">-</span>train_indices<span class="punctuation">,</span> <span class="punctuation">]</span></span><br><span class="line"></span><br><span class="line">model2 <span class="operator">&lt;-</span> lm<span class="punctuation">(</span>mpg <span class="operator">~</span> disp<span class="punctuation">,</span> data<span class="operator">=</span>train<span class="punctuation">)</span></span><br><span class="line"><span class="comment"># 测试集</span></span><br><span class="line">new.data <span class="operator">&lt;-</span> data.frame<span class="punctuation">(</span>disp <span class="operator">=</span> test<span class="operator">$</span>disp<span class="punctuation">)</span></span><br><span class="line">test<span class="operator">$</span>output <span class="operator">&lt;-</span> predict<span class="punctuation">(</span>model2<span class="punctuation">,</span> new.data<span class="punctuation">)</span></span><br><span class="line"><span class="built_in">sqrt</span><span class="punctuation">(</span> <span class="built_in">sum</span><span class="punctuation">(</span> test<span class="operator">$</span>mpg <span class="operator">-</span> test<span class="operator">$</span>output<span class="punctuation">)</span><span class="operator">^</span><span class="number">2</span> <span class="operator">/</span> nrow<span class="punctuation">(</span>test<span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 回归模型评估指标</span></span><br><span class="line">mse <span class="operator">&lt;-</span> mean<span class="punctuation">(</span><span class="punctuation">(</span>test<span class="operator">$</span>mpg <span class="operator">-</span> test<span class="operator">$</span>output<span class="punctuation">)</span><span class="operator">^</span><span class="number">2</span><span class="punctuation">)</span></span><br><span class="line">rmse <span class="operator">&lt;-</span> <span class="built_in">sqrt</span><span class="punctuation">(</span>mse<span class="punctuation">)</span></span><br><span class="line">mae <span class="operator">&lt;-</span> mean<span class="punctuation">(</span><span class="built_in">abs</span><span class="punctuation">(</span>test<span class="operator">$</span>mpg <span class="operator">-</span> test<span class="operator">$</span>output<span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">rsquared <span class="operator">&lt;-</span> summary<span class="punctuation">(</span>model2<span class="punctuation">)</span><span class="operator">$</span>r.squared</span><br><span class="line"></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;均方误差 (MSE):&quot;</span><span class="punctuation">,</span> mse<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;均方根误差 (RMSE):&quot;</span><span class="punctuation">,</span> rmse<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;平均绝对误差 (MAE):&quot;</span><span class="punctuation">,</span> mae<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;决定系数 (R²):&quot;</span><span class="punctuation">,</span> rsquared<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 线性回归交叉验证</span></span><br><span class="line">library<span class="punctuation">(</span>caret<span class="punctuation">)</span></span><br><span class="line">set.seed<span class="punctuation">(</span><span class="number">123</span><span class="punctuation">)</span></span><br><span class="line">train_control <span class="operator">&lt;-</span> trainControl<span class="punctuation">(</span>method <span class="operator">=</span> <span class="string">&quot;cv&quot;</span><span class="punctuation">,</span> number <span class="operator">=</span> <span class="number">5</span><span class="punctuation">)</span></span><br><span class="line">model_cv <span class="operator">&lt;-</span> train<span class="punctuation">(</span>mpg <span class="operator">~</span> disp<span class="punctuation">,</span> data <span class="operator">=</span> mtcars<span class="punctuation">,</span> method <span class="operator">=</span> <span class="string">&quot;lm&quot;</span><span class="punctuation">,</span> trControl <span class="operator">=</span> train_control<span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;\n交叉验证结果:\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">print<span class="punctuation">(</span>model_cv<span class="operator">$</span>results<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Logistics回归 </span></span><br><span class="line">library<span class="punctuation">(</span>caTools<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line">Label.train <span class="operator">=</span> train<span class="punctuation">[</span><span class="punctuation">,</span><span class="number">9</span><span class="punctuation">]</span></span><br><span class="line">Data.train <span class="operator">=</span> train<span class="punctuation">[</span><span class="punctuation">,</span><span class="operator">-</span><span class="number">9</span><span class="punctuation">]</span></span><br><span class="line"></span><br><span class="line">model <span class="operator">=</span> LogitBoost<span class="punctuation">(</span>Data.train<span class="punctuation">,</span> Label.train<span class="punctuation">)</span></span><br><span class="line">Data.test <span class="operator">=</span> test</span><br><span class="line">Lab <span class="operator">=</span> predict<span class="punctuation">(</span>model<span class="punctuation">,</span> Data.test<span class="punctuation">,</span> type<span class="operator">=</span><span class="string">&quot;raw&quot;</span><span class="punctuation">)</span></span><br><span class="line">data.frame<span class="punctuation">(</span>row.names<span class="punctuation">(</span>test<span class="punctuation">)</span><span class="punctuation">,</span> test<span class="operator">$</span>mpg<span class="punctuation">,</span> test<span class="operator">$</span>am<span class="punctuation">,</span> Lab<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 分类模型评估指标</span></span><br><span class="line">accuracy <span class="operator">&lt;-</span> <span class="built_in">sum</span><span class="punctuation">(</span>diag<span class="punctuation">(</span>conf_matrix<span class="punctuation">)</span><span class="punctuation">)</span> <span class="operator">/</span> <span class="built_in">sum</span><span class="punctuation">(</span>conf_matrix<span class="punctuation">)</span></span><br><span class="line">precision <span class="operator">&lt;-</span> conf_matrix<span class="punctuation">[</span><span class="number">2</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">]</span> <span class="operator">/</span> <span class="built_in">sum</span><span class="punctuation">(</span>conf_matrix<span class="punctuation">[</span><span class="number">2</span><span class="punctuation">,</span><span class="punctuation">]</span><span class="punctuation">)</span></span><br><span class="line">recall <span class="operator">&lt;-</span> conf_matrix<span class="punctuation">[</span><span class="number">2</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">]</span> <span class="operator">/</span> <span class="built_in">sum</span><span class="punctuation">(</span>conf_matrix<span class="punctuation">[</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">]</span><span class="punctuation">)</span></span><br><span class="line">f1_score <span class="operator">&lt;-</span> 2 <span class="operator">*</span> <span class="punctuation">(</span>precision <span class="operator">*</span> recall<span class="punctuation">)</span> <span class="operator">/</span> <span class="punctuation">(</span>precision <span class="operator">+</span> recall<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;准确率:&quot;</span><span class="punctuation">,</span> accuracy<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;精确率:&quot;</span><span class="punctuation">,</span> precision<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;召回率:&quot;</span><span class="punctuation">,</span> recall<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;F1分数:&quot;</span><span class="punctuation">,</span> f1_score<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 逻辑回归交叉验证</span></span><br><span class="line">set.seed<span class="punctuation">(</span><span class="number">123</span><span class="punctuation">)</span></span><br><span class="line">cv_folds <span class="operator">&lt;-</span> createFolds<span class="punctuation">(</span>mtcars<span class="operator">$</span>am<span class="punctuation">,</span> k <span class="operator">=</span> <span class="number">5</span><span class="punctuation">)</span></span><br><span class="line">cv_accuracy <span class="operator">&lt;-</span> sapply<span class="punctuation">(</span>cv_folds<span class="punctuation">,</span> <span class="keyword">function</span><span class="punctuation">(</span>fold<span class="punctuation">)</span> <span class="punctuation">&#123;</span></span><br><span class="line">  train_cv <span class="operator">&lt;-</span> mtcars<span class="punctuation">[</span><span class="operator">-</span>fold<span class="punctuation">,</span> <span class="punctuation">]</span></span><br><span class="line">  test_cv <span class="operator">&lt;-</span> mtcars<span class="punctuation">[</span>fold<span class="punctuation">,</span> <span class="punctuation">]</span></span><br><span class="line">  model_cv <span class="operator">&lt;-</span> LogitBoost<span class="punctuation">(</span>train_cv<span class="punctuation">[</span><span class="punctuation">,</span><span class="operator">-</span><span class="number">9</span><span class="punctuation">]</span><span class="punctuation">,</span> train_cv<span class="punctuation">[</span><span class="punctuation">,</span><span class="number">9</span><span class="punctuation">]</span><span class="punctuation">)</span></span><br><span class="line">  pred_cv <span class="operator">&lt;-</span> predict<span class="punctuation">(</span>model_cv<span class="punctuation">,</span> test_cv<span class="punctuation">[</span><span class="punctuation">,</span><span class="operator">-</span><span class="number">9</span><span class="punctuation">]</span><span class="punctuation">,</span> type <span class="operator">=</span> <span class="string">&quot;raw&quot;</span><span class="punctuation">)</span></span><br><span class="line">  mean<span class="punctuation">(</span>pred_cv <span class="operator">==</span> test_cv<span class="operator">$</span>am<span class="punctuation">)</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;\n逻辑回归交叉验证准确率:&quot;</span><span class="punctuation">,</span> mean<span class="punctuation">(</span>cv_accuracy<span class="punctuation">)</span><span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#K-聚类分析  </span></span><br><span class="line">plot<span class="punctuation">(</span>x <span class="operator">=</span> iris<span class="operator">$</span>Petal.Length<span class="punctuation">,</span> y <span class="operator">=</span> iris<span class="operator">$</span>Petal.Width<span class="punctuation">,</span></span><br><span class="line">     xlab <span class="operator">=</span> <span class="string">&quot;Petal Length&quot;</span><span class="punctuation">,</span>ylab <span class="operator">=</span> <span class="string">&quot;Petal Width&quot;</span><span class="punctuation">)</span></span><br><span class="line">iris_data <span class="operator">&lt;-</span> data.frame<span class="punctuation">(</span>iris<span class="operator">$</span>Petal.Length<span class="punctuation">,</span> iris<span class="operator">$</span>Petal.Width<span class="punctuation">)</span></span><br><span class="line">iris.kmeans <span class="operator">&lt;-</span> kmeans<span class="punctuation">(</span>iris_data<span class="punctuation">,</span> <span class="number">2</span><span class="punctuation">)</span></span><br><span class="line">plot<span class="punctuation">(</span>x <span class="operator">=</span> iris<span class="operator">$</span>Petal.Length<span class="punctuation">,</span> y <span class="operator">=</span> iris<span class="operator">$</span>Petal.Width<span class="punctuation">,</span>pch <span class="operator">=</span> iris.kmeans<span class="operator">$</span>cluster<span class="punctuation">,</span></span><br><span class="line">     xlab <span class="operator">=</span> <span class="string">&quot;Petal Length&quot;</span><span class="punctuation">,</span>ylab <span class="operator">=</span> <span class="string">&quot;Petal Width&quot;</span><span class="punctuation">)</span></span><br><span class="line">points<span class="punctuation">(</span>iris.kmeans<span class="operator">$</span>centers<span class="punctuation">,</span> pch <span class="operator">=</span> <span class="number">8</span><span class="punctuation">,</span> cex <span class="operator">=</span> <span class="number">2</span><span class="punctuation">)</span></span><br><span class="line">iris.kmeans3 <span class="operator">&lt;-</span> kmeans<span class="punctuation">(</span>iris_data<span class="punctuation">,</span> <span class="number">3</span><span class="punctuation">)</span></span><br><span class="line">plot<span class="punctuation">(</span>x <span class="operator">=</span> iris<span class="operator">$</span>Petal.Length<span class="punctuation">,</span> y <span class="operator">=</span> iris<span class="operator">$</span>Petal.Width<span class="punctuation">,</span>pch <span class="operator">=</span> iris.kmeans3<span class="operator">$</span>cluster<span class="punctuation">,</span></span><br><span class="line">     xlab <span class="operator">=</span> <span class="string">&quot;Petal Length&quot;</span><span class="punctuation">,</span>ylab <span class="operator">=</span> <span class="string">&quot;Petal Width&quot;</span><span class="punctuation">,</span>main <span class="operator">=</span> <span class="string">&quot;3kmeans&quot;</span><span class="punctuation">)</span></span><br><span class="line">points<span class="punctuation">(</span>iris.kmeans3<span class="operator">$</span>centers<span class="punctuation">,</span> pch <span class="operator">=</span> <span class="number">8</span><span class="punctuation">,</span> cex <span class="operator">=</span> <span class="number">2</span><span class="punctuation">)</span></span><br><span class="line">par<span class="punctuation">(</span>mfrow <span class="operator">=</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="number">1</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">plot<span class="punctuation">(</span>x <span class="operator">=</span> iris<span class="operator">$</span>Petal.Length<span class="punctuation">,</span> y <span class="operator">=</span> iris<span class="operator">$</span>Petal.Width<span class="punctuation">,</span>pch <span class="operator">=</span> iris.kmeans3<span class="operator">$</span>cluster<span class="punctuation">,</span></span><br><span class="line">     xlab <span class="operator">=</span> <span class="string">&quot;Petal Length&quot;</span><span class="punctuation">,</span>ylab <span class="operator">=</span> <span class="string">&quot;Petal Width&quot;</span><span class="punctuation">,</span>main <span class="operator">=</span> <span class="string">&quot;3kmeans&quot;</span><span class="punctuation">)</span></span><br><span class="line">plot<span class="punctuation">(</span>x <span class="operator">=</span> iris<span class="operator">$</span>Petal.Length<span class="punctuation">,</span> y <span class="operator">=</span> iris<span class="operator">$</span>Petal.Width<span class="punctuation">,</span>pch <span class="operator">=</span> <span class="built_in">as.integer</span><span class="punctuation">(</span>iris<span class="operator">$</span>Species<span class="punctuation">)</span><span class="punctuation">,</span></span><br><span class="line">     xlab <span class="operator">=</span> <span class="string">&quot;Petal Length&quot;</span><span class="punctuation">,</span>ylab <span class="operator">=</span> <span class="string">&quot;Petal Width&quot;</span><span class="punctuation">,</span>main <span class="operator">=</span> <span class="string">&quot;truedata&quot;</span><span class="punctuation">)</span></span><br><span class="line">table<span class="punctuation">(</span>iris.kmeans3<span class="operator">$</span>cluster<span class="punctuation">,</span> iris<span class="operator">$</span>Species<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 聚类评估指标</span></span><br><span class="line">library<span class="punctuation">(</span>cluster<span class="punctuation">)</span></span><br><span class="line">silhouette_avg <span class="operator">&lt;-</span> mean<span class="punctuation">(</span>silhouette<span class="punctuation">(</span>iris.kmeans3<span class="operator">$</span>cluster<span class="punctuation">,</span> dist<span class="punctuation">(</span>iris_data<span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">[</span><span class="punctuation">,</span><span class="number">3</span><span class="punctuation">]</span><span class="punctuation">)</span></span><br><span class="line">within_ss <span class="operator">&lt;-</span> iris.kmeans3<span class="operator">$</span>tot.withinss</span><br><span class="line">between_ss <span class="operator">&lt;-</span> iris.kmeans3<span class="operator">$</span>betweenss</span><br><span class="line"></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;\n聚类评估指标:\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;轮廓系数:&quot;</span><span class="punctuation">,</span> silhouette_avg<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;组内平方和:&quot;</span><span class="punctuation">,</span> within_ss<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;组间平方和:&quot;</span><span class="punctuation">,</span> between_ss<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;聚类与真实类别比较:\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">print<span class="punctuation">(</span>table<span class="punctuation">(</span>iris.kmeans3<span class="operator">$</span>cluster<span class="punctuation">,</span> iris<span class="operator">$</span>Species<span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<p><img src="11.png" alt="1" /></p>
+<h2 id="question5"><a class="markdownIt-Anchor" href="#question5"></a> Question5</h2>
+<p>LASSO的目标函数：</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munder><mrow><mi>min</mi><mo>⁡</mo></mrow><mi>β</mi></munder><mrow><mo fence="true">{</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mi>β</mi><mn>0</mn></msub><mo>−</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>p</mi></munderover><msub><mi>β</mi><mi>j</mi></msub><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mi>λ</mi><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>p</mi></munderover><mi mathvariant="normal">∣</mi><msub><mi>β</mi><mi>j</mi></msub><mi mathvariant="normal">∣</mi><mo fence="true">}</mo></mrow></mrow><annotation encoding="application/x-tex">\min_{\beta} \left\{\sum_{i=1}^{n}(y_i - \beta_0 - \sum_{j=1}^{p}\beta_jx_{ij})^2 + \lambda \sum_{j=1}^{p}|\beta_j| \right\}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.1638em;vertical-align:-1.4138em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6679em;"><span style="top:-2.3479em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05278em;">β</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">min</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8882em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6985em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3471em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4138em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6985em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3471em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4138em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size4">}</span></span></span></span></span></span></span></p>
+<p>即 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>S</mi><mi>S</mi><mo>+</mo><mi>λ</mi><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>p</mi></msubsup><mi mathvariant="normal">∣</mi><msub><mi>β</mi><mi>j</mi></msub><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">RSS+\lambda \sum_{j=1}^{p}|\beta_j|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">RSS</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.2401em;vertical-align:-0.4358em;"></span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4358em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord">∣</span></span></span></span></p>
+<p>LASSO回归在普通的线性回归基础上加入L1范数惩罚项，使变量的系数可以为0</p>
+<h2 id="question6"><a class="markdownIt-Anchor" href="#question6"></a> Question6</h2>
+<p>随机森林是一种集成学习方法，通过构建多棵决策树并将它们的预测结果组合起来，以提高预测准确性和模型的鲁棒性。</p>
+<p>决策树过程</p>
+<ul>
+<li>
+<p>从原始数据集中通过自助采样法抽取多个样本子集</p>
+</li>
+<li>
+<p>为每个样本子集构建一棵决策树</p>
+</li>
+<li>
+<p>在每棵树的每个节点分裂时，随机选择特征子集进行考虑</p>
+</li>
+<li>
+<p>将所有树的预测结果进行组合（分类任务使用投票，回归任务使用平均）</p>
+</li>
+</ul>
+<h2 id="question7"><a class="markdownIt-Anchor" href="#question7"></a> Question7</h2>
+<p>支持向量机SVM是一种监督学习算法，可用于分类和回归任务。SVM的核心思想是找到一个最优的超平面，将不同类别的数据点分开，同时最大化边界（间隔）。</p>
+<h2 id="question8"><a class="markdownIt-Anchor" href="#question8"></a> Question8</h2>
+<p>由大量相互连接的节点（神经元）组成。输入向量经过神经网络得到输出向量。</p>
+<h3 id="神经网络的基本组成"><a class="markdownIt-Anchor" href="#神经网络的基本组成"></a> 神经网络的基本组成</h3>
+<ul>
+<li>
+<p>神经元</p>
+<ul>
+<li>神经网络的基本处理单元</li>
+</ul>
+</li>
+<li>
+<p>层</p>
+<ul>
+<li>输入层
+<ul>
+<li>接收原始特征</li>
+</ul>
+</li>
+<li>隐藏层
+<ul>
+<li>进行特征变换和模式学习</li>
+</ul>
+</li>
+<li>输出层
+<ul>
+<li>产生最终预测</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>权重和偏置</p>
+<ul>
+<li>连接神经元之间的参数</li>
+</ul>
+</li>
+<li>
+<p>激活函数</p>
+<ul>
+<li>非线性函数模拟神经元的激活过程，使网络能够学习复杂模式</li>
+</ul>
+</li>
+</ul>
+<h2 id="question9"><a class="markdownIt-Anchor" href="#question9"></a> Question9</h2>
+<p>PCA用于对具有多个预测变量的数据进行降维，对原始预测变量进行线性组合得到正交基，称为主成分，按照方差大小降序排序。一般取前两个主成分。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="../../../../../../tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag" title="机器学习">机器学习</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+  <nav id="article-nav" aria-label="Article navigation" data-aos="fade-up">
+    
+      
+      <div class="article-nav-link-wrap left">
+        
+          
+          
+            <img data-src="/images/banner.webp" data-sizes="auto" alt="线性回归" class="lazyload">
+          
+        
+        <a href="/2025/11/19/MachineLearning/LinearRegression/LinearRegression/" aria-label="前一篇: 线性回归" title="前一篇: 线性回归"></a>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">
+          
+            线性回归
+          
+        </h3>
+      </div>
+    
+    
+    
+    <div class="article-nav-link-wrap right">
+      
+        
+        
+          <img data-src="/images/banner.webp" data-sizes="auto" alt="EasyML" class="lazyload">
+        
+      
+      <a href="/2025/11/12/Bioinformatics/EasyML/EasyML/" aria-label="后一篇: EasyML"  title="后一篇: EasyML"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          EasyML
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+
+
+
+
+
+
+</section>
+        </div>
+        <footer id="footer" aria-label="Site footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    
+    <div>
+      <span class="icon-copyright"></span>
+      
+      
+      
+        2020-2025
+      
+      <span class="footer-info-sep rotate"></span>
+      May_wind
+    </div>
+    
+      <div>
+        基于&nbsp;<a href="https://hexo.io/" rel="noopener nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+    
+    
+      <div>
+        <span class="icon-brush"></span>
+        36.3k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        03:01
+      </div>
+    
+    
+    
+    
+    
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+    
+  </div>
+</footer>
+
+        
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav" aria-label="Mobile navigation">
+  <div class="sidebar-wrap">
+    
+      
+        <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class" >
+  
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#question1"><span class="toc-number">1.</span> <span class="toc-text"> Question1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question2"><span class="toc-number">2.</span> <span class="toc-text"> Question2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question3"><span class="toc-number">3.</span> <span class="toc-text"> Question3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question4"><span class="toc-number">4.</span> <span class="toc-text"> Question4</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9E%E5%BD%92"><span class="toc-number">4.1.</span> <span class="toc-text"> 回归</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%B1%BB"><span class="toc-number">4.2.</span> <span class="toc-text"> 分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81"><span class="toc-number">4.3.</span> <span class="toc-text"> 交叉验证</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question5"><span class="toc-number">5.</span> <span class="toc-text"> Question5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question6"><span class="toc-number">6.</span> <span class="toc-text"> Question6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question7"><span class="toc-number">7.</span> <span class="toc-text"> Question7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question8"><span class="toc-number">8.</span> <span class="toc-text"> Question8</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="toc-number">8.1.</span> <span class="toc-text"> 神经网络的基本组成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#question9"><span class="toc-number">9.</span> <span class="toc-text"> Question9</span></a></li></ol>
+  
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="May_wind" class="lazyload">
+  <div class="sidebar-author-name">May_wind</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">25</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">10</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">15</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+      
+    
+  </div>
+  
+    
+      <div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div>
+    
+  
+</nav>
+
+    </div>
+    
+    
+    
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src="../../../../../../../../../../../../js/script.js"></script>
+
+
+
+  
+<script src="../../../../../../../../../../../../js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+
+<script src="../../../../../../../../../../../../js/pjax_script.js" data-pjax></script>
+
+
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js" integrity="sha384-8LyaidD9GPxQQgLJO&#x2F;WRw&#x2F;O2h3BoNq&#x2F;ApI&#x2F;ecpvM6RsrCz2qP2ppBXUKihP4V&#x2F;2d" crossorigin="anonymous"></script>
+
+  <script>
+    window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["var(--red-1)","var(--red-2)","var(--red-3)","var(--red-4)"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["var(--red-0)"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'))
+  </script>
+
+
+
+
+
+
+
+
+
+
+<div id="lazy-script">
+  <div>
+    
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "May_wind",
+          title: "MLQall",
+          url: "http://example.com/2025/11/19/MachineLearning/MLQall/MLQall/",
+          excerpt: "",
+          description: "",
+          stripContent: " Question1 flowchart TD     A[定义问题与目标] --&gt; B[数据收集与理解];     C[数据清洗和预处理];     D[特征工程];     D --&gt; E[模型训练];     E --&gt; F[模型评估];     G{性能是否满意?};     G -- 否 --&gt; D;     G -- 否 --&gt; E;     G -- 是 --&gt; H[模型预测/应用];          subgraph A [阶段一：问题定义]     end          ",
+          date: "Wed Nov 19 2025 13:21:40 GMT+0800",
+          updated: "Fri Nov 21 2025 13:31:54 GMT+0800",
+          cover: "/images/banner.webp",
+        };
+      </script>
+       
+    
+    
+      
+        
+<script src="../../../../../../../../../../../../js/insert_highlight.js" data-pjax></script>
+
+        
+      
+    
+    
+      <script type="module" data-pjax>
+        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+        const initPswp = (gallery, children) => {
+          if (_$$(`${gallery} ${children}`).length > 0) {
+            new PhotoSwipeLightbox({
+              gallery,
+              children,
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+        }
+        const pswp = () => {
+          initPswp('.article-entry', 'a.article-gallery-item');
+          initPswp('.article-gallery', 'a.article-gallery-item');
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script>
+      
+        
+
+
+
+
+
+
+
+
+      
+    
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.10.2' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+  </html>
+
