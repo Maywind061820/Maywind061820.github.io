@@ -56,6 +56,12 @@
 
   <link rel="preload" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL&#x2F;toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx&#x2F;1oA&#x2F;0l8ysE" crossorigin="anonymous">
   
+    
+      
+        <link rel="preload" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;" href="https://npm.webcache.cn/katex@0.16.24/dist/katex.min.css" integrity="sha384-tTgKLjMYmJr94v8qu2PE5MUGSMbyN2xiH266JUB3gpm8vnnJywd1dWSOEfrFz+YI" crossorigin="anonymous">
+      
+    
+  
   
   
   
@@ -190,7 +196,7 @@
         
       </picture>
       
-        <img  fetchpriority="high" src="/images/banner.webp" alt="">
+        <img crossorigin="anonymous" fetchpriority="high" src="/images/weather1.webp" alt="">
       
     
   
@@ -317,14 +323,63 @@
       <div class="post-wrapper">
   <div class="post-wrap left" data-aos="fade-up">
     
-      <a class="post-link" href="2025/11/20/lasso/" aria-label="lasso" title="lasso"></a>
+      <a class="post-link" href="2025/11/23/MachineLearning/RandomForest/RandomForest/" aria-label="RandomForest" title="RandomForest"></a>
     
     
     <div class="post-cover left">
       
         
         
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="lasso" class="lazyload">
+          <img data-src="/images/weather1.webp" data-sizes="auto" alt="RandomForest" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-11-23</span>
+        
+        <span><span class="icon-pencil"></span>622 字</span>
+        <span><span class="icon-clock"></span>3 分钟</span>
+      </div>
+      <h2 class="post-title">RandomForest</h2>
+      <article class="post-article">
+        
+          随机森林是一种集成学习方法，通过构建多棵决策树并将它们的预测结果组合起来，以提高预测准确性和模型的鲁棒性。
+ 基本概念
+
+集成学习：通过组合多个弱学习器（决策树）来创建一个强学习器
+Bagging：通过自助采样法为每棵树创建不同的训练子集
+特征随机性：在每棵树的每个节点分裂时，只考虑特征的一个随机子集
+降低方差：通过平均多棵树的预测结果来减少过拟合
+
+ 执行流程
+
+从原始数据集中通过自助采样法抽取多个样本子集
+为每个样本子集构建一棵决策树
+在每棵树的每个节点分裂时，随机选择特征子集进行考虑
+将所有树的预测结果进行组合（分类任务使用投票，回归任务使用平均）
+
+ 特点
+
+对过拟合有很强的抵抗能力(
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap right" data-aos="fade-up">
+    
+      <a class="post-link" href="2025/11/20/MachineLearning/NeuroNetwork/NeuroNetwork/" aria-label="NeuroNetwork" title="NeuroNetwork"></a>
+    
+    
+    <div class="post-cover right">
+      
+        
+        
+          <img data-src="/images/weather1.webp" data-sizes="auto" alt="NeuroNetwork" class="lazyload">
         
       
     </div>
@@ -332,25 +387,70 @@
       <div class="post-meta">
         <span><span class="icon-calendar"></span>2025-11-20</span>
         
-        <span><span class="icon-pencil"></span>963 字</span>
-        <span><span class="icon-clock"></span>5 分钟</span>
+        <span><span class="icon-pencil"></span>1.5k 字</span>
+        <span><span class="icon-clock"></span>8 分钟</span>
       </div>
-      <h2 class="post-title">lasso</h2>
+      <h2 class="post-title">NeuroNetwork</h2>
       <article class="post-article">
         
-          标准线性回归模型为
-Y=β0+β1X1+⋯+βpXp+ϵY = \beta_0 + \beta_1 X_1 + \dots + \beta_p X_p + \epsilon 
-Y=β0​+β1​X1​+⋯+βp​Xp​+ϵ
-使用最小二乘法可以拟合此模型。
-使用其他方法进行拟合可以得到更好的 预测准确性 prediction accuracy 和 模型解释性 model interpretability
+          人工神经网络是受生物神经网络启发的计算模型，由大量相互连接的节点（神经元）组成。
+ 基本组成
 
-预测准确性
+神经元：神经网络的基本处理单元
+层：
 
-当观测个数 nnn 不能远远大于 ppp 时，使用最小二乘法容易得到过拟合，方差极大。因此可以考虑以牺牲偏差为代价减小方差，从而提高模型在测试集上的预测准确性。
+输入层：接收原始特征
+隐藏层：进行特征变换和模式学习
+输出层：产生最终预测
 
 
-模型解释性
+权重和偏置：连接神经元之间的参数
+激活函数：引入非线性，使网络能够学习复杂模式
 
+常用激活函数：
+
+Sigmoid：f(x)=11+e−xf(x) = \frac{1}{1 + e^{-x}}f(x)=1+e−x1​
+Tanh：f(x)=tanh⁡(x)f(x) = \tanh(x)f(x)=tanh(x)
+ReLU：f(x)=max⁡(0,x)f(x) = \max(0, x)f
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap left" data-aos="fade-up">
+    
+      <a class="post-link" href="2025/11/20/MachineLearning/SVM/SVM/" aria-label="SVM" title="SVM"></a>
+    
+    
+    <div class="post-cover left">
+      
+        
+        
+          <img data-src="/images/weather1.webp" data-sizes="auto" alt="SVM" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-11-20</span>
+        
+        <span><span class="icon-pencil"></span>3.5k 字</span>
+        <span><span class="icon-clock"></span>19 分钟</span>
+      </div>
+      <h2 class="post-title">SVM</h2>
+      <article class="post-article">
+        
+           线性可分的SVM
+ 基本概念
+ 超平面 hyperplane
+数据集可以被超平面分隔为二类，超平面为
+wTx+b=0\mathbf{w}^{\text{T}}\mathbf{x}+b=0
+wTx+b=0
+记作 h(x)=0h(\mathbf{x}) = 0h(x)=0
+基于此超平面的分类模型可以用 f(x)=wTx+bf(\mathbf{x}) = \mathbf{w}^{\text{T}}\mathbf{x}+bf(x)=wTx+b表示,若 f(x)&amp;gt;0f(\mathbf{x}) &amp;gt; 0f(x)&amp;gt;0，则分类标签 y=1y = 1y=1。若 f(x)=0f(\mathbf{
         
       </article>
     </div>
@@ -368,7 +468,7 @@ Y=β0​+β1​X1​+⋯+βp​Xp​+ϵ
       
         
         
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="Lagrange" class="lazyload">
+          <img data-src="/images/weather1.webp" data-sizes="auto" alt="Lagrange" class="lazyload">
         
       
     </div>
@@ -405,164 +505,6 @@ L(x,λ)=f(x)+∑i=1nλihi(x)L(\bm{x},\bm{\lambda}) = f(\bm
       <div class="post-wrapper">
   <div class="post-wrap left" data-aos="fade-up">
     
-      <a class="post-link" href="2025/11/19/MachineLearning/RandomForest/RandomForest/" aria-label="RandomForest" title="RandomForest"></a>
-    
-    
-    <div class="post-cover left">
-      
-        
-        
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="RandomForest" class="lazyload">
-        
-      
-    </div>
-    <div class="post-info">
-      <div class="post-meta">
-        <span><span class="icon-calendar"></span>2025-11-19</span>
-        
-        <span><span class="icon-pencil"></span>0 字</span>
-        <span><span class="icon-clock"></span>1 分钟</span>
-      </div>
-      <h2 class="post-title">RandomForest</h2>
-      <article class="post-article">
-        
-          
-        
-      </article>
-    </div>
-  </div>
-</div>
-      
-    
-      <div class="post-wrapper">
-  <div class="post-wrap right" data-aos="fade-up">
-    
-      <a class="post-link" href="2025/11/19/MachineLearning/NeuroNetwork/NeuroNetwork/" aria-label="NeuroNetwork" title="NeuroNetwork"></a>
-    
-    
-    <div class="post-cover right">
-      
-        
-        
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="NeuroNetwork" class="lazyload">
-        
-      
-    </div>
-    <div class="post-info">
-      <div class="post-meta">
-        <span><span class="icon-calendar"></span>2025-11-19</span>
-        
-        <span><span class="icon-pencil"></span>898 字</span>
-        <span><span class="icon-clock"></span>5 分钟</span>
-      </div>
-      <h2 class="post-title">NeuroNetwork</h2>
-      <article class="post-article">
-        
-          人工神经网络是受生物神经网络启发的计算模型，由大量相互连接的节点（神经元）组成。
- 基本组成
-
-神经元：神经网络的基本处理单元
-层：
-
-输入层：接收原始特征
-隐藏层：进行特征变换和模式学习
-输出层：产生最终预测
-
-
-权重和偏置：连接神经元之间的参数
-激活函数：引入非线性，使网络能够学习复杂模式
-
-常用激活函数：
-
-Sigmoid：f(x)=11+e−xf(x) = \frac{1}{1 + e^{-x}}f(x)=1+e−x1​
-Tanh：f(x)=tanh⁡(x)f(x) = \tanh(x)f(x)=tanh(x)
-ReLU：f(x)=max⁡(0,x)f(x) = \max(0, x)f
-        
-      </article>
-    </div>
-  </div>
-</div>
-      
-    
-      <div class="post-wrapper">
-  <div class="post-wrap left" data-aos="fade-up">
-    
-      <a class="post-link" href="2025/11/19/MachineLearning/PCA/PCA/" aria-label="PCA" title="PCA"></a>
-    
-    
-    <div class="post-cover left">
-      
-        
-        
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="PCA" class="lazyload">
-        
-      
-    </div>
-    <div class="post-info">
-      <div class="post-meta">
-        <span><span class="icon-calendar"></span>2025-11-19</span>
-        
-        <span><span class="icon-pencil"></span>551 字</span>
-        <span><span class="icon-clock"></span>3 分钟</span>
-      </div>
-      <h2 class="post-title">PCA</h2>
-      <article class="post-article">
-        
-           
- 
- Code
- R
- PCA分析
-123456789101112131415161718192021222324252627282930library(ggplot2)if(!require(&amp;quot;ggfortify&amp;quot;))install.packages(&amp;quot;ggfortify&amp;quot;);library(ggfortify)library(ggrepel)# 使用iris数据集data(iris)iris_features &amp;lt;- iris[, 1:4]# 执行PCA分析pca_result &amp;lt;- prcomp(iris_features, scal
-        
-      </article>
-    </div>
-  </div>
-</div>
-      
-    
-      <div class="post-wrapper">
-  <div class="post-wrap right" data-aos="fade-up">
-    
-      <a class="post-link" href="2025/11/19/MachineLearning/SVM/SVM/" aria-label="SVM" title="SVM"></a>
-    
-    
-    <div class="post-cover right">
-      
-        
-        
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="SVM" class="lazyload">
-        
-      
-    </div>
-    <div class="post-info">
-      <div class="post-meta">
-        <span><span class="icon-calendar"></span>2025-11-19</span>
-        
-        <span><span class="icon-pencil"></span>2.1k 字</span>
-        <span><span class="icon-clock"></span>12 分钟</span>
-      </div>
-      <h2 class="post-title">SVM</h2>
-      <article class="post-article">
-        
-           线性可分的SVM
- 基本概念
- 超平面 hyperplane
-数据集可以被超平面分隔为二类，超平面为
-wTx+b=0\bm{w}^{\text{T}}\bm{x}+b=0
-wTx+b=0
-记作 h(x)=0h(\bm{x}) = 0h(x)=0
-基于此超平面的分类模型可以用 f(x)=wTx+bf(\bm{x}) = \bm{w}^{\text{T}}\bm{x}+bf(x)=wTx+b表示,若 f(x)&amp;gt;0f(\bm{x}) &amp;gt; 0f(x)&amp;gt;0，则分类标签 y=1y = 1y=1。若 f(x)=0f(\bm{x}) = 0f(x)=0 此点恰好在超平面上。 f(x)&amp;lt
-        
-      </article>
-    </div>
-  </div>
-</div>
-      
-    
-      <div class="post-wrapper">
-  <div class="post-wrap left" data-aos="fade-up">
-    
       <a class="post-link" href="2025/11/19/MachineLearning/LinearRegression/LinearRegression/" aria-label="线性回归" title="线性回归"></a>
     
     
@@ -570,7 +512,7 @@ wTx+b=0
       
         
         
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="线性回归" class="lazyload">
+          <img data-src="/images/weather1.webp" data-sizes="auto" alt="线性回归" class="lazyload">
         
       
     </div>
@@ -578,8 +520,8 @@ wTx+b=0
       <div class="post-meta">
         <span><span class="icon-calendar"></span>2025-11-19</span>
         
-        <span><span class="icon-pencil"></span>479 字</span>
-        <span><span class="icon-clock"></span>2 分钟</span>
+        <span><span class="icon-pencil"></span>1.6k 字</span>
+        <span><span class="icon-clock"></span>9 分钟</span>
       </div>
       <h2 class="post-title">线性回归</h2>
       <article class="post-article">
@@ -587,18 +529,16 @@ wTx+b=0
            标准线性模型
  一元线性回归
  
-Y^=β^0+β^1X\hat Y = \hat\beta_0 + \hat\beta_1 X
-Y^=β^​0​+β^​1​X
+y=β^0+β^1x+uy = \hat\beta_0 + \hat\beta_1 x + u
+y=β^​0​+β^​1​x+u
+y^=β^0+β^1x\hat y = \hat\beta_0 + \hat\beta_1 x
+y^​=β^​0​+β^​1​x
 使用残差平方和 RSS 来测量模型与真实数据的接近程度
 RSS=∑i=1nei2RSS = \sum_{i=1}^n e_i^2
 RSS=i=1∑n​ei2​
  评价
  多元线性回归
- 线性模型拓展
-标准线性回归模型为
-Y=β0+β1X1+⋯+βpXp+ϵY = \beta_0 + \beta_1 X_1 + \dots + \beta_p X_p + \epsilon 
-Y=β0​+β1​X1​+⋯+βp​Xp​+ϵ
-使用最小二乘
+y=β0+β1x1+⋯+βnxm+uy_ = \beta_0 + \beta_1 x_1 + \dots + \beta
         
       </article>
     </div>
@@ -616,7 +556,7 @@ Y=β0​+β1​X1​+⋯+βp​Xp​+ϵ
       
         
         
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="MLQall" class="lazyload">
+          <img data-src="/images/weather1.webp" data-sizes="auto" alt="MLQall" class="lazyload">
         
       
     </div>
@@ -624,8 +564,8 @@ Y=β0​+β1​X1​+⋯+βp​Xp​+ϵ
       <div class="post-meta">
         <span><span class="icon-calendar"></span>2025-11-19</span>
         
-        <span><span class="icon-pencil"></span>2.1k 字</span>
-        <span><span class="icon-clock"></span>10 分钟</span>
+        <span><span class="icon-pencil"></span>2.8k 字</span>
+        <span><span class="icon-clock"></span>12 分钟</span>
       </div>
       <h2 class="post-title">MLQall</h2>
       <article class="post-article">
@@ -658,6 +598,81 @@ flowchart TD
       <div class="post-wrapper">
   <div class="post-wrap left" data-aos="fade-up">
     
+      <a class="post-link" href="2025/11/18/MachineLearning/PCA/PCA/" aria-label="PCA" title="PCA"></a>
+    
+    
+    <div class="post-cover left">
+      
+        
+        
+          <img data-src="/images/weather1.webp" data-sizes="auto" alt="PCA" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-11-18</span>
+        
+        <span><span class="icon-pencil"></span>554 字</span>
+        <span><span class="icon-clock"></span>3 分钟</span>
+      </div>
+      <h2 class="post-title">PCA</h2>
+      <article class="post-article">
+        
+           Principal Component Analysis
+ Code
+ R
+ PCA分析
+123456789101112131415161718192021222324252627282930library(ggplot2)if(!require(&amp;quot;ggfortify&amp;quot;))install.packages(&amp;quot;ggfortify&amp;quot;);library(ggfortify)library(ggrepel)# 使用iris数据集data(iris)iris_features &amp;lt;- iris[, 1:4]# 执行PCA分析pca_result &amp;lt;- 
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap right" data-aos="fade-up">
+    
+      <a class="post-link" href="2025/11/17/lasso/" aria-label="lasso" title="lasso"></a>
+    
+    
+    <div class="post-cover right">
+      
+        
+        
+          <img data-src="/images/weather1.webp" data-sizes="auto" alt="lasso" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-11-17</span>
+        
+        <span><span class="icon-pencil"></span>2.3k 字</span>
+        <span><span class="icon-clock"></span>12 分钟</span>
+      </div>
+      <h2 class="post-title">lasso</h2>
+      <article class="post-article">
+        
+           多元线性回归
+y=β0+β1x1+⋯+βnxm+uy_ = \beta_0 + \beta_1 x_1 + \dots + \beta_n x_m + u
+y=​β0​+β1​x1​+⋯+βn​xm​+u
+回归模型为
+y^=β^0+β^1x1+⋯+β^mxm\hat y = \hat\beta_0 + \hat\beta_1 x_1 + \dots + \hat\beta_m x_m
+y^​=β^​0​+β^​1​x1​+⋯+β^​m​xm​
+取 nnn 组观察值，即为
+[y1y2⋮yn]=[1x11x12⋯x1m1x21x22⋯x2m⋮⋮⋮⋱⋮1xn1xn2⋯xnm][β0β2⋮βm]+[
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap left" data-aos="fade-up">
+    
       <a class="post-link" href="2025/11/12/Bioinformatics/EasyML/EasyML/" aria-label="EasyML" title="EasyML"></a>
     
     
@@ -665,7 +680,7 @@ flowchart TD
       
         
         
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="EasyML" class="lazyload">
+          <img data-src="/images/weather1.webp" data-sizes="auto" alt="EasyML" class="lazyload">
         
       
     </div>
@@ -722,7 +737,7 @@ graph TD
       
         
         
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="CellMembrane" class="lazyload">
+          <img data-src="/images/weather1.webp" data-sizes="auto" alt="CellMembrane" class="lazyload">
         
       
     </div>
@@ -797,10 +812,10 @@ graph TD
     
       <div>
         <span class="icon-brush"></span>
-        36.3k
+        42k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        03:01
+        03:29
       </div>
     
     
@@ -914,6 +929,10 @@ graph TD
 
 
 
+  
+<script src="https://npm.webcache.cn/material-theme@1.0.0/dist/material-theme.umd.js" integrity="sha384-vLev0II0HKFaxkcm+&#x2F;7kX5IGwVFBASkGchU311wmU&#x2F;veIj2bB0UcBkQbW6yw2asK" crossorigin="anonymous"></script>
+
+
 
 
 <script src="js/script.js"></script>
@@ -1009,6 +1028,8 @@ graph TD
 </script>
 
 
+
+  
 
 
 

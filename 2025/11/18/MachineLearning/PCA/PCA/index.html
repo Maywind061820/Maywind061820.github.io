@@ -35,22 +35,22 @@
 
   
   
-    <meta name="description" content="Code  R  PCA分析 123456789101112131415161718192021222324252627282930library(ggplot2)if(!require(&quot;ggfortify&quot;))install.packages(&quot;ggfortify&quot;);library(ggfortify)library(ggrepel)# 使用">
+    <meta name="description" content="Principal Component Analysis  Code  R  PCA分析 123456789101112131415161718192021222324252627282930library(ggplot2)if(!require(&quot;ggfortify&quot;))install.packages(&quot;ggfortify&quot;);library(ggfo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PCA">
-<meta property="og:url" content="http://example.com/2025/11/19/MachineLearning/PCA/PCA/index.html">
+<meta property="og:url" content="http://example.com/2025/11/18/MachineLearning/PCA/PCA/index.html">
 <meta property="og:site_name" content="May_wind&#39;s Blog">
-<meta property="og:description" content="Code  R  PCA分析 123456789101112131415161718192021222324252627282930library(ggplot2)if(!require(&quot;ggfortify&quot;))install.packages(&quot;ggfortify&quot;);library(ggfortify)library(ggrepel)# 使用">
+<meta property="og:description" content="Principal Component Analysis  Code  R  PCA分析 123456789101112131415161718192021222324252627282930library(ggplot2)if(!require(&quot;ggfortify&quot;))install.packages(&quot;ggfortify&quot;);library(ggfo">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2025/11/19/MachineLearning/PCA/PCA/PCA1.png">
-<meta property="og:image" content="http://example.com/2025/11/19/MachineLearning/PCA/PCA/PCA2">
-<meta property="og:image" content="http://example.com/2025/11/19/MachineLearning/PCA/PCA/PCAdd.png">
-<meta property="article:published_time" content="2025-11-19T05:54:24.000Z">
-<meta property="article:modified_time" content="2025-11-21T05:19:48.815Z">
+<meta property="og:image" content="http://example.com/2025/11/18/MachineLearning/PCA/PCA/PCA1.png">
+<meta property="og:image" content="http://example.com/2025/11/18/MachineLearning/PCA/PCA/PCA2">
+<meta property="og:image" content="http://example.com/2025/11/18/MachineLearning/PCA/PCA/PCAdd.png">
+<meta property="article:published_time" content="2025-11-18T05:54:24.000Z">
+<meta property="article:modified_time" content="2025-11-23T08:14:52.339Z">
 <meta property="article:author" content="May_wind">
 <meta property="article:tag" content="maywind,sdu">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2025/11/19/MachineLearning/PCA/PCA/PCA1.png">
+<meta name="twitter:image" content="http://example.com/2025/11/18/MachineLearning/PCA/PCA/PCA1.png">
   
   
     <link rel="alternate" href="../../../../../../atom.xml" title="May_wind's Blog" type="application/atom+xml">
@@ -62,6 +62,14 @@
 <link rel="stylesheet" href="../../../../../../../../../../../../css/style.css">
 
   <link rel="preload" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL&#x2F;toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx&#x2F;1oA&#x2F;0l8ysE" crossorigin="anonymous">
+  
+    
+      
+        
+<link rel="stylesheet" href="https://npm.webcache.cn/katex@0.16.24/dist/katex.min.css" integrity="sha384-tTgKLjMYmJr94v8qu2PE5MUGSMbyN2xiH266JUB3gpm8vnnJywd1dWSOEfrFz+YI" crossorigin="anonymous">
+
+      
+    
   
   
   
@@ -198,7 +206,7 @@
           
         </picture>
         
-          <img  fetchpriority="high" src="/images/banner.webp" alt="PCA">
+          <img crossorigin="anonymous" fetchpriority="high" src="/images/weather1.webp" alt="PCA">
         
       
     
@@ -239,7 +247,7 @@
           <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
 <div class="sidebar-toc-wrapper toc-div-class" >
   
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text"> </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#-2"><span class="toc-number">2.</span> <span class="toc-text"> </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#code"><span class="toc-number">3.</span> <span class="toc-text"> Code</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#r"><span class="toc-number">3.1.</span> <span class="toc-text"> R</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pca%E5%88%86%E6%9E%90"><span class="toc-number">3.1.1.</span> <span class="toc-text"> PCA分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%81%9A%E7%B1%BB%E5%88%86%E6%9E%90"><span class="toc-number">3.1.2.</span> <span class="toc-text"> 聚类分析</span></a></li></ol></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#principal-component-analysis"><span class="toc-number">1.</span> <span class="toc-text"> Principal Component Analysis</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#code"><span class="toc-number">2.</span> <span class="toc-text"> Code</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#r"><span class="toc-number">2.1.</span> <span class="toc-text"> R</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pca%E5%88%86%E6%9E%90"><span class="toc-number">2.1.1.</span> <span class="toc-text"> PCA分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%81%9A%E7%B1%BB%E5%88%86%E6%9E%90"><span class="toc-number">2.1.2.</span> <span class="toc-text"> 聚类分析</span></a></li></ol></li></ol></li></ol>
   
 </div>
 </div>
@@ -337,8 +345,8 @@
     <div class="article-meta">
       <div class="article-date">
   <span class="article-date-link icon-calendar" data-aos="zoom-in">
-    <time datetime="2025-11-19T05:54:24.000Z" itemprop="datePublished">2025-11-19</time>
-    <time style="display: none;" id="post-update-time">2025-11-21</time>
+    <time datetime="2025-11-18T05:54:24.000Z" itemprop="datePublished">2025-11-18</time>
+    <time style="display: none;" id="post-update-time">2025-11-23</time>
   </span>
   
 </div>
@@ -353,8 +361,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
       
-        <h1 id=""><a class="markdownIt-Anchor" href="#"></a> </h1>
-<h1 id="-2"><a class="markdownIt-Anchor" href="#-2"></a> </h1>
+        <h1 id="principal-component-analysis"><a class="markdownIt-Anchor" href="#principal-component-analysis"></a> Principal Component Analysis</h1>
 <h1 id="code"><a class="markdownIt-Anchor" href="#code"></a> Code</h1>
 <h2 id="r"><a class="markdownIt-Anchor" href="#r"></a> R</h2>
 <h3 id="pca分析"><a class="markdownIt-Anchor" href="#pca分析"></a> PCA分析</h3>
@@ -389,14 +396,14 @@
         
           
           
-            <img data-src="/images/banner.webp" data-sizes="auto" alt="NeuroNetwork" class="lazyload">
+            <img data-src="/images/weather1.webp" data-sizes="auto" alt="MLQall" class="lazyload">
           
         
-        <a href="/2025/11/19/MachineLearning/NeuroNetwork/NeuroNetwork/" aria-label="前一篇: NeuroNetwork" title="前一篇: NeuroNetwork"></a>
+        <a href="/2025/11/19/MachineLearning/MLQall/MLQall/" aria-label="前一篇: MLQall" title="前一篇: MLQall"></a>
         <div class="article-nav-caption">前一篇</div>
         <h3 class="article-nav-title">
           
-            NeuroNetwork
+            MLQall
           
         </h3>
       </div>
@@ -407,14 +414,14 @@
       
         
         
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="SVM" class="lazyload">
+          <img data-src="/images/weather1.webp" data-sizes="auto" alt="lasso" class="lazyload">
         
       
-      <a href="/2025/11/19/MachineLearning/SVM/SVM/" aria-label="后一篇: SVM"  title="后一篇: SVM"></a>
+      <a href="/2025/11/17/lasso/" aria-label="后一篇: lasso"  title="后一篇: lasso"></a>
       <div class="article-nav-caption">后一篇</div>
       <h3 class="article-nav-title">
         
-          SVM
+          lasso
         
       </h3>
     </div>
@@ -460,10 +467,10 @@
     
       <div>
         <span class="icon-brush"></span>
-        36.3k
+        42k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        03:01
+        03:29
       </div>
     
     
@@ -496,7 +503,7 @@
         <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
 <div class="sidebar-toc-wrapper toc-div-class" >
   
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text"> </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#-2"><span class="toc-number">2.</span> <span class="toc-text"> </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#code"><span class="toc-number">3.</span> <span class="toc-text"> Code</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#r"><span class="toc-number">3.1.</span> <span class="toc-text"> R</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pca%E5%88%86%E6%9E%90"><span class="toc-number">3.1.1.</span> <span class="toc-text"> PCA分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%81%9A%E7%B1%BB%E5%88%86%E6%9E%90"><span class="toc-number">3.1.2.</span> <span class="toc-text"> 聚类分析</span></a></li></ol></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#principal-component-analysis"><span class="toc-number">1.</span> <span class="toc-text"> Principal Component Analysis</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#code"><span class="toc-number">2.</span> <span class="toc-text"> Code</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#r"><span class="toc-number">2.1.</span> <span class="toc-text"> R</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pca%E5%88%86%E6%9E%90"><span class="toc-number">2.1.1.</span> <span class="toc-text"> PCA分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%81%9A%E7%B1%BB%E5%88%86%E6%9E%90"><span class="toc-number">2.1.2.</span> <span class="toc-text"> 聚类分析</span></a></li></ol></li></ol></li></ol>
   
 </div>
 </div>
@@ -593,6 +600,10 @@
 
 
 
+  
+<script src="https://npm.webcache.cn/material-theme@1.0.0/dist/material-theme.umd.js" integrity="sha384-vLev0II0HKFaxkcm+&#x2F;7kX5IGwVFBASkGchU311wmU&#x2F;veIj2bB0UcBkQbW6yw2asK" crossorigin="anonymous"></script>
+
+
 
 
 <script src="../../../../../../../../../../../../js/script.js"></script>
@@ -653,13 +664,13 @@
         window.REIMU_POST = {
           author: "May_wind",
           title: "PCA",
-          url: "http://example.com/2025/11/19/MachineLearning/PCA/PCA/",
+          url: "http://example.com/2025/11/18/MachineLearning/PCA/PCA/",
           excerpt: "",
           description: "",
-          stripContent: "     Code  R  PCA分析 123456789101112131415161718192021222324252627282930library(ggplot2)if(!require(&amp;quot;ggfortify&amp;quot;))install.packages(&amp;quot;ggfortify&amp;quot;);library(ggfortify)library(ggrepel)# 使用iris数据集data(iris)iris_features &amp;lt;- iris[, 1:4]# ",
-          date: "Wed Nov 19 2025 13:54:24 GMT+0800",
-          updated: "Fri Nov 21 2025 13:19:48 GMT+0800",
-          cover: "/images/banner.webp",
+          stripContent: " Principal Component Analysis  Code  R  PCA分析 123456789101112131415161718192021222324252627282930library(ggplot2)if(!require(&amp;quot;ggfortify&amp;quot;))install.packages(&amp;quot;ggfortify&amp;quot;);library(ggfortify)library(ggrepel)# 使用iris数据集data(iris)iris_fe",
+          date: "Tue Nov 18 2025 13:54:24 GMT+0800",
+          updated: "Sun Nov 23 2025 16:14:52 GMT+0800",
+          cover: "/images/weather1.webp",
         };
       </script>
        
@@ -744,6 +755,8 @@
 </script>
 
 
+
+  
 
 
 

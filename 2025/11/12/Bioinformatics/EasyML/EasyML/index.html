@@ -45,9 +45,9 @@
 <meta property="article:published_time" content="2025-11-12T07:37:17.000Z">
 <meta property="article:modified_time" content="2025-11-20T14:09:45.332Z">
 <meta property="article:author" content="May_wind">
-<meta property="article:tag" content="机器学习">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="统计学">
+<meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
   
   
@@ -60,6 +60,14 @@
 <link rel="stylesheet" href="../../../../../../../../../../../../css/style.css">
 
   <link rel="preload" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL&#x2F;toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx&#x2F;1oA&#x2F;0l8ysE" crossorigin="anonymous">
+  
+    
+      
+        
+<link rel="stylesheet" href="https://npm.webcache.cn/katex@0.16.24/dist/katex.min.css" integrity="sha384-tTgKLjMYmJr94v8qu2PE5MUGSMbyN2xiH266JUB3gpm8vnnJywd1dWSOEfrFz+YI" crossorigin="anonymous">
+
+      
+    
   
   
   
@@ -196,7 +204,7 @@
           
         </picture>
         
-          <img  fetchpriority="high" src="/images/banner.webp" alt="EasyML">
+          <img crossorigin="anonymous" fetchpriority="high" src="/images/weather1.webp" alt="EasyML">
         
       
     
@@ -587,14 +595,14 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
         
           
           
-            <img data-src="/images/banner.webp" data-sizes="auto" alt="MLQall" class="lazyload">
+            <img data-src="/images/weather1.webp" data-sizes="auto" alt="lasso" class="lazyload">
           
         
-        <a href="/2025/11/19/MachineLearning/MLQall/MLQall/" aria-label="前一篇: MLQall" title="前一篇: MLQall"></a>
+        <a href="/2025/11/17/lasso/" aria-label="前一篇: lasso" title="前一篇: lasso"></a>
         <div class="article-nav-caption">前一篇</div>
         <h3 class="article-nav-title">
           
-            MLQall
+            lasso
           
         </h3>
       </div>
@@ -605,7 +613,7 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
       
         
         
-          <img data-src="/images/banner.webp" data-sizes="auto" alt="CellMembrane" class="lazyload">
+          <img data-src="/images/weather1.webp" data-sizes="auto" alt="CellMembrane" class="lazyload">
         
       
       <a href="/2025/10/29/Biology/Cell%20Biology/CellMembrane/CellMembrane/" aria-label="后一篇: CellMembrane"  title="后一篇: CellMembrane"></a>
@@ -658,10 +666,10 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
     
       <div>
         <span class="icon-brush"></span>
-        36.3k
+        42k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        03:01
+        03:29
       </div>
     
     
@@ -791,6 +799,10 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
 
 
 
+  
+<script src="https://npm.webcache.cn/material-theme@1.0.0/dist/material-theme.umd.js" integrity="sha384-vLev0II0HKFaxkcm+&#x2F;7kX5IGwVFBASkGchU311wmU&#x2F;veIj2bB0UcBkQbW6yw2asK" crossorigin="anonymous"></script>
+
+
 
 
 <script src="../../../../../../../../../../../../js/script.js"></script>
@@ -857,10 +869,104 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
           stripContent: " Question1 graph TD     start(开始) --&gt; Begin[问题抽象]     Begin --&gt; data1[数据获取]     data1 --&gt; data2[数据清洗]     data2 --&gt; |训练集|model[参数拟合]     model --&gt; check{模型评估?}     check --&gt;|Yes| End(结束)     data2 --&gt; |测试集|check     check --&gt;|No| model  Question2  训练",
           date: "Wed Nov 12 2025 15:37:17 GMT+0800",
           updated: "Thu Nov 20 2025 22:09:45 GMT+0800",
-          cover: "/images/banner.webp",
+          cover: "/images/weather1.webp",
         };
       </script>
        
+    
+      
+<script src="https://npm.webcache.cn/mermaid@11.12.0/dist/mermaid.min.js" integrity="sha384-o+g&#x2F;BxPwhi0C3RK7oQBxQuNimeafQ3GE&#x2F;ST4iT2BxVI4Wzt60SH4pq9iXVYujjaS" crossorigin="anonymous" data-pjax></script>
+
+      
+<script src="https://npm.webcache.cn/dompurify@3.2.6/dist/purify.min.js" integrity="sha384-JEyTNhjM6R1ElGoJns4U2Ln4ofPcqzSsynQkmEc&#x2F;KGy6336qAZl70tDLufbkla+3" crossorigin="anonymous"></script>
+
+      
+      <script data-pjax>
+        if (window.mermaid) {
+          // https://github.com/mermaid-js/mermaid/issues/1945
+          const elementCode = '.mermaid'
+          const processElements = (callback) => {
+            const els = _$$(elementCode);
+            if (!els.length) return Promise.resolve();
+            
+            return new Promise((resolve, reject) => {
+              try {
+                els.forEach(callback);
+                resolve();
+              } catch (error) {
+                reject(error);
+              }
+            });
+          };
+          const saveOriginalData = () => processElements(el => {
+            if (!el.getAttribute('data-original-code')) {
+              el.setAttribute('data-original-code', el.innerHTML);
+            }
+          });
+
+          const resetProcessed = () => processElements(el => {
+            const originalCode = el.getAttribute('data-original-code');
+            if (originalCode) {
+              el.removeAttribute('data-processed');
+              el.innerHTML = DOMPurify.sanitize(originalCode);
+            }
+          });
+          const loadMermaid = async (theme) => {
+            window.mermaid.initialize({theme, startOnLoad: false})
+            await window.mermaid.run({querySelector: elementCode, suppressErrors: true})
+            if (window.svgPanZoom) {
+              window.__panZoomList?.forEach(panZoom => {try {panZoom.destroy()} catch {}});
+              window.__panZoomList = [];
+              _$$('.mermaid > svg').forEach(el => {
+                const bbox = el.getBBox();
+                el.setAttribute('height', Math.max(bbox.height, 80));
+                window.__panZoomList.push(window.svgPanZoom(el, {
+                  zoomEnabled: true,
+                  controlIconsEnabled: true,
+                  fit: true,
+                  center: true
+                }));
+              });
+              if (window.__resizeMermaidSvg) {
+                window.removeEventListener('resize', window.__resizeMermaidSvg);
+              }
+              window.__resizeMermaidSvg = () => {
+                try {
+                  window.__panZoomList.forEach(panZoom => {
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                  });
+                } catch {
+                  window.removeEventListener('resize', window.__resizeMermaidSvg);
+                  window.__panZoomList = [];
+                }
+              }
+              window.addEventListener('resize', window.__resizeMermaidSvg);
+            }
+          }
+          const initMermaid = async (theme) => {
+            try {
+              await saveOriginalData();
+              await resetProcessed();
+              await loadMermaid(theme);
+            } catch (error) {
+              console.error(error);
+            }
+          };
+          
+          document.body.addEventListener('dark-theme-set', () => initMermaid('dark'));
+          document.body.addEventListener('light-theme-set', () => initMermaid('default'));
+
+          const mode = localStorage.getItem('dark_mode');
+          if (mode === 'auto') {
+            const osMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            initMermaid(osMode ? 'dark' : 'default');
+          } else {
+            initMermaid(mode === 'true' ? 'dark' : 'default');
+          }
+        }
+      </script>
     
     
       
@@ -942,6 +1048,8 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
 </script>
 
 
+
+  
 
 
 
