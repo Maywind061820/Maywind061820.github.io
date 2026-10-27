@@ -202,7 +202,7 @@ print(lasso_model)
 plot(lasso_model, xvar = "lambda", label = TRUE)
 title("LASSO系数路径")
 ```
-![LASSO1](LASSO/LASSO1.png)
+![LASSO1](lasso/LASSO1.png)
 ```r
 #交叉验证
 set.seed(123)
