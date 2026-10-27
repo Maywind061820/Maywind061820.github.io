@@ -1,0 +1,25 @@
+# Normalize text files, never touch binaries (this repo is image-heavy).
+* text=auto
+
+# Source
+*.md      text
+*.yml     text
+*.yaml    text
+*.json    text
+*.styl    text
+*.css     text
+*.js      text
+*.ejs     text
+
+# Binary assets must never be line-ending converted
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.webp    binary
+*.gif     binary
+*.ico     binary
+*.svg     text
+*.woff    binary
+*.woff2   binary
+*.ttf     binary
+*.eot     binary
