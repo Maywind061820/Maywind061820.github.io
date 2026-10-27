@@ -14,7 +14,7 @@
 
   
 
-  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_4k4bc36ef96';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';</script>
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_4k4bc36ef96';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://maywindsdu.cn';</script>
   
   <title>
     lasso |
@@ -31,38 +31,38 @@
   
   
     
-<link rel="stylesheet" href="../../../../../../../../css/loader.css">
+<link rel="stylesheet" href="/css/loader.css">
 
   
   
     <meta name="description" content="多元线性回归 y&#x3D;β0+β1x1+⋯+βnxm+uy_ &#x3D; \beta_0 + \beta_1 x_1 + \dots + \beta_n x_m + u y&#x3D;​β0​+β1​x1​+⋯+βn​xm​+u 回归模型为 y^&#x3D;β^0+β^1x1+⋯+β^mxm\hat y &#x3D; \hat\beta_0 + \hat\beta_1 x_1 + \dots + \hat\beta_m x_m y^​&#x3D;β">
 <meta property="og:type" content="article">
 <meta property="og:title" content="lasso">
-<meta property="og:url" content="http://example.com/2025/11/17/lasso/index.html">
+<meta property="og:url" content="https://maywindsdu.cn/2025/11/17/lasso/index.html">
 <meta property="og:site_name" content="May_wind&#39;s Blog">
 <meta property="og:description" content="多元线性回归 y&#x3D;β0+β1x1+⋯+βnxm+uy_ &#x3D; \beta_0 + \beta_1 x_1 + \dots + \beta_n x_m + u y&#x3D;​β0​+β1​x1​+⋯+βn​xm​+u 回归模型为 y^&#x3D;β^0+β^1x1+⋯+β^mxm\hat y &#x3D; \hat\beta_0 + \hat\beta_1 x_1 + \dots + \hat\beta_m x_m y^​&#x3D;β">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2025/11/17/lasso/LASSO0.png">
-<meta property="og:image" content="http://example.com/2025/11/17/lasso/LASSO/LASSO1.png">
-<meta property="og:image" content="http://example.com/2025/11/17/lasso/LASSO1.png">
-<meta property="og:image" content="http://example.com/2025/11/17/lasso/LASSO2.png">
-<meta property="og:image" content="http://example.com/2025/11/17/lasso/LASSO3.png">
-<meta property="og:image" content="http://example.com/2025/11/17/lasso/LASSO4.png">
+<meta property="og:image" content="https://maywindsdu.cn/2025/11/17/lasso/LASSO0.png">
+<meta property="og:image" content="https://maywindsdu.cn/2025/11/17/lasso/LASSO1.png">
+<meta property="og:image" content="https://maywindsdu.cn/2025/11/17/lasso/LASSO1.png">
+<meta property="og:image" content="https://maywindsdu.cn/2025/11/17/lasso/LASSO2.png">
+<meta property="og:image" content="https://maywindsdu.cn/2025/11/17/lasso/LASSO3.png">
+<meta property="og:image" content="https://maywindsdu.cn/2025/11/17/lasso/LASSO4.png">
 <meta property="article:published_time" content="2025-11-17T14:16:30.000Z">
-<meta property="article:modified_time" content="2025-12-04T08:29:58.917Z">
+<meta property="article:modified_time" content="2026-10-27T02:34:40.205Z">
 <meta property="article:author" content="May_wind">
 <meta property="article:tag" content="maywind,sdu">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2025/11/17/lasso/LASSO0.png">
+<meta name="twitter:image" content="https://maywindsdu.cn/2025/11/17/lasso/LASSO0.png">
   
   
-    <link rel="alternate" href="../../../../atom.xml" title="May_wind's Blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="May_wind's Blog" type="application/atom+xml">
   
   
-    <link rel="shortcut icon" href="../../../../images/favicon.ico">
+    <link rel="shortcut icon" href="/images/favicon.ico">
   
   
-<link rel="stylesheet" href="../../../../../../../../css/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
   <link rel="preload" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL&#x2F;toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx&#x2F;1oA&#x2F;0l8ysE" crossorigin="anonymous">
   
@@ -153,7 +153,7 @@
   <nav id="main-nav" aria-label="Primary navigation">
     
       
-        <a class="main-nav-link-wrap" href="../../../../index.html">
+        <a class="main-nav-link-wrap" href="/">
           <div class="main-nav-icon icon rotate">
              
               &#xe62b;
@@ -162,7 +162,7 @@
           <span class="main-nav-link">首页</span>
         </span>
       
-        <a class="main-nav-link-wrap" href="../../../../archives">
+        <a class="main-nav-link-wrap" href="/archives">
           <div class="main-nav-icon icon rotate">
              
               &#xe62b;
@@ -171,7 +171,7 @@
           <span class="main-nav-link">归档</span>
         </span>
       
-        <a class="main-nav-link-wrap" href="../../../../about">
+        <a class="main-nav-link-wrap" href="/about">
           <div class="main-nav-icon icon rotate">
              
               &#xe62b;
@@ -180,7 +180,7 @@
           <span class="main-nav-link">关于</span>
         </span>
       
-        <a class="main-nav-link-wrap" href="../../../../friend">
+        <a class="main-nav-link-wrap" href="/friend">
           <div class="main-nav-icon icon rotate">
              
               &#xe62b;
@@ -194,7 +194,7 @@
   </nav>
   <nav id="sub-nav" aria-label="Secondary navigation">
     
-      <a id="nav-rss-link" class="nav-icon" href="../../../../atom.xml" title="RSS 订阅" aria-label="RSS 订阅" target="_blank"></a>
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" aria-label="RSS 订阅" target="_blank"></a>
     
     
   </nav>
@@ -262,7 +262,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">43</div>
+    <div class="sidebar-state-number">30</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -349,7 +349,7 @@
       <div class="article-date">
   <span class="article-date-link icon-calendar" data-aos="zoom-in">
     <time datetime="2025-11-17T14:16:30.000Z" itemprop="datePublished">2025-11-17</time>
-    <time style="display: none;" id="post-update-time">2025-12-04</time>
+    <time style="display: none;" id="post-update-time">2026-10-27</time>
   </span>
   
 </div>
@@ -516,7 +516,7 @@ M347 1759 V0 H263 V1759 v1200 v1759 h84z"/></svg></span></span></span><span clas
 <h1 id="code"><a class="markdownIt-Anchor" href="#code"></a> Code</h1>
 <h2 id="r"><a class="markdownIt-Anchor" href="#r"></a> R</h2>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="punctuation">(</span><span class="operator">!</span>require<span class="punctuation">(</span>glmnet<span class="punctuation">)</span><span class="punctuation">)</span> install.packages<span class="punctuation">(</span><span class="string">&quot;glmnet&quot;</span><span class="punctuation">)</span>;library<span class="punctuation">(</span>glmnet<span class="punctuation">)</span></span><br><span class="line"><span class="keyword">if</span> <span class="punctuation">(</span><span class="operator">!</span>require<span class="punctuation">(</span>ggplot2<span class="punctuation">)</span><span class="punctuation">)</span> install.packages<span class="punctuation">(</span><span class="string">&quot;ggplot2&quot;</span><span class="punctuation">)</span>;library<span class="punctuation">(</span>ggplot2<span class="punctuation">)</span></span><br><span class="line"><span class="keyword">if</span> <span class="punctuation">(</span><span class="operator">!</span>require<span class="punctuation">(</span>dplyr<span class="punctuation">)</span><span class="punctuation">)</span> install.packages<span class="punctuation">(</span><span class="string">&quot;dplyr&quot;</span><span class="punctuation">)</span>;library<span class="punctuation">(</span>dplyr<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line">data<span class="punctuation">(</span>mtcars<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">x <span class="operator">&lt;-</span> as.matrix<span class="punctuation">(</span>mtcars<span class="punctuation">[</span><span class="punctuation">,</span> <span class="operator">-</span><span class="number">1</span><span class="punctuation">]</span><span class="punctuation">)</span>  <span class="comment"># 特征矩阵</span></span><br><span class="line">y <span class="operator">&lt;-</span> mtcars<span class="operator">$</span>mpg               <span class="comment"># 响应变量</span></span><br><span class="line"></span><br><span class="line">colnames<span class="punctuation">(</span>x<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line">set.seed<span class="punctuation">(</span><span class="number">123</span><span class="punctuation">)</span></span><br><span class="line">lasso_model <span class="operator">&lt;-</span> glmnet<span class="punctuation">(</span>x<span class="punctuation">,</span> y<span class="punctuation">,</span> alpha <span class="operator">=</span> <span class="number">1</span><span class="punctuation">)</span></span><br><span class="line">print<span class="punctuation">(</span>lasso_model<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line">plot<span class="punctuation">(</span>lasso_model<span class="punctuation">,</span> xvar <span class="operator">=</span> <span class="string">&quot;lambda&quot;</span><span class="punctuation">,</span> label <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">)</span></span><br><span class="line">title<span class="punctuation">(</span><span class="string">&quot;LASSO系数路径&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
-<p><img src="LASSO/LASSO1.png" alt="LASSO1" /></p>
+<p><img src="LASSO1.png" alt="LASSO1" /></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#交叉验证</span></span><br><span class="line">set.seed<span class="punctuation">(</span><span class="number">123</span><span class="punctuation">)</span></span><br><span class="line">cv_lasso <span class="operator">&lt;-</span> cv.glmnet<span class="punctuation">(</span>x<span class="punctuation">,</span> y<span class="punctuation">,</span> alpha <span class="operator">=</span> <span class="number">1</span><span class="punctuation">)</span></span><br><span class="line">plot<span class="punctuation">(</span>cv_lasso<span class="punctuation">)</span></span><br><span class="line">title<span class="punctuation">(</span><span class="string">&quot;LASSO交叉验证&quot;</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看最优lambda值</span></span><br><span class="line">lambda_min <span class="operator">&lt;-</span> cv_lasso<span class="operator">$</span>lambda.min</span><br><span class="line">lambda_1se <span class="operator">&lt;-</span> cv_lasso<span class="operator">$</span>lambda.1se</span><br><span class="line"></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;最小MSE对应的lambda:&quot;</span><span class="punctuation">,</span> lambda_min<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;1个标准差规则对应的lambda:&quot;</span><span class="punctuation">,</span> lambda_1se<span class="punctuation">,</span> <span class="string">&quot;\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">coef_min <span class="operator">&lt;-</span> coef<span class="punctuation">(</span>cv_lasso<span class="punctuation">,</span> s <span class="operator">=</span> <span class="string">&quot;lambda.min&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;最小lambda对应的系数:\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">print<span class="punctuation">(</span>coef_min<span class="punctuation">)</span></span><br><span class="line">coef_1se <span class="operator">&lt;-</span> coef<span class="punctuation">(</span>cv_lasso<span class="punctuation">,</span> s <span class="operator">=</span> <span class="string">&quot;lambda.1se&quot;</span><span class="punctuation">)</span></span><br><span class="line">cat<span class="punctuation">(</span><span class="string">&quot;1se lambda对应的系数（更稀疏）:\n&quot;</span><span class="punctuation">)</span></span><br><span class="line">print<span class="punctuation">(</span>coef_1se<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line">coef_comparison <span class="operator">&lt;-</span> data.frame<span class="punctuation">(</span></span><br><span class="line">  Feature <span class="operator">=</span> rownames<span class="punctuation">(</span>coef_min<span class="punctuation">)</span><span class="punctuation">,</span></span><br><span class="line">  Coef_min <span class="operator">=</span> <span class="built_in">as.numeric</span><span class="punctuation">(</span>coef_min<span class="punctuation">)</span><span class="punctuation">,</span></span><br><span class="line">  Coef_1se <span class="operator">=</span> <span class="built_in">as.numeric</span><span class="punctuation">(</span>coef_1se<span class="punctuation">)</span></span><br><span class="line"><span class="punctuation">)</span></span><br><span class="line">print<span class="punctuation">(</span>coef_comparison<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 <p><img src="LASSO1.png" alt="LASSO1" /></p>
 <p><img src="LASSO2.png" alt="LASSO2" /></p>
@@ -621,10 +621,10 @@ M347 1759 V0 H263 V1759 v1200 v1759 h84z"/></svg></span></span></span><span clas
     
       <div>
         <span class="icon-brush"></span>
-        211.1k
+        143.8k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        14:27
+        09:48
       </div>
     
     
@@ -669,7 +669,7 @@ M347 1759 V0 H263 V1759 v1200 v1759 h84z"/></svg></span></span></span><span clas
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">43</div>
+    <div class="sidebar-state-number">30</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -760,12 +760,12 @@ M347 1759 V0 H263 V1759 v1200 v1759 h84z"/></svg></span></span></span><span clas
 
 
 
-<script src="../../../../../../../../js/script.js"></script>
+<script src="/js/script.js"></script>
 
 
 
   
-<script src="../../../../../../../../js/aos.js"></script>
+<script src="/js/aos.js"></script>
 
   <script>
     var aosInit = () => {
@@ -785,7 +785,7 @@ M347 1759 V0 H263 V1759 v1200 v1759 h84z"/></svg></span></span></span><span clas
 
 
 
-<script src="../../../../../../../../js/pjax_script.js" data-pjax></script>
+<script src="/js/pjax_script.js" data-pjax></script>
 
 
 
@@ -818,12 +818,12 @@ M347 1759 V0 H263 V1759 v1200 v1759 h84z"/></svg></span></span></span><span clas
         window.REIMU_POST = {
           author: "May_wind",
           title: "lasso",
-          url: "http://example.com/2025/11/17/lasso/",
+          url: "https://maywindsdu.cn/2025/11/17/lasso/",
           excerpt: "",
           description: "",
           stripContent: " 多元线性回归 y=β0+β1x1+⋯+βnxm+uy_ = \beta_0 + \beta_1 x_1 + \dots + \beta_n x_m + u y=​β0​+β1​x1​+⋯+βn​xm​+u 回归模型为 y^=β^0+β^1x1+⋯+β^mxm\hat y = \hat\beta_0 + \hat\beta_1 x_1 + \dots + \hat\beta_m x_m y^​=β^​0​+β^​1​x1​+⋯+β^​m​xm​ 取 nnn 组观察值，即为 [y1y2⋮yn]=[",
           date: "Mon Nov 17 2025 22:16:30 GMT+0800",
-          updated: "Thu Dec 04 2025 16:29:58 GMT+0800",
+          updated: "Tue Oct 27 2026 10:34:40 GMT+0800",
           cover: "/images/weather1.webp",
         };
       </script>
@@ -832,7 +832,7 @@ M347 1759 V0 H263 V1759 v1200 v1759 h84z"/></svg></span></span></span><span clas
     
       
         
-<script src="../../../../../../../../js/insert_highlight.js" data-pjax></script>
+<script src="/js/insert_highlight.js" data-pjax></script>
 
         
       

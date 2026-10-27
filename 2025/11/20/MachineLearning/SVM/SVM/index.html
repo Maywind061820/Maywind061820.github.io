@@ -14,7 +14,7 @@
 
   
 
-  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_4k4bc36ef96';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';</script>
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_4k4bc36ef96';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://maywindsdu.cn';</script>
   
   <title>
     SVM |
@@ -31,35 +31,35 @@
   
   
     
-<link rel="stylesheet" href="../../../../../../../../../../../../css/loader.css">
+<link rel="stylesheet" href="/css/loader.css">
 
   
   
     <meta name="description" content="线性可分的SVM  基本概念  超平面 hyperplane 数据集可以被超平面分隔为二类，超平面为 wTx+b&#x3D;0\mathbf{w}^{\text{T}}\mathbf{x}+b&#x3D;0 wTx+b&#x3D;0 记作 h(x)&#x3D;0h(\mathbf{x}) &#x3D; 0h(x)&#x3D;0 基于此超平面的分类模型可以用 f(x)&#x3D;wTx+bf(\mathbf{x}) &#x3D; \mathbf{w}^{\text{T}}\m">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SVM">
-<meta property="og:url" content="http://example.com/2025/11/20/MachineLearning/SVM/SVM/index.html">
+<meta property="og:url" content="https://maywindsdu.cn/2025/11/20/MachineLearning/SVM/SVM/index.html">
 <meta property="og:site_name" content="May_wind&#39;s Blog">
 <meta property="og:description" content="线性可分的SVM  基本概念  超平面 hyperplane 数据集可以被超平面分隔为二类，超平面为 wTx+b&#x3D;0\mathbf{w}^{\text{T}}\mathbf{x}+b&#x3D;0 wTx+b&#x3D;0 记作 h(x)&#x3D;0h(\mathbf{x}) &#x3D; 0h(x)&#x3D;0 基于此超平面的分类模型可以用 f(x)&#x3D;wTx+bf(\mathbf{x}) &#x3D; \mathbf{w}^{\text{T}}\m">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2025/11/20/MachineLearning/SVM/SVM/iris.png">
-<meta property="og:image" content="http://example.com/2025/11/20/MachineLearning/SVM/SVM/SVM1.png">
-<meta property="og:image" content="http://example.com/2025/11/20/MachineLearning/SVM/SVM/SVM2.png">
+<meta property="og:image" content="https://maywindsdu.cn/2025/11/20/MachineLearning/SVM/SVM/iris.png">
+<meta property="og:image" content="https://maywindsdu.cn/2025/11/20/MachineLearning/SVM/SVM/SVM1.png">
+<meta property="og:image" content="https://maywindsdu.cn/2025/11/20/MachineLearning/SVM/SVM/SVM2.png">
 <meta property="article:published_time" content="2025-11-20T05:54:04.000Z">
 <meta property="article:modified_time" content="2025-11-23T08:27:12.878Z">
 <meta property="article:author" content="May_wind">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2025/11/20/MachineLearning/SVM/SVM/iris.png">
+<meta name="twitter:image" content="https://maywindsdu.cn/2025/11/20/MachineLearning/SVM/SVM/iris.png">
   
   
-    <link rel="alternate" href="../../../../../../atom.xml" title="May_wind's Blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="May_wind's Blog" type="application/atom+xml">
   
   
-    <link rel="shortcut icon" href="../../../../../../images/favicon.ico">
+    <link rel="shortcut icon" href="/images/favicon.ico">
   
   
-<link rel="stylesheet" href="../../../../../../../../../../../../css/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
   <link rel="preload" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL&#x2F;toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx&#x2F;1oA&#x2F;0l8ysE" crossorigin="anonymous">
   
@@ -150,7 +150,7 @@
   <nav id="main-nav" aria-label="Primary navigation">
     
       
-        <a class="main-nav-link-wrap" href="../../../../../../index.html">
+        <a class="main-nav-link-wrap" href="/">
           <div class="main-nav-icon icon rotate">
              
               &#xe62b;
@@ -159,7 +159,7 @@
           <span class="main-nav-link">首页</span>
         </span>
       
-        <a class="main-nav-link-wrap" href="../../../../../../archives">
+        <a class="main-nav-link-wrap" href="/archives">
           <div class="main-nav-icon icon rotate">
              
               &#xe62b;
@@ -168,7 +168,7 @@
           <span class="main-nav-link">归档</span>
         </span>
       
-        <a class="main-nav-link-wrap" href="../../../../../../about">
+        <a class="main-nav-link-wrap" href="/about">
           <div class="main-nav-icon icon rotate">
              
               &#xe62b;
@@ -177,7 +177,7 @@
           <span class="main-nav-link">关于</span>
         </span>
       
-        <a class="main-nav-link-wrap" href="../../../../../../friend">
+        <a class="main-nav-link-wrap" href="/friend">
           <div class="main-nav-icon icon rotate">
              
               &#xe62b;
@@ -191,7 +191,7 @@
   </nav>
   <nav id="sub-nav" aria-label="Secondary navigation">
     
-      <a id="nav-rss-link" class="nav-icon" href="../../../../../../atom.xml" title="RSS 订阅" aria-label="RSS 订阅" target="_blank"></a>
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" aria-label="RSS 订阅" target="_blank"></a>
     
     
   </nav>
@@ -259,7 +259,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">43</div>
+    <div class="sidebar-state-number">30</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -560,7 +560,7 @@ C - \alpha_i - \mu_i &amp;= 0,\forall i
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="../../../../../../tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag" title="机器学习">机器学习</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag" title="机器学习">机器学习</a></li></ul>
 
 
     </footer>
@@ -644,10 +644,10 @@ C - \alpha_i - \mu_i &amp;= 0,\forall i
     
       <div>
         <span class="icon-brush"></span>
-        211.1k
+        143.8k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        14:27
+        09:48
       </div>
     
     
@@ -692,7 +692,7 @@ C - \alpha_i - \mu_i &amp;= 0,\forall i
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">43</div>
+    <div class="sidebar-state-number">30</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -783,12 +783,12 @@ C - \alpha_i - \mu_i &amp;= 0,\forall i
 
 
 
-<script src="../../../../../../../../../../../../js/script.js"></script>
+<script src="/js/script.js"></script>
 
 
 
   
-<script src="../../../../../../../../../../../../js/aos.js"></script>
+<script src="/js/aos.js"></script>
 
   <script>
     var aosInit = () => {
@@ -808,7 +808,7 @@ C - \alpha_i - \mu_i &amp;= 0,\forall i
 
 
 
-<script src="../../../../../../../../../../../../js/pjax_script.js" data-pjax></script>
+<script src="/js/pjax_script.js" data-pjax></script>
 
 
 
@@ -841,7 +841,7 @@ C - \alpha_i - \mu_i &amp;= 0,\forall i
         window.REIMU_POST = {
           author: "May_wind",
           title: "SVM",
-          url: "http://example.com/2025/11/20/MachineLearning/SVM/SVM/",
+          url: "https://maywindsdu.cn/2025/11/20/MachineLearning/SVM/SVM/",
           excerpt: "",
           description: "",
           stripContent: " 线性可分的SVM  基本概念  超平面 hyperplane 数据集可以被超平面分隔为二类，超平面为 wTx+b=0\mathbf{w}^{\text{T}}\mathbf{x}+b=0 wTx+b=0 记作 h(x)=0h(\mathbf{x}) = 0h(x)=0 基于此超平面的分类模型可以用 f(x)=wTx+bf(\mathbf{x}) = \mathbf{w}^{\text{T}}\mathbf{x}+bf(x)=wTx+b表示,若 f(x)&amp;gt;0f(\mathbf{x}) &amp;g",
@@ -855,7 +855,7 @@ C - \alpha_i - \mu_i &amp;= 0,\forall i
     
       
         
-<script src="../../../../../../../../../../../../js/insert_highlight.js" data-pjax></script>
+<script src="/js/insert_highlight.js" data-pjax></script>
 
         
       
