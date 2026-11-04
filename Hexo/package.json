@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
+    "build": "node tools/build-site.mjs",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server"
+    "generate": "hexo generate",
+    "deploy": "node tools/build-site.mjs && hexo deploy",
+    "verify": "node tools/verify-site.mjs",
+    "preview": "node tools/preview-server.mjs"
   },
   "hexo": {
     "version": "7.3.0"

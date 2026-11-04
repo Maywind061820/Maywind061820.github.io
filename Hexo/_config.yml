@@ -1,4 +1,4 @@
-﻿# Hexo Configuration
+# Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
@@ -12,8 +12,10 @@ language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://maywindsdu.cn
+## The blog is served under /hexo/; the main site lives at the repo root.
+## url includes the sub-path so canonical/feed/og links stay absolute and correct.
+url: https://maywindsdu.cn/hexo
+root: /hexo/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -22,7 +24,7 @@ pretty_urls:
 
 # Directory
 source_dir: source
-public_dir: public
+public_dir: ../dist
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
@@ -111,3 +113,5 @@ deploy:
   type: git
   repo: git@github.com:Maywind061820/Maywind061820.github.io.git
   branch: main
+  # 保留 dist/.nojekyll，避免 GitHub Pages 用 Jekyll 处理静态站点。
+  ignore_hidden: false

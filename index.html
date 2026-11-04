@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>May_wind</title>
+  <meta name="theme-color" content="#e9deeb">
+  <link rel="icon" href="/hexo/images/favicon.ico">
+  <link rel="preload" as="image" href="/photo.jpg" fetchpriority="high">
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #e9deeb;
+    }
+
+    img.hero {
+      position: fixed;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 62% 40%;
+    }
+  </style>
+</head>
+<body>
+  <img class="hero" src="/photo.jpg" alt="樱花教室里的少女" width="1920" height="1536" fetchpriority="high" decoding="async">
+</body>
+</html>
