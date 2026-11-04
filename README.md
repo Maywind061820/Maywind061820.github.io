@@ -8,6 +8,8 @@
 /
 ├─ index.html       主站：单图首页（静态展示，不包含任何跳转）
 ├─ photo.jpg        主站图片（不放入 Hexo/）
+├─ ECLMA/
+│  └─ site/          齐鲁外系医学联盟页面（静态，构建到 /ECLMA/）
 ├─ Hexo/            Hexo 博客源码与构建工具
 │  ├─ source/
 │  ├─ themes/
@@ -20,6 +22,7 @@
 
 - `/`：主站单图首页
 - `/hexo/`：Hexo 博客（需要直接输入该地址进入）
+- `/ECLMA/`：齐鲁外系医学联盟页面（需要直接输入该地址进入）
 - 其他路径：GitHub Pages 返回根目录的 `404.html`，内容同样是主站首页
 
 ## 常用命令
@@ -28,7 +31,7 @@
 
 ```bash
 cd Hexo
-npm run build    # 生成 ../dist/：主站首页在根目录，博客在 dist/hexo/
+npm run build    # 生成 ../dist/：主站首页在根目录，博客在 dist/hexo/，协会页在 dist/ECLMA/
 npm run preview  # 本地预览 http://127.0.0.1:8123
 npm run verify   # 检查站内链接、主站无 <a> 标签等
 npm run deploy   # 构建并推送 dist/ 到 main（会 force push）

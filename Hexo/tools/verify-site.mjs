@@ -83,7 +83,18 @@ if (missing.size) {
   console.log('all referenced files exist');
 }
 
-for (const required of ['index.html', '404.html', 'photo.jpg', 'CNAME', '.nojekyll', 'hexo/index.html']) {
+for (const required of [
+  'index.html',
+  '404.html',
+  'photo.jpg',
+  'CNAME',
+  '.nojekyll',
+  'hexo/index.html',
+  'ECLMA/index.html',
+  'ECLMA/style.css',
+  'ECLMA/assets/emblem.png',
+  'ECLMA/assets/favicon.png',
+]) {
   if (!fs.existsSync(path.join(publicDir, required))) {
     console.log(`MISSING dist/${required}`);
     process.exitCode = 1;
