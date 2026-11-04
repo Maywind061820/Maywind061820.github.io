@@ -1,0 +1,377 @@
+:root {
+  --ink: #16233b;
+  --navy: #12345f;
+  --blue: #2f63a4;
+  --muted: #6f7c91;
+  --line: #dfe5ee;
+  --paper: #ffffff;
+  --serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", SimSun, serif;
+  --sans: "Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background: linear-gradient(180deg, #f7faff 0, #ffffff 420px) no-repeat, var(--paper);
+  font-family: var(--sans);
+  line-height: 1.8;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  z-index: 10;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, var(--navy), #4f7fbd 55%, #c9d8ea);
+}
+
+::selection {
+  color: #fff;
+  background: var(--blue);
+}
+
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 42px 0 30px;
+  border-bottom: 1px solid var(--line);
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+}
+
+.emblem {
+  display: block;
+  flex: none;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+}
+
+.names {
+  min-width: 0;
+}
+
+.name-cn {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  color: var(--navy);
+}
+
+.name-en {
+  margin: 4px 0 0;
+  overflow-wrap: anywhere;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.est {
+  flex: none;
+  padding-left: 24px;
+  border-left: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-align: right;
+}
+
+.est strong {
+  display: block;
+  margin-top: 2px;
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+  padding: 64px 0 72px;
+}
+
+.hero-year {
+  padding-top: 2px;
+  color: #e3ebf6;
+  font-family: var(--serif);
+  font-size: 112px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.85;
+  user-select: none;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--blue);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.intro {
+  max-width: 680px;
+  margin: 0;
+  color: #26344c;
+  font-family: var(--serif);
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  line-height: 1.85;
+}
+
+.intro strong {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.members {
+  padding: 54px 0 18px;
+  border-top: 1px solid var(--line);
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+}
+
+.count {
+  margin: 0 0 5px;
+  color: #a9b8cc;
+  font-family: var(--serif);
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.member-list {
+  border-top: 1px solid var(--line);
+}
+
+.member {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 24px;
+  padding: 31px 0 33px;
+  border-bottom: 1px solid var(--line);
+}
+
+.member-no {
+  padding-top: 6px;
+  color: var(--blue);
+  font-family: var(--serif);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+}
+
+.member-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px 16px;
+  margin-bottom: 9px;
+}
+
+.member-head h3 {
+  margin: 0;
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+}
+
+.role {
+  margin: 0;
+  padding: 2px 9px;
+  color: var(--blue);
+  background: #f5f8fc;
+  border: 1px solid #d5e1f0;
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  line-height: 1.7;
+}
+
+.bio {
+  max-width: 760px;
+  margin: 0;
+  color: #435066;
+  font-size: 14.5px;
+  line-height: 1.95;
+}
+
+.paper {
+  color: #2b3b52;
+  font-family: var(--serif);
+  overflow-wrap: anywhere;
+}
+
+.paper-line {
+  margin-top: 6px;
+}
+
+.footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 46px;
+  padding: 22px 0 48px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .slash {
+  margin: 0 6px;
+  color: #b3c0d0;
+}
+
+@media (max-width: 760px) {
+  .wrap {
+    padding: 0 24px;
+  }
+
+  .masthead {
+    align-items: flex-start;
+    padding: 30px 0 22px;
+  }
+
+  .identity {
+    gap: 13px;
+  }
+
+  .emblem {
+    width: 58px;
+    height: 58px;
+  }
+
+  .name-cn {
+    font-size: 21px;
+    letter-spacing: 0.05em;
+  }
+
+  .name-en {
+    font-size: 8.5px;
+    letter-spacing: 0.15em;
+  }
+
+  .est {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding: 36px 0 46px;
+  }
+
+  .hero-year {
+    font-size: 74px;
+  }
+
+  .intro {
+    font-size: 18px;
+    line-height: 1.85;
+  }
+
+  .members {
+    padding: 40px 0 14px;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .member {
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 12px;
+    padding: 26px 0 28px;
+  }
+
+  .member-head {
+    gap: 8px 12px;
+  }
+
+  .member-head h3 {
+    font-size: 22px;
+  }
+
+  .bio {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .footer {
+    display: block;
+    margin-top: 36px;
+    padding-bottom: 38px;
+    line-height: 1.9;
+  }
+
+  .footer p + p {
+    margin-top: 5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}
