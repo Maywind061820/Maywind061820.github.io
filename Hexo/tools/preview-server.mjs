@@ -61,5 +61,5 @@ http
     }
   })
   .listen(port, '127.0.0.1', () => {
-    console.log(`preview: http://127.0.0.1:${port}/  (blog: /hexo/)`);
+    console.log(`preview: http://127.0.0.1:${port}/  (blog: /hexo/, source: /source/)`);
   });

@@ -94,6 +94,11 @@ for (const required of [
   'ECLMA/style.css',
   'ECLMA/assets/emblem.png',
   'ECLMA/assets/favicon.png',
+  'source/index.html',
+  'source/style.css',
+  'source/url/index.html',
+  'source/assets/source-sky.webp',
+  'source/assets/source-sky.jpg',
 ]) {
   if (!fs.existsSync(path.join(publicDir, required))) {
     console.log(`MISSING dist/${required}`);
@@ -101,3 +106,25 @@ for (const required of [
   }
 }
 console.log(`CNAME: ${fs.readFileSync(path.join(publicDir, 'CNAME'), 'utf8').trim()}`);
+
+const sourceIndex = fs.readFileSync(path.join(publicDir, 'source', 'index.html'), 'utf8');
+if (!sourceIndex.includes('网址') || !sourceIndex.includes('href="url/"')) {
+  console.log('source index is missing the "网址" entry');
+  process.exitCode = 1;
+}
+for (const hidden of ['上消化道内镜诊断培训（上册）', 'edu.lndjzz.cn']) {
+  if (sourceIndex.includes(hidden)) {
+    console.log(`source index shows "${hidden}" before the entry is opened`);
+    process.exitCode = 1;
+  }
+}
+
+const sourceDetail = fs.readFileSync(path.join(publicDir, 'source', 'url', 'index.html'), 'utf8');
+const sourceUrl =
+  'http://edu.lndjzz.cn/videos?pageType=5&resourceTypes=1&resourceId=a6b499d789204d84adaddd2b07f8bc1b&organizeId=d5406e15-32eb-43fa-a6b3-3793cb50f5a4';
+for (const needle of ['上消化道内镜诊断培训（上册）', 'edu.lndjzz.cn', '微信中打开', sourceUrl.replaceAll('&', '&amp;')]) {
+  if (!sourceDetail.includes(needle)) {
+    console.log(`source detail page is missing "${needle}"`);
+    process.exitCode = 1;
+  }
+}
